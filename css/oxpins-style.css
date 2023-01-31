@@ -115,7 +115,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--oxpins-black-rgb: 40, 55, 52;
 	--oxpins-white: #ffffff;
 	--oxpins-white-rgb: 255, 255, 255;
-	--oxpins-extra: #f9f4e8;
+	--oxpins-extra: #D7F1FE;
 	--oxpins-extra-rgb: 249, 244, 232;
 	--oxpins-extra-two: #f2f0ec;
 	--oxpins-extra-two-rgb: 242, 240, 236;
@@ -143,7 +143,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--oxpins-black-rgb: 40, 55, 52;
 	--oxpins-white: #ffffff;
 	--oxpins-white-rgb: 255, 255, 255;
-	--oxpins-extra: #f9f4e8;
+	--oxpins-extra: #D7F1FE;
 	--oxpins-extra-rgb: 249, 244, 232;
 	--oxpins-extra-two: #f2f0ec;
 	--oxpins-extra-two-rgb: 242, 240, 236;
@@ -917,7 +917,7 @@ textarea {
 	position: relative;
 	display: block;
 	padding: 47px 40px 50px;
-	background-color: var(--oxpins-extra, #f9f4e8);
+	background-color: var(--oxpins-extra, #D7F1FE);
 	border-radius: var(--oxpins-bdr-radius, 8px);
 }
 
@@ -3846,6 +3846,15 @@ ul {
 
 .section-title__tagline {
 	font-size: 24px;
+	color: var(--oxpins-primary);
+	font-weight: 700;
+	line-height: 24px;
+	margin-bottom: 10px;
+	font-family: var(--oxpins-font-three);
+}
+
+.event_section-title__tagline {
+	font-size: 24px;
 	color: var(--oxpins-base);
 	font-weight: 700;
 	line-height: 24px;
@@ -3856,9 +3865,19 @@ ul {
 .section-title__title {
 	margin: 0;
 	color: var(--oxpins-black);
-	font-size: 50px;
-	line-height: 60px;
-	font-weight: 900;
+	font-size: 40px;
+	line-height: 45px;
+	font-weight: 800;
+	letter-spacing: -0.04em;
+	margin-top: 6px;
+}
+
+.section-title__title {
+	margin: 0;
+	color: var(--oxpins-black);
+	font-size: 40px;
+	line-height: 45px;
+	font-weight: 800;
 	letter-spacing: -0.04em;
 	margin-top: 6px;
 }
@@ -7088,7 +7107,7 @@ ul {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: var(--oxpins-base);
+	background-color: var(--oxpins-black);
 	z-index: -1;
 }
 
@@ -7314,7 +7333,7 @@ ul {
 
 .events-one__title {
 	font-size: 24px;
-	font-weight: 900;
+	font-weight: 700;
 	letter-spacing: -0.04em;
 	line-height: 28px;
 }
@@ -7771,15 +7790,15 @@ ul {
 }
 
 .testimonial-one__client-name {
-	font-size: 30px;
-	font-weight: 900;
+	font-size: 20px;
+	font-weight: 700;
 	line-height: 36px;
 	letter-spacing: -0.04em;
 	color: var(--oxpins-white);
 }
 
 .testimonial-one__client-sub-title {
-	font-size: 24px;
+	font-size: 15px;
 	color: var(--oxpins-primary);
 	font-weight: 700;
 	font-family: var(--oxpins-font-three);
@@ -8597,6 +8616,11 @@ ul {
 	background-color: var(--oxpins-black);
 	z-index: 1;
 }
+
+.footer_section_text {
+	background: red;
+}
+
 
 .site-footer-bg {
 	position: absolute;
@@ -14780,7 +14804,7 @@ ul {
 # Boxed Version
 --------------------------------------------------------------*/
 body.boxed-wrapper {
-	background-color: #f9f4e8;
+	background-color: #D7F1FE;
 }
 
 .boxed-wrapper .page-wrapper {
@@ -14918,7 +14942,7 @@ body.boxed-wrapper {
 	padding: 9px;
 	width: 100%;
 	border-radius: var(--oxpins-bdr-radius, 8px);
-	background-color: var(--oxpins-extra, #f9f4e8);
+	background-color: var(--oxpins-extra, #D7F1FE);
 	font-size: 18px;
 	color: var(--oxpins-gray, #6f7775);
 	font-weight: 400;
@@ -14987,8 +15011,8 @@ body.boxed-wrapper {
 	width: 20px;
 	height: 20px;
 	display: block;
-	background-color: var(--oxpins-extra, #f9f4e8);
-	border: 6px solid var(--oxpins-extra, #f9f4e8);
+	background-color: var(--oxpins-extra, #D7F1FE);
+	border: 6px solid var(--oxpins-extra, #D7F1FE);
 	border-radius: 50%;
 	margin-right: 10px;
 }
@@ -15014,9 +15038,9 @@ body.boxed-wrapper {
 	width: 20px;
 	height: 20px;
 	display: block;
-	background-color: var(--oxpins-extra, #f9f4e8);
+	background-color: var(--oxpins-extra, #D7F1FE);
 	border-radius: 50%;
-	border: 6px solid var(--oxpins-extra, #f9f4e8);
+	border: 6px solid var(--oxpins-extra, #D7F1FE);
 	margin-right: 10px;
 	appearance: none;
 }
@@ -15460,7 +15484,7 @@ label {
 .blog-details__content .post-password-form input[type=password] {
 	width: 200px;
 	height: 50px;
-	background-color: var(--oxpins-extra, #f9f4e8);
+	background-color: var(--oxpins-extra, #D7F1FE);
 	color: var(--oxpins-gray, #717178);
 	padding-left: 30px;
 	display: inline-block;
@@ -15534,8 +15558,8 @@ label {
 .wp-block-archives-dropdown select {
 	width: 100%;
 	height: 60px;
-	background-color: var(--oxpins-extra, #f9f4e8);
-	border: 1px solid var(--oxpins-extra, #f9f4e8);
+	background-color: var(--oxpins-extra, #D7F1FE);
+	border: 1px solid var(--oxpins-extra, #D7F1FE);
 	outline: none;
 	color: var(--oxpins-gray, #717178);
 	font-size: 16px;
@@ -15681,7 +15705,7 @@ label {
 	position: relative;
 	line-height: 40px;
 	padding: 19px 80px 19px 35px;
-	background: var(--oxpins-extra, #f9f4e8);
+	background: var(--oxpins-extra, #D7F1FE);
 	color: var(--oxpins-gray, #717178);
 	display: block;
 	font-size: 16px;
@@ -15689,7 +15713,7 @@ label {
 	font-family: var(--oxpins-font, "Kumbh Sans", sans-serif);
 	width: 100%;
 	height: 60px;
-	border: 1px solid var(--oxpins-extra, #f9f4e8);
+	border: 1px solid var(--oxpins-extra, #D7F1FE);
 	border-radius: 7px;
 	transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
@@ -15883,7 +15907,7 @@ a.wp-block-button__link {
 
 .wp-block-calendar table th {
 	font-weight: 400;
-	background: var(--oxpins-extra, #f9f4e8);
+	background: var(--oxpins-extra, #D7F1FE);
 }
 
 .wp-block-gallery:not(.has-nested-images).alignleft {
@@ -15935,7 +15959,7 @@ a.wp-block-button__link {
 .give_error,
 .give_success,
 .give_warning {
-	background-color: #f9f4e8;
+	background-color: #D7F1FE;
 }
 
 #give_checkout_user_info legend {
