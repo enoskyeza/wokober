@@ -112,7 +112,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--oxpins-secondary: #26cc8c;
 	--oxpins-secondary-rgb: 38, 204, 140;
 	--oxpins-black: #001666;
-	--oxpins-black-rgb: 40, 55, 52;
+	--oxpins-black-rgb: 0, 22, 102;
 	--oxpins-white: #ffffff;
 	--oxpins-white-rgb: 255, 255, 255;
 	--oxpins-extra: #D7F1FE;
@@ -140,7 +140,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--secondary: #F5E2C8;
 	--secondary-rgb: 245, 226, 200;
 	--oxpins-black: #001666;
-	--oxpins-black-rgb: 40, 55, 52;
+	--oxpins-black-rgb: 0, 22, 102;
 	--oxpins-white: #ffffff;
 	--oxpins-white-rgb: 255, 255, 255;
 	--oxpins-extra: #D7F1FE;
@@ -6499,7 +6499,7 @@ ul {
 }
 
 /*--------------------------------------------------------------
-# Main Slider Two
+# Main Slider Three
 --------------------------------------------------------------*/
 .main-slider-three {
 	position: relative;
@@ -6509,7 +6509,7 @@ ul {
 
 .main-slider-three .swiper-slide {
 	position: relative;
-	background-color: #212d2b;
+	background-color: var(--oxpins-black);
 }
 
 .main-slider-three .container {
@@ -6559,8 +6559,8 @@ ul {
 	left: 0;
 	right: 0;
 	height: 420px;
-	background: #212d2b;
-	background: linear-gradient(180deg, rgba(33, 45, 43, 0.969625) 7%, rgba(33, 45, 43, 0) 100%);
+	background: #001666;
+	background: linear-gradient(180deg, rgba(0, 22, 102, 0.969625) 7%, rgba(0, 22, 102, 0) 100%);
 	z-index: 1;
 }
 
