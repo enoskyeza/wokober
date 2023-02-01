@@ -3846,7 +3846,7 @@ ul {
 
 .section-title__tagline {
 	font-size: 24px;
-	color: var(--oxpins-primary);
+	color: var(--oxpins-base);
 	font-weight: 700;
 	line-height: 24px;
 	margin-bottom: 10px;
@@ -8155,6 +8155,12 @@ ul {
 
 .faq-one__btn {
 	font-weight: 800;
+}
+
+.footer-btn-new {
+	background: var(--oxpins-primary);
+	color: var(--oxpins-base);
+	font-weight: 700;
 }
 
 .faq-one-accrodion .accrodion {
