@@ -6035,7 +6035,7 @@ ul {
 	right: -20px;
 	bottom: 0;
 	width: 50%;
-	/* mix-blend-mode: luminosity; */
+	mix-blend-mode: luminosity;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: left center;
