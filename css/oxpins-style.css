@@ -4283,8 +4283,8 @@ ul {
 
 .main-menu__right-top-social a {
 	position: relative;
-	height: 40px;
-	width: 40px;
+	height: 20px;
+	width: 20px;
 	display: -webkit-box;
 	display: flex;
 	-webkit-box-align: center;
@@ -4294,7 +4294,7 @@ ul {
 	text-align: center;
 	color: var(--oxpins-black);
 	font-size: 14px;
-	background-color: var(--oxpins-extra);
+	background-color: white;
 	border-radius: 50%;
 	overflow: hidden;
 	-webkit-transition: all 500ms ease;
@@ -4704,6 +4704,12 @@ ul {
 .main-menu-two__main-menu-box .main-menu__list>.megamenu>ul>li,
 .main-menu__wrapper .main-menu__list>.megamenu>ul>li {
 	padding: 0 !important;
+}
+
+@media (min-width: 2000px) {
+	.main-menu-three__main-menu-box {
+		margin-left: 400px;
+	}
 }
 
 .stricky-header {
@@ -5787,7 +5793,7 @@ ul {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 53px;
+	padding: 0 0 0 10px;
 }
 
 .main-menu-three__main-menu-box {
@@ -5796,8 +5802,8 @@ ul {
 
 .main-menu-three__search-cat {
 	display: flex;
-	align-items: center;
-	margin-left: 500px;
+	align-items: flex-end;
+	margin-left: 10px;
 }
 
 .main-menu-three__search-box {
@@ -5839,7 +5845,11 @@ ul {
 	position: relative;
 	display: flex;
 	align-items: center;
-	margin-left: 95px;
+	margin-left: 10px;
+}
+
+.main-menu-three__btn {
+	background: var(--oxpins-primary);
 }
 
 .main-menu-three__btn-box a {
