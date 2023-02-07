@@ -4706,6 +4706,10 @@ ul {
 	padding: 0 !important;
 }
 
+.main-menu-three__main-menu-box {
+	margin-right: 40px;
+}
+
 @media (min-width: 2000px) {
 	.main-menu-three__main-menu-box {
 		margin-left: 400px;
