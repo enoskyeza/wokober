@@ -4086,6 +4086,8 @@ ul {
 	width: 91%;
 }
 
+
+
 .main-menu__right-top {
 	display: flex;
 	align-items: center;
@@ -4366,6 +4368,12 @@ ul {
 
 	.main-menu__right-top-right {
 		margin-right: 50px;
+	}
+}
+
+@media (max-width: 768px) {
+	.main-menu__right {
+		padding-left: 0px;
 	}
 }
 
@@ -4911,6 +4919,7 @@ ul {
 	right: 15px;
 	font-size: 18px;
 	color: var(--oxpins-white);
+	background: red;
 	cursor: pointer;
 }
 
@@ -17255,7 +17264,7 @@ form[id*=give-form] #give-final-total-wrap {
 
 	.main-menu__wrapper {
 		padding-left: 30px;
-		padding-right: 30px;
+		/* padding-right: 30px; */
 	}
 
 	.main-menu__shape-1 {
