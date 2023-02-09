@@ -6980,6 +6980,10 @@ ul {
 	margin-bottom: 30px;
 }
 
+.about-purpose {
+	height: 200px;
+}
+
 .causes-one__img {
 	position: relative;
 	display: block;
@@ -7233,7 +7237,7 @@ ul {
 	background-size: cover;
 	background-position: center;
 	mix-blend-mode: luminosity;
-	opacity: .60;
+	opacity: .10;
 }
 
 .become-volunteer-one__shape-1 {
@@ -10958,7 +10962,7 @@ ul {
 }
 
 .about-three__right .about-three__img-two img {
-	width: auto;
+	width: 100%;
 	border-radius: 50%;
 }
 
@@ -11125,7 +11129,7 @@ ul {
 .causes-three {
 	position: relative;
 	display: block;
-	padding: 270px 0 90px;
+	padding: 170px 0 90px;
 	margin-top: -176px;
 }
 
@@ -11646,7 +11650,7 @@ ul {
 	background-position: center;
 	background-color: var(--oxpins-black);
 	background-blend-mode: luminosity;
-	opacity: 0.7;
+	opacity: 0.2;
 	z-index: -1;
 }
 
@@ -14718,6 +14722,8 @@ ul {
 
 .about-four__img-two {
 	position: absolute;
+	height: 100%;
+	width: 100%;
 	bottom: -160px;
 	right: -140px;
 	z-index: 1;
@@ -14733,7 +14739,7 @@ ul {
 	top: 60px;
 	left: 70px;
 	border-width: 5px;
-	border-color: #fbd45a;
+	border-color: var(--oxpins-primary);
 	border-style: solid;
 	border-radius: 20px;
 	background-color: rgba(40, 55, 52, 0);
@@ -17624,4 +17630,8 @@ form[id*=give-form] #give-final-total-wrap {
 .nav-header-seperator {
 	height: 120px;
 	background: white;
+}
+
+.mission-section {
+	padding-top: 100px;
 }
