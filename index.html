@@ -749,7 +749,7 @@
                                         <div class="main-container">
                                             <div class="background-container">
                                                 <video autoplay muted loop id="myVideo">
-                                                    <source src="videos/vid-2.mp4" type="video/mp4">
+                                                    <source src="videos/WOKOBER TOY FESTIVAL 2022 SAMMARY.mp4" type="video/mp4">
                                                     Your browser does not support HTML5 video.
                                                 </video>
                                                 <div class="overlay-layer"></div>
@@ -2152,6 +2152,15 @@
         var wpformsElementorVars = { "captcha_provider": "recaptcha", "recaptcha_type": "v2" };
     </script>
     <script src='./js/wpforms-lite-assets-js-integrations-elementor-frontend.min.js' id='wpforms-elementor-js'></script>
+    <script>
+        const video = document.getElementById("myVideo");
+        video.currentTime = 10; // starting time in seconds
+        video.addEventListener("timeupdate", function() {
+          if (video.currentTime >= 40) { // ending time in seconds
+            video.currentTime = 10; // starting time in seconds
+          }
+        });
+      </script>
 </body>
 
 </html>
