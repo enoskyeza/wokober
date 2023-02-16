@@ -10170,6 +10170,7 @@ ul {
 	position: relative;
 	display: block;
 	padding: 120px 0 90px;
+	background: rgba(159, 222, 254, 0.45);
 }
 
 .team-one__single {
@@ -11139,8 +11140,9 @@ ul {
 .causes-three {
 	position: relative;
 	display: block;
-	padding: 170px 0 90px;
+	padding: 170px 0 120px;
 	margin-top: -176px;
+	overflow: hidden;
 }
 
 .causes-three .container {
