@@ -176,7 +176,7 @@ var giveApiSettings = {"root":"http:\/\/localhost:8888\/wordpress\/wp-json\/give
 														<span aria-hidden="true" class="  icon-phone-call"></span>													</div>
 													<div class="content">
 														<p>Helpline</p>
-														<h5><a href="tel:980009630">+ 98 (000) - 9630</a></h5>
+														<h5><a href="tel:+256784041804">+ 98 (000) - 9630</a></h5>
 													</div>
 												</li>
 																							<li>
@@ -599,7 +599,7 @@ var giveApiSettings = {"root":"http:\/\/localhost:8888\/wordpress\/wp-json\/give
 						<i aria-hidden="true" class="  fas fa-phone-alt"></i>					</div>
 					<div class="text">
 						<p>
-							<a href="tel:980009630">+ 98 (000) - 9630</a>						</p>
+							<a href="tel:+256784041804">+ 98 (000) - 9630</a>						</p>
 					</div>
 				</li>
 					</ul>

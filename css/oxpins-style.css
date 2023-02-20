@@ -6156,7 +6156,7 @@ ul {
 		margin-top: 0px;
 		padding-top: 50px;
 	}
-	.main-slider, 
+	.main-slider,
 	.main-slider .swiper-slide,
 	.main-slider .container,
 	.main-slider .image-layer
@@ -6170,7 +6170,7 @@ ul {
 		margin-top: 0px;
 		padding-top: 20px;
 	}
-	.main-slider, 
+	.main-slider,
 	.main-slider .swiper-slide,
 	.main-slider .container,
 	.main-slider .image-layer
@@ -6250,7 +6250,7 @@ ul {
 		margin-top: 10px;
 	}
 
-	.main-slider, 
+	.main-slider,
 	.main-slider .swiper-slide,
 	.main-slider .container,
 	.main-slider .image-layer
@@ -6695,7 +6695,7 @@ ul {
 	transition: transform 2000ms ease, opacity 2000ms ease;
 	transition: transform 2000ms ease, opacity 2000ms ease, -webkit-transform 2000ms ease;
 }
-  
+
 
 .main-slider-three__btn {
 	font-weight: 800;
@@ -13967,7 +13967,8 @@ ul {
 .become-volunteer-page__left {
 	position: relative;
 	display: block;
-	background-color: var(--oxpins-extra);
+	background-color: rgba(159, 222, 254, 0.45);
+	/* background-color: var(--oxpins-primary); */
 	border-top-left-radius: var(--oxpins-bdr-radius);
 	border-bottom-left-radius: var(--oxpins-bdr-radius);
 	padding: 60px 60px 57.41px;
