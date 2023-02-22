@@ -18009,10 +18009,17 @@ textarea.form-control {
 
 .tf-gallery {
 	display: flex;
+	align-items: end;
 	position: relative;
 	padding-top: 10px;
 	height: 250px;
 	overflow: hidden;
+}
+
+@media (max-width:425px) {
+	.tf-gallery{
+		height: 200px;
+	}
 }
 
 .slider-img-item {
@@ -18023,9 +18030,13 @@ textarea.form-control {
 
 .slider-controls {
 	position: absolute;
-	bottom: -100px;
+	bottom: -500px;
 	left: 0;
 	width: 100px;
 	height: 100px;
 	z-index: 200;
+}
+
+.img-slider-wrapper {
+	/* justify-self: end; */
 }
