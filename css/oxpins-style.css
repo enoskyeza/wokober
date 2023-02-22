@@ -18005,3 +18005,26 @@ textarea.form-control {
 	font-weight: bold;
 	font-size: larger;
 }
+
+
+.tf-gallery {
+	position: relative;
+	padding-top: 10px;
+	height: 250px;
+	overflow: hidden;
+}
+
+.slider-img-item {
+	height: 250px;
+	width: 250px;
+	overflow-y: hidden;
+}
+
+.slider-controls {
+	position: absolute;
+	bottom: -100px;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	z-index: 200;
+}
