@@ -18008,6 +18008,7 @@ textarea.form-control {
 
 
 .tf-gallery {
+	display: flex;
 	position: relative;
 	padding-top: 10px;
 	height: 250px;
@@ -18015,8 +18016,8 @@ textarea.form-control {
 }
 
 .slider-img-item {
-	height: 250px;
-	width: 250px;
+	aspect-ratio: 1/1;
+	flex-grow: 1;
 	overflow-y: hidden;
 }
 
