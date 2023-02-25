@@ -18055,6 +18055,25 @@ textarea.form-control {
 			   -4px -4px 12px #ffffff;
   }
 
+/* Wiinner section */
+/* .winner-section {
+	background: yellow;
+}
+
+.top-nav-section {
+	background: red;
+}
+
+.bottom-nav-section{
+	background: #0036fc;
+} */
+
+/* @media (max-width: 425px) {
+	.winner-section {
+		display: flex;
+	}
+} */
+
 /* Judges section */
 .judges-section {
 	overflow: hidden;
