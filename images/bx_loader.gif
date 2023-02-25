@@ -164,7 +164,7 @@ var giveApiSettings = {"root":"http:\/\/localhost:8888\/wordpress\/wp-json\/give
 											<a href="https://layerdrops.com/oxpinswp/become-volunteer/"><img decoding="async" src="http://layerdrops.com/oxpinswp/wp-content/uploads/2022/09/main-menu-heart-icon.png" alt="631"></a>
 										</div>
 																												<div class="main-menu__volunteers-text-box">
-											<p class="main-menu__volunteers-text"><a href="https://layerdrops.com/oxpinswp/become-volunteer/">Become a volunteers</a></p>
+											<p class="main-menu__volunteers-text"><a href="https://layerdrops.com/oxpinswp/become-volunteer/">Get Involveds</a></p>
 										</div>
 																	</div>
 							</div>
@@ -176,7 +176,7 @@ var giveApiSettings = {"root":"http:\/\/localhost:8888\/wordpress\/wp-json\/give
 														<span aria-hidden="true" class="  icon-phone-call"></span>													</div>
 													<div class="content">
 														<p>Helpline</p>
-														<h5><a href="tel:980009630">+ 98 (000) - 9630</a></h5>
+														<h5><a href="tel:+256784041804">+ 98 (000) - 9630</a></h5>
 													</div>
 												</li>
 																							<li>
@@ -599,7 +599,7 @@ var giveApiSettings = {"root":"http:\/\/localhost:8888\/wordpress\/wp-json\/give
 						<i aria-hidden="true" class="  fas fa-phone-alt"></i>					</div>
 					<div class="text">
 						<p>
-							<a href="tel:980009630">+ 98 (000) - 9630</a>						</p>
+							<a href="tel:+256784041804">+ 98 (000) - 9630</a>						</p>
 					</div>
 				</li>
 					</ul>
