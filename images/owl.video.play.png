@@ -78,7 +78,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 			--oxpins-primary-rgb: 251, 212, 90;
 			--oxpins-base: #00715d;
 			--oxpins-base-rgb: 0, 113, 93;
-		}.page-header-bg { background-image: url(http://localhost:8888/wordpress/wp-content/uploads/2023/01/page-header-bg-1.jpg); } .preloader .preloader__image { background-image: url(http://localhost:8888/wordpress/wp-content/uploads/2023/01/loader-2.png); } 
+		}.page-header-bg { background-image: url(http://localhost:8888/wordpress/wp-content/uploads/2023/01/page-header-bg-1.jpg); } .preloader .preloader__image { background-image: url(http://localhost:8888/wordpress/wp-content/uploads/2023/01/loader-2.png); }
 </style>
 <link rel='stylesheet' id='recent-posts-widget-with-thumbnails-public-style-css' href='http://localhost:8888/wordpress/wp-content/plugins/recent-posts-widget-with-thumbnails/public.css?ver=7.1.1' media='all' />
         <script>
@@ -133,8 +133,8 @@ var giveApiSettings = {"root":"http:\/\/localhost:8888\/wordpress\/wp-json\/give
 	<div id="page" class="site page-wrapper">
 		<a class="skip-link screen-reader-text" href="#primary">Skip to content</a>
 
-		
-	
+
+
                     <!-- the loop -->
                             		<div data-elementor-type="wp-post" data-elementor-id="602" class="elementor elementor-602">
 									<section class="elementor-section elementor-top-section elementor-element elementor-element-712c65a elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="712c65a" data-element_type="section">
@@ -143,7 +143,7 @@ var giveApiSettings = {"root":"http:\/\/localhost:8888\/wordpress\/wp-json\/give
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-b14c4d4 elementor-widget elementor-widget-oxpins-header" data-id="b14c4d4" data-element_type="widget" data-widget_type="oxpins-header.default">
 				<div class="elementor-widget-container">
-			
+
 	<header class="main-header">
 		<nav class="main-menu">
 			<div class="main-menu__wrapper">
@@ -347,7 +347,7 @@ var giveApiSettings = {"root":"http:\/\/localhost:8888\/wordpress\/wp-json\/give
 			<div class="stricky-header stricked-menu main-menu">
 			<div class="sticky-header__content"></div><!-- /.sticky-header__content -->
 		</div><!-- /.stricky-header -->
-	
+
 
 
 
@@ -423,10 +423,10 @@ var giveApiSettings = {"root":"http:\/\/localhost:8888\/wordpress\/wp-json\/give
 							</div>
 		                        <!-- end of the loop -->
 
-            
-        
-		
-					
+
+
+
+
 <!--Page Header Start-->
 <section class="page-header">
 	<div class="page-header-bg">
@@ -435,7 +435,7 @@ var giveApiSettings = {"root":"http:\/\/localhost:8888\/wordpress\/wp-json\/give
 		<div class="page-header__inner">
 										<ul class="thm-breadcrumb list-unstyled ml-0" typeof="BreadcrumbList" vocab="https://schema.org/">
 					<!-- Breadcrumb NavXT 7.1.0 -->
-<li class="home"><span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Project_one." href="./index.html" class="home" ><span property="name">Project_one</span></a><meta property="position" content="1"></span></li>
+<li class="home"><span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Project_one." href="index" class="home" ><span property="name">Project_one</span></a><meta property="position" content="1"></span></li>
 <li class="404 current-item"><span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to 404." href="" class="404 current-item" aria-current="page"><span property="name">404</span></a><meta property="position" content="2"></span></li>
 				</ul>
 									<h2>
@@ -443,7 +443,7 @@ var giveApiSettings = {"root":"http:\/\/localhost:8888\/wordpress\/wp-json\/give
 		</div>
 	</div>
 </section>
-<!--Page Header End-->		
+<!--Page Header End-->
 <main id="primary" class="site-main">
 
 	<!--Error Page Start-->
@@ -482,7 +482,7 @@ var giveApiSettings = {"root":"http:\/\/localhost:8888\/wordpress\/wp-json\/give
 
 
 
-	
+
                     <!-- the loop -->
                             		<div data-elementor-type="wp-post" data-elementor-id="753" class="elementor elementor-753">
 									<section class="elementor-section elementor-top-section elementor-element elementor-element-eab01e4 site-footer elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="eab01e4" data-element_type="section">
@@ -522,7 +522,7 @@ var giveApiSettings = {"root":"http:\/\/localhost:8888\/wordpress\/wp-json\/give
 				<div class="elementor-widget-container">
 				<div class="footer-widget__column footer-widget__links clearfix">
 					<h3 class="footer-widget__title">Links</h3>
-		
+
 					<ul id="menu-links" class="footer-widget__links-list list-unstyled clearfix ml-0"><li id="menu-item-763" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-763"><a href="http://localhost:8888/wordpress/about/">About Us</a></li>
 <li id="menu-item-764" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-764"><a href="http://localhost:8888/wordpress/contact/">Contact</a></li>
 <li id="menu-item-765" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-765"><a href="http://localhost:8888/wordpress/news-sidebar/">Latest News</a></li>
@@ -539,7 +539,7 @@ var giveApiSettings = {"root":"http:\/\/localhost:8888\/wordpress\/wp-json\/give
 				<div class="elementor-widget-container">
 				<div class="footer-widget__column footer-widget__links clearfix">
 					<h3 class="footer-widget__title">Non profit</h3>
-		
+
 					<div class="footer-widget__links-list list-unstyled clearfix ml-0"><ul>
 <li class="page_item page-item-13"><a href="http://localhost:8888/wordpress/about/">About</a></li>
 <li class="page_item page-item-76"><a href="http://localhost:8888/wordpress/become-volunteer/">Become volunteer</a></li>
@@ -584,7 +584,7 @@ var giveApiSettings = {"root":"http:\/\/localhost:8888\/wordpress\/wp-json\/give
 					<h3 class="footer-widget__title">Contact</h3>
 							<p class="footer-widget__contact-text">380 Street Kilda Broklyn Road <br> Melbourne
                                     Australia			</p>
-		
+
 		<ul class="list-unstyled footer-widget__contact-list ml-0">
 							<li>
 					<div class="icon">
@@ -650,8 +650,8 @@ var giveApiSettings = {"root":"http:\/\/localhost:8888\/wordpress\/wp-json\/give
 							</div>
 		                        <!-- end of the loop -->
 
-            
-        
+
+
 </div><!-- #page -->
 
 <link rel='stylesheet' id='elementor-frontend-css' href='http://localhost:8888/wordpress/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.10.2' media='all' />
