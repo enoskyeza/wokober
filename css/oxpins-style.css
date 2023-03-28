@@ -7076,11 +7076,12 @@ ul {
 .causes-one__content {
 	position: relative;
 	display: block;
-	background-color: white;
+	color: white;
+	background-color: var(--oxpins-base);
 	box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
 	border-bottom-left-radius: var(--oxpins-bdr-radius);
 	border-bottom-right-radius: var(--oxpins-bdr-radius);
-	border: 1px solid var(--oxpins-bdr-color);
+	border: none;
 	padding: 22px 30px 30px;
 	border-top: 0;
 }
@@ -17670,7 +17671,7 @@ form[id*=give-form] #give-final-total-wrap {
 }
 
 .mission-section {
-	padding-top: 100px;
+	padding-top: 150px;
 }
 
 /* =========================
