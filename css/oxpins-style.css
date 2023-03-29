@@ -18838,3 +18838,99 @@ textarea.form-control {
 .profile-card-10:hover img {
 	transform: scale(1.1);
 }
+
+/* ---volunteer--- */
+
+#volunteer_area_main .volunteer_wrapper {
+    margin-bottom: 30px;
+}
+
+.volunteer_wrapper {
+    z-index: 9;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background: var(--oxpins-base);
+    box-shadow: 8px 10px 24px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.volunteer_wrapper:hover {
+    box-shadow: rgb(0 0 0 / 14%) 8px 20px 22px;
+}
+
+.volunteer_img img {
+    width: 100%;
+}
+
+.volunteer_img {
+    position: relative;
+}
+
+.volunteer_icon {
+    position: absolute;
+    bottom: 20px;
+    left: 40%;
+    transform: translate(-50%, 20px);
+    transition: var(--transition);
+    opacity: 0;
+}
+
+.volunteer_wrapper:hover .volunteer_icon {
+    opacity: 1;
+    transform: translate(-50%, 0px);
+}
+
+.volunteer_icon ul {
+    display: flex;
+    justify-content: center;
+	list-style-type: none;
+}
+
+.volunteer_icon ul li {
+    padding-left: 20px;
+}
+
+.volunteer_icon ul li:first-child {
+    padding-left: 0px;
+}
+
+.volunteer_icon ul li a:hover {
+    background: var(--oxpins-primary);
+}
+
+.volunteer_icon ul li a {
+    height: 30px;
+    width: 30px;
+    background: var(--oxpins-base);
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    transition: var(--transition);
+}
+
+.volunteer_text {
+    padding: 20px 20px;
+    text-align: center;
+	background-color: var(--oxpins-base);
+}
+
+.volunteer_text h3 a {
+    color: white;
+}
+
+.volunteer_text h3 a:hover {
+    color: var(--oxpins-primary);
+}
+
+.volunteer_text p {
+    padding-top: 6px;
+	color: white;
+}
+
+#partner_area-2 .owl-carousel .owl-item img {
+    width: auto !important;
+}
