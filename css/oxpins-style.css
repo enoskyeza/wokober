@@ -17830,6 +17830,11 @@ textarea.form-control {
 	margin-top: 100px;
 }
 
+.section_padding_teams {
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
 .project_organizer_wrapper {
     display: flex;
 }
@@ -18933,4 +18938,42 @@ textarea.form-control {
 
 #partner_area-2 .owl-carousel .owl-item img {
     width: auto !important;
+}
+
+/* ----------------------------
+    Gallery Page
+---------------------------------*/
+.gallery_item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.gallery_item img {
+    width: 100%;
+}
+
+.gallery_overlay {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: #ff00003b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+}
+
+.gallery_item:hover .gallery_overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.gallery_overlay a img {
+    width: auto;
 }

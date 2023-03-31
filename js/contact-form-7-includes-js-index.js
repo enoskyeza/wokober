@@ -187,7 +187,7 @@
         const t = document.createElement("li");
         t.setAttribute("id", s),
           i && i.id
-            ? t.insertAdjacentHTML("beforeend", `<a href="#${i.id}">${a}</a>`)
+            ? t.insertAdjacentHTML("beforeend", `<a href ="#${i.id}">${a}</a>`)
             : t.insertAdjacentText("beforeend", a),
           e.wpcf7.parent
             .querySelector(".screen-reader-response ul")
