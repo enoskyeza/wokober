@@ -491,6 +491,10 @@
     <link rel="icon" href="./images/logo_icon/favicon-32x32.png" sizes="192x192" />
     <link rel="apple-touch-icon" href="./images/logo_icon/apple-touch-icon.png" />
 
+    <!-- Tiny slider cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+
     <meta name="msapplication-TileImage"
         content="http://localhost:8888/wordpress/wp-content/uploads/2022/09/favicon-32x32-1.png" />
     <!-- Fonts Plugin CSS - https://fontsplugin.com/ -->
@@ -518,7 +522,7 @@
                                     <header class="main-header-three">
                                         <nav class="main-menu main-menu-three">
                                             <div class="main-menu-three__wrapper">
-                                                <div class="main-menu-three__wrapper-inner">
+                                                <div class="main-menu-three__wrapper-inner py-2">
                                                     <div class="main-menu-three__left">
                                                         <div class="main-menu-three__logo"> <a href ="/"><img
                                                                     decoding="async" width="150" height="50"
@@ -528,7 +532,7 @@
                                                     <div class="main-menu-three__right">
                                                         <div class="main-menu-three__right-inner">
                                                             <div class="main-menu-three__right-content-box">
-                                                                <div class="main-menu-three__right-top">
+                                                                <div class="main-menu-three__right-top d-none">
                                                                     <div class="main-menu-three__volunteers">
 
                                                                     </div>
@@ -820,7 +824,7 @@
                                                                     <div class="main-slider-three__content">
                                                                         <p class="main-slider-three__sub-title">Welcome
                                                                             to Wokober</p>
-                                                                        <h2 class="main-slider-three__title">Nurturing conscious creators, <br> world leaders, inspiring an brighter future.</h2>
+                                                                        <h2 class="main-slider-three__title">Nurturing conscious creators, <br> world leaders, inspiring a brighter future.</h2>
                                                                         <div class="main-slider-three__btn-box">
                                                                             <a href ="about"
                                                                                 class="thm-btn thm-btn-carousel main-slider-three__btn">Discover
@@ -870,7 +874,7 @@
                                                         <div class="about-one__img-box wow slideInLeft"
                                                             data-wow-delay="100ms" data-wow-duration="2500ms">
                                                             <div class="about-one__img float-bob-y"> <img
-                                                                    decoding="async" src="./images/img/about-1-01.jpg"
+                                                                    decoding="async" src="./images/img/about/about-1-01.jpg"
                                                                     alt="alt">
                                                             </div>
                                                             <div class="about-one__img-border float-bob-y"></div>
@@ -1129,8 +1133,8 @@
                                                                                 <li><i class="fas fa-clock"></i>Coming soon
                                                                                 </li>
                                                                             </ul>
-                                                                            <h3 class="events-one__title"><a href ="#">
-                                                                                    Mentorship Project</a></h3>
+                                                                            <h3 class="events-one__title">
+                                                                                <a href ="#">Mentorship Project</a></h3>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1317,6 +1321,7 @@
                                 data-id="c476803" data-element_type="widget"
                                 data-widget_type="oxpins-testimonials.default">
                                 <div class="elementor-widget-container">
+
                                     <!--Testimonial One Start-->
                                     <section class="testimonial-one">
                                         <div class="testimonial-one-bg jarallax" data-jarallax data-speed="0.2"
@@ -1454,7 +1459,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </section> <!--Testimonial One End-->
+                                    </section>
+                                    <!--Testimonial One End-->
                                 </div>
                             </div>
                         </div>
@@ -1464,312 +1470,267 @@
             <!-- testimonial end -->
 
             <!-- Gallery Section -->
-            <section
-                class="elementor-section elementor-top-section elementor-element elementor-element-0abe686 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-                data-id="0abe686" data-element_type="section">
-                <div class="elementor-container elementor-column-gap-no">
-                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ab64ed1"
-                        data-id="ab64ed1" data-element_type="column">
-                        <div class="elementor-widget-wrap elementor-element-populated">
-                            <div class="elementor-element elementor-element-d275bae elementor-widget elementor-widget-oxpins-gallery"
-                                data-id="d275bae" data-element_type="widget" data-widget_type="oxpins-gallery.default">
-                                <div class="elementor-widget-container"> <!--Gallery One Start-->
-                                    <section class="gallery-one">
-                                        <div class="gallery-one__top">
-                                            <h3 class="gallery-one__top-title">Our photo gallery</h3>
-                                        </div>
-                                        <div class="gallery-one__bottom">
-                                            <div class="gallery-one__container">
-                                                <ul class="list-unstyled gallery-one__list">
-                                                    <li class="gallery-one__single wow fadeInUp" data-wow-delay="100ms">
-                                                        <div class="gallery-one__img"> <img decoding="async"
-                                                                src="./images/img/gallery-01.jpg" alt="alt"> <a
-                                                                href="#/" class="img-popup"></a>
-                                                            <div class="gallery-one__content"> <!-- /.img-popup -->
-                                                                <p class="gallery-one__sub-title">Toy Festival</p>
-                                                                <h5 class="gallery-one__title">Education</h5>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="gallery-one__single wow fadeInUp" data-wow-delay="200ms">
-                                                        <div class="gallery-one__img"> <img decoding="async"
-                                                                src="./images/img/gallery4-01.jpg" alt="alt"> <a
-                                                                href="#/" class="img-popup"></a>
-                                                            <div class="gallery-one__content"> <!-- /.img-popup -->
-                                                                <p class="gallery-one__sub-title">Toy Festival</p>
-                                                                <h5 class="gallery-one__title">Education</h5>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="gallery-one__single wow fadeInUp" data-wow-delay="300ms">
-                                                        <div class="gallery-one__img"> <img decoding="async"
-                                                                src="./images/img/gallery-02.jpg" alt="alt"> <a
-                                                                href="#/" class="img-popup"></a>
-                                                            <div class="gallery-one__content"> <!-- /.img-popup -->
-                                                                <p class="gallery-one__sub-title">Toy Festival</p>
-                                                                <h5 class="gallery-one__title">Education</h5>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="gallery-one__single wow fadeInUp" data-wow-delay="400ms">
-                                                        <div class="gallery-one__img"> <img decoding="async"
-                                                                src="./images/uploads-2022-09-gallery-1-4.jpg"
-                                                                alt="alt"> <a
-                                                                href="http://layerdrops.com/oxpinswp/wp-content/uploads/2022/09/gallery-1-4.jpg"
-                                                                class="img-popup"></a>
-                                                            <div class="gallery-one__content"> <!-- /.img-popup -->
-                                                                <p class="gallery-one__sub-title">Toy Festival</p>
-                                                                <h5 class="gallery-one__title">Education</h5>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="gallery-one__single wow fadeInUp" data-wow-delay="500ms">
-                                                        <div class="gallery-one__img"> <img decoding="async"
-                                                                src="./images/img/gallery-03.jpg" alt="alt"> <a
-                                                                href="#/" class="img-popup"></a>
-                                                            <div class="gallery-one__content"> <!-- /.img-popup -->
-                                                                <p class="gallery-one__sub-title">Toy Festival</p>
-                                                                <h5 class="gallery-one__title">Education</h5>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </section> <!--Gallery One End-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+            <!--Gallery One Start-->
+            <section class="gallery-one">
+                <div class="gallery-one__top">
+                    <h3 class="gallery-one__top-title">Our photo gallery</h3>
                 </div>
             </section>
+            <section class="tf-gallery tf-gallery-home">
+                <div class="my-slider img-slider-wrapper">
+                    <div class="my-img-slider slider-img-item">
+                        <img src="./images/img/gallery/home-gallery/g-01.jpg" alt="toy festival gallery">
+                    </div>
+                    <div class="my-img-slider slider-img-item">
+                        <img src="./images/img/gallery/home-gallery/g-02.jpg" alt="toy festival gallery">
+                    </div>
+                    <div class="my-img-slider slider-img-item">
+                        <img src="./images/img/gallery/home-gallery/g-03.jpg" alt="toy festival gallery">
+                    </div>
+                    <div class="my-img-slider slider-img-item">
+                        <img src="./images/img/events/tf-gallery/tf-gallery-01.jpg" alt="toy festival gallery">
+                    </div>
+                    <div class="my-img-slider slider-img-item">
+                        <img src="./images/img/events/tf-gallery/tf-gallery-02.jpg" alt="toy festival gallery">
+                    </div>
+                    <div class="my-img-slider slider-img-item">
+                        <img src="./images/img/events/tf-gallery/tf-gallery-03.jpg" alt="toy festival gallery">
+                    </div>
+                    <div class="my-img-slider slider-img-item">
+                        <img src="./images/img/events/tf-gallery/tf-gallery-04.jpg" alt="toy festival gallery">
+                    </div>
+                    <div class="my-img-slider slider-img-item">
+                        <img src="./images/img/events/tf-gallery/tf-gallery-05.jpg" alt="toy festival gallery">
+                    </div>
+                    <div class="my-img-slider slider-img-item">
+                        <img src="./images/img/events/tf-gallery/tf-gallery-06.jpg" alt="toy festival gallery">
+                    </div>
+                    <div class="my-img-slider slider-img-item">
+                        <img src="./images/img/gallery/home-gallery/g-04.jpg" alt="toy festival gallery">
+                    </div>
+                </div>
+                <div class="slider-controls" id="controls">
+                    <button class="previous"></button>
+                    <button class="next"></button>
+                </div>
+            </section>
+            <div class="w-100 d-flex justify-content-center">
+                <a href ="gallery" class="thm-btn" style="margin: 5px auto;">View More</a> </div>
+            <!--Gallery One End-->
+
             <!-- Gallery Section end -->
 
             <!-- Faq section omitted here -->
 
             <!-- News letter section -->
-            <section
-                class="elementor-section elementor-top-section elementor-element elementor-element-ea073ca elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-                data-id="ea073ca" data-element_type="section">
-                <div class="elementor-container elementor-column-gap-no">
-                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-862d8c0"
-                        data-id="862d8c0" data-element_type="column">
-                        <div class="elementor-widget-wrap elementor-element-populated">
-                            <div class="elementor-element elementor-element-76299db elementor-widget elementor-widget-oxpins-blog"
-                                data-id="76299db" data-element_type="widget" data-widget_type="oxpins-blog.default">
-                                <div class="elementor-widget-container"> <!--News One Start-->
-                                    <section class="news-one">
-                                        <div class="container">
-                                            <div class="section-title text-center"> <span
-                                                    class="section-title__tagline">News &amp; articles</span>
-                                                <h2 class="section-title__title">Directly from the <br> latest news and
-                                                    articles</h2>
-                                            </div>
-                                            <div class="row"> <!--News One Single Start-->
-                                                <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
-                                                    <div class="news-one__single">
-                                                        <div class="news-one__img">
-                                                            <img width="370" height="250" src="./images/teacher-01.jpg"
-                                                                class="attachment-oxpins_blog_370X250 size-oxpins_blog_370X250 wp-post-image"
-                                                                alt="alt" decoding="async" loading="lazy" />
-                                                        </div>
-                                                        <div class="news-one__content-box">
-                                                            <div class="news-one__content-inner">
-                                                                <div class="news-one__content">
-                                                                    <ul class="list-unstyled news-one__meta ml-0">
-                                                                        <li><span class="byline"><span
-                                                                                    class="author vcard"><a
-                                                                                        class="url fn n"
-                                                                                        href="./author/enos/"><i
-                                                                                            class="fas fa-user-circle"></i>
-                                                                                        enos</a></span></span></li>
-                                                                        <li><span class="comments-link"><i
-                                                                                    class="fas fa-comments"></i> <a
-                                                                                    href="./2022/09/07/aenean-sollicitudin-leo-nunc-nec-ornare-enim/#comments">2
-                                                                                    Comments<span
-                                                                                        class="screen-reader-text">
-                                                                                        Insights and thoughts from
-                                                                                        industry experts on the
-                                                                                        importance of hands-on,
-                                                                                        experiential
-                                                                                        education.</span></a></span>
-                                                                        </li>
-                                                                    </ul>
-                                                                    <h3 class="news-one__title"><a
-                                                                            href="#/article">Insights and thoughts from
-                                                                            industry experts on the importance of
-                                                                            hands-on, experiential education.</a>
-                                                                    </h3>
-                                                                </div>
-                                                                <div class="news-one__bottom">
-                                                                    <div class="news-one__read-more"> <a
-                                                                            href="#/article">
-                                                                            <span class="icon-right-arrow"></span>Read
-                                                                            More</a> </div>
-                                                                    <div class="news-one__share"> <a href ="#"><i
-                                                                                class="fas fa-share-alt"></i></a>
-                                                                        <div class="news-one__social-box">
-                                                                            <ul
-                                                                                class="list-unstyled news-one__social ml-0">
-                                                                                <li><a
-                                                                                        href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8888%2Fwordpress%2F2022%2F09%2F07%2Faenean-sollicitudin-leo-nunc-nec-ornare-enim%2F"><i
-                                                                                            class="fab fa-facebook-f"></i></a>
-                                                                                </li>
-                                                                                <li><a
-                                                                                        href="https://twitter.com/intent/tweet?text=Aenean%20sollicitudin%20leo%20nunc,%20nec%20ornare%20enim&#038;url=http%3A%2F%2Flocalhost%3A8888%2Fwordpress%2F2022%2F09%2F07%2Faenean-sollicitudin-leo-nunc-nec-ornare-enim%2F&#038;via=Crunchify"><i
-                                                                                            class="fab fa-twitter"></i></a>
-                                                                                </li>
-                                                                                <li><a
-                                                                                        href="https://twitter.com/intent/tweet?text=Aenean%20sollicitudin%20leo%20nunc,%20nec%20ornare%20enim&#038;url=http%3A%2F%2Flocalhost%3A8888%2Fwordpress%2F2022%2F09%2F07%2Faenean-sollicitudin-leo-nunc-nec-ornare-enim%2F&#038;via=Crunchify"><i
-                                                                                            class="fab fa-pinterest-p"></i></a>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="news-one__date">
-                                                                <p>07 Sep,22</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div> <!--News One Single End--> <!--News One Single Start-->
-                                                <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
-                                                    <div class="news-one__single">
-                                                        <div class="news-one__img"> <img width="370" height="250"
-                                                                src="./images/community-01.jpg"
-                                                                class="attachment-oxpins_blog_370X250 size-oxpins_blog_370X250 wp-post-image"
-                                                                alt="alt" decoding="async" loading="lazy" /> </div>
-                                                        <div class="news-one__content-box">
-                                                            <div class="news-one__content-inner">
-                                                                <div class="news-one__content">
-                                                                    <ul class="list-unstyled news-one__meta ml-0">
-                                                                        <li><span class="byline"><span
-                                                                                    class="author vcard"><a
-                                                                                        class="url fn n"
-                                                                                        href="./author/enos/"><i
-                                                                                            class="fas fa-user-circle"></i>
-                                                                                        enos</a></span></span></li>
-                                                                        <li><span class="comments-link"><i
-                                                                                    class="fas fa-comments"></i> <a
-                                                                                    href="./2022/09/07/there-are-many-variations-of-passages-of-lorem/#comments">2
-                                                                                    Comments<span
-                                                                                        class="screen-reader-text"> on
-                                                                                        There are many variations of
-                                                                                        passages of</span></a></span>
-                                                                        </li>
-                                                                    </ul>
-                                                                    <h3 class="news-one__title"><a
-                                                                            href="#/article">Spotlights on the positive
-                                                                            impact of Wokober events on participants and
-                                                                            communities.</a></h3>
-                                                                </div>
-                                                                <div class="news-one__bottom">
-                                                                    <div class="news-one__read-more"> <a
-                                                                            href="#/article">
-                                                                            <span class="icon-right-arrow"></span>Read
-                                                                            More</a> </div>
-                                                                    <div class="news-one__share"> <a href ="#"><i
-                                                                                class="fas fa-share-alt"></i></a>
-                                                                        <div class="news-one__social-box">
-                                                                            <ul
-                                                                                class="list-unstyled news-one__social ml-0">
-                                                                                <li><a
-                                                                                        href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8888%2Fwordpress%2F2022%2F09%2F07%2Fthere-are-many-variations-of-passages-of-lorem%2F"><i
-                                                                                            class="fab fa-facebook-f"></i></a>
-                                                                                </li>
-                                                                                <li><a
-                                                                                        href="https://twitter.com/intent/tweet?text=There%20are%20many%20variations%20of%20passages%20of&#038;url=http%3A%2F%2Flocalhost%3A8888%2Fwordpress%2F2022%2F09%2F07%2Fthere-are-many-variations-of-passages-of-lorem%2F&#038;via=Crunchify"><i
-                                                                                            class="fab fa-twitter"></i></a>
-                                                                                </li>
-                                                                                <li><a
-                                                                                        href="https://twitter.com/intent/tweet?text=There%20are%20many%20variations%20of%20passages%20of&#038;url=http%3A%2F%2Flocalhost%3A8888%2Fwordpress%2F2022%2F09%2F07%2Fthere-are-many-variations-of-passages-of-lorem%2F&#038;via=Crunchify"><i
-                                                                                            class="fab fa-pinterest-p"></i></a>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="news-one__date">
-                                                                <p>07 Sep,22</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div> <!--News One Single End--> <!--News One Single Start-->
-                                                <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
-                                                    <div class="news-one__single">
-                                                        <div class="news-one__img"> <img width="370" height="250"
-                                                                src="./images/inovation-01.jpg"
-                                                                class="attachment-oxpins_blog_370X250 size-oxpins_blog_370X250 wp-post-image"
-                                                                alt="alt" decoding="async" loading="lazy" /> </div>
-                                                        <div class="news-one__content-box">
-                                                            <div class="news-one__content-inner">
-                                                                <div class="news-one__content">
-                                                                    <ul class="list-unstyled news-one__meta ml-0">
-                                                                        <li><span class="byline"><span
-                                                                                    class="author vcard"><a
-                                                                                        class="url fn n"
-                                                                                        href="./author/enos/"><i
-                                                                                            class="fas fa-user-circle"></i>
-                                                                                        enos</a></span></span></li>
-                                                                        <li><span class="comments-link"><i
-                                                                                    class="fas fa-comments"></i> <a
-                                                                                    href="./2022/09/07/it-is-a-long-established-fact-that-a-reader/#comments">2
-                                                                                    Comments<span
-                                                                                        class="screen-reader-text"> on
-                                                                                        It is a long established fact
-                                                                                        that a reader</span></a></span>
-                                                                        </li>
-                                                                    </ul>
-                                                                    <h3 class="news-one__title"><a
-                                                                            href="./2022/09/07/it-is-a-long-established-fact-that-a-reader/">Updates
-                                                                            on new developments in the field of
-                                                                            innovation and transformative education.</a>
-                                                                    </h3>
-                                                                </div>
-                                                                <div class="news-one__bottom">
-                                                                    <div class="news-one__read-more"> <a
-                                                                            href="./2022/09/07/it-is-a-long-established-fact-that-a-reader/">
-                                                                            <span class="icon-right-arrow"></span>Read
-                                                                            More</a> </div>
-                                                                    <div class="news-one__share"> <a href ="#"><i
-                                                                                class="fas fa-share-alt"></i></a>
-                                                                        <div class="news-one__social-box">
-                                                                            <ul
-                                                                                class="list-unstyled news-one__social ml-0">
-                                                                                <li><a
-                                                                                        href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8888%2Fwordpress%2F2022%2F09%2F07%2Fit-is-a-long-established-fact-that-a-reader%2F"><i
-                                                                                            class="fab fa-facebook-f"></i></a>
-                                                                                </li>
-                                                                                <li><a
-                                                                                        href="https://twitter.com/intent/tweet?text=It%20is%20a%20long%20established%20fact%20that%20a%20reader&#038;url=http%3A%2F%2Flocalhost%3A8888%2Fwordpress%2F2022%2F09%2F07%2Fit-is-a-long-established-fact-that-a-reader%2F&#038;via=Crunchify"><i
-                                                                                            class="fab fa-twitter"></i></a>
-                                                                                </li>
-                                                                                <li><a
-                                                                                        href="https://twitter.com/intent/tweet?text=It%20is%20a%20long%20established%20fact%20that%20a%20reader&#038;url=http%3A%2F%2Flocalhost%3A8888%2Fwordpress%2F2022%2F09%2F07%2Fit-is-a-long-established-fact-that-a-reader%2F&#038;via=Crunchify"><i
-                                                                                            class="fab fa-pinterest-p"></i></a>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="news-one__date">
-                                                                <p>07 Sep,22</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div> <!--News One Single End-->
+            <section class="news-one">
+                <div class="container">
+                    <div class="section-title text-center"> <span
+                            class="section-title__tagline">News &amp; articles</span>
+                        <h2 class="section-title__title">Directly from the <br> latest news and
+                            articles</h2>
+                    </div>
+                    <div class="row"> <!--News One Single Start-->
+                        <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
+                            <div class="news-one__single">
+                                <div class="news-one__img">
+                                    <img width="370" height="250" src="./images/teacher-01.jpg"
+                                        class="attachment-oxpins_blog_370X250 size-oxpins_blog_370X250 wp-post-image"
+                                        alt="alt" decoding="async" loading="lazy" />
+                                </div>
+                                <div class="news-one__content-box">
+                                    <div class="news-one__content-inner">
+                                        <div class="news-one__content">
+                                            <ul class="list-unstyled news-one__meta ml-0">
+                                                <li><span class="byline"><span
+                                                            class="author vcard"><a
+                                                                class="url fn n"
+                                                                href="./author/enos/"><i
+                                                                    class="fas fa-user-circle"></i>
+                                                                enos</a></span></span></li>
+                                                <li><span class="comments-link"><i
+                                                            class="fas fa-comments"></i> <a
+                                                            href="./2022/09/07/aenean-sollicitudin-leo-nunc-nec-ornare-enim/#comments">2
+                                                            Comments<span
+                                                                class="screen-reader-text">
+                                                                Insights and thoughts from
+                                                                industry experts on the
+                                                                importance of hands-on,
+                                                                experiential
+                                                                education.</span></a></span>
+                                                </li>
+                                            </ul>
+                                            <h3 class="news-one__title"><a
+                                                    href="#/article">Insights and thoughts from
+                                                    industry experts on the importance of
+                                                    hands-on, experiential education.</a>
+                                            </h3>
+                                        </div>
+                                        <div class="news-one__bottom">
+                                            <div class="news-one__read-more"> <a
+                                                    href="#/article">
+                                                    <span class="icon-right-arrow"></span>Read
+                                                    More</a> </div>
+                                            <div class="news-one__share"> <a href ="#"><i
+                                                        class="fas fa-share-alt"></i></a>
+                                                <div class="news-one__social-box">
+                                                    <ul
+                                                        class="list-unstyled news-one__social ml-0">
+                                                        <li><a
+                                                                href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8888%2Fwordpress%2F2022%2F09%2F07%2Faenean-sollicitudin-leo-nunc-nec-ornare-enim%2F"><i
+                                                                    class="fab fa-facebook-f"></i></a>
+                                                        </li>
+                                                        <li><a
+                                                                href="https://twitter.com/intent/tweet?text=Aenean%20sollicitudin%20leo%20nunc,%20nec%20ornare%20enim&#038;url=http%3A%2F%2Flocalhost%3A8888%2Fwordpress%2F2022%2F09%2F07%2Faenean-sollicitudin-leo-nunc-nec-ornare-enim%2F&#038;via=Crunchify"><i
+                                                                    class="fab fa-twitter"></i></a>
+                                                        </li>
+                                                        <li><a
+                                                                href="https://twitter.com/intent/tweet?text=Aenean%20sollicitudin%20leo%20nunc,%20nec%20ornare%20enim&#038;url=http%3A%2F%2Flocalhost%3A8888%2Fwordpress%2F2022%2F09%2F07%2Faenean-sollicitudin-leo-nunc-nec-ornare-enim%2F&#038;via=Crunchify"><i
+                                                                    class="fab fa-pinterest-p"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
-                                    </section> <!--News One End-->
+                                    </div>
+                                    <div class="news-one__date">
+                                        <p>07 Sep,22</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> <!--News One Single End--> <!--News One Single Start-->
+                        <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
+                            <div class="news-one__single">
+                                <div class="news-one__img"> <img width="370" height="250"
+                                        src="./images/community-01.jpg"
+                                        class="attachment-oxpins_blog_370X250 size-oxpins_blog_370X250 wp-post-image"
+                                        alt="alt" decoding="async" loading="lazy" /> </div>
+                                <div class="news-one__content-box">
+                                    <div class="news-one__content-inner">
+                                        <div class="news-one__content">
+                                            <ul class="list-unstyled news-one__meta ml-0">
+                                                <li><span class="byline"><span
+                                                            class="author vcard"><a
+                                                                class="url fn n"
+                                                                href="./author/enos/"><i
+                                                                    class="fas fa-user-circle"></i>
+                                                                enos</a></span></span></li>
+                                                <li><span class="comments-link"><i
+                                                            class="fas fa-comments"></i> <a
+                                                            href="./2022/09/07/there-are-many-variations-of-passages-of-lorem/#comments">2
+                                                            Comments<span
+                                                                class="screen-reader-text"> on
+                                                                There are many variations of
+                                                                passages of</span></a></span>
+                                                </li>
+                                            </ul>
+                                            <h3 class="news-one__title"><a
+                                                    href="#/article">Spotlights on the positive
+                                                    impact of Wokober events on participants and
+                                                    communities.</a></h3>
+                                        </div>
+                                        <div class="news-one__bottom">
+                                            <div class="news-one__read-more"> <a
+                                                    href="#/article">
+                                                    <span class="icon-right-arrow"></span>Read
+                                                    More</a> </div>
+                                            <div class="news-one__share"> <a href ="#"><i
+                                                        class="fas fa-share-alt"></i></a>
+                                                <div class="news-one__social-box">
+                                                    <ul
+                                                        class="list-unstyled news-one__social ml-0">
+                                                        <li><a
+                                                                href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8888%2Fwordpress%2F2022%2F09%2F07%2Fthere-are-many-variations-of-passages-of-lorem%2F"><i
+                                                                    class="fab fa-facebook-f"></i></a>
+                                                        </li>
+                                                        <li><a
+                                                                href="https://twitter.com/intent/tweet?text=There%20are%20many%20variations%20of%20passages%20of&#038;url=http%3A%2F%2Flocalhost%3A8888%2Fwordpress%2F2022%2F09%2F07%2Fthere-are-many-variations-of-passages-of-lorem%2F&#038;via=Crunchify"><i
+                                                                    class="fab fa-twitter"></i></a>
+                                                        </li>
+                                                        <li><a
+                                                                href="https://twitter.com/intent/tweet?text=There%20are%20many%20variations%20of%20passages%20of&#038;url=http%3A%2F%2Flocalhost%3A8888%2Fwordpress%2F2022%2F09%2F07%2Fthere-are-many-variations-of-passages-of-lorem%2F&#038;via=Crunchify"><i
+                                                                    class="fab fa-pinterest-p"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="news-one__date">
+                                        <p>07 Sep,22</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!--News One Single End--> <!--News One Single Start-->
+                        <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
+                            <div class="news-one__single">
+                                <div class="news-one__img"> <img width="370" height="250"
+                                        src="./images/inovation-01.jpg"
+                                        class="attachment-oxpins_blog_370X250 size-oxpins_blog_370X250 wp-post-image"
+                                        alt="alt" decoding="async" loading="lazy" /> </div>
+                                <div class="news-one__content-box">
+                                    <div class="news-one__content-inner">
+                                        <div class="news-one__content">
+                                            <ul class="list-unstyled news-one__meta ml-0">
+                                                <li><span class="byline"><span
+                                                            class="author vcard"><a
+                                                                class="url fn n"
+                                                                href="./author/enos/"><i
+                                                                    class="fas fa-user-circle"></i>
+                                                                enos</a></span></span></li>
+                                                <li><span class="comments-link"><i
+                                                            class="fas fa-comments"></i> <a
+                                                            href="./2022/09/07/it-is-a-long-established-fact-that-a-reader/#comments">2
+                                                            Comments<span
+                                                                class="screen-reader-text"> on
+                                                                It is a long established fact
+                                                                that a reader</span></a></span>
+                                                </li>
+                                            </ul>
+                                            <h3 class="news-one__title"><a
+                                                    href="./2022/09/07/it-is-a-long-established-fact-that-a-reader/">Updates
+                                                    on new developments in the field of
+                                                    innovation and transformative education.</a>
+                                            </h3>
+                                        </div>
+                                        <div class="news-one__bottom">
+                                            <div class="news-one__read-more"> <a
+                                                    href="./2022/09/07/it-is-a-long-established-fact-that-a-reader/">
+                                                    <span class="icon-right-arrow"></span>Read
+                                                    More</a> </div>
+                                            <div class="news-one__share"> <a href ="#"><i
+                                                        class="fas fa-share-alt"></i></a>
+                                                <div class="news-one__social-box">
+                                                    <ul
+                                                        class="list-unstyled news-one__social ml-0">
+                                                        <li><a
+                                                                href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8888%2Fwordpress%2F2022%2F09%2F07%2Fit-is-a-long-established-fact-that-a-reader%2F"><i
+                                                                    class="fab fa-facebook-f"></i></a>
+                                                        </li>
+                                                        <li><a
+                                                                href="https://twitter.com/intent/tweet?text=It%20is%20a%20long%20established%20fact%20that%20a%20reader&#038;url=http%3A%2F%2Flocalhost%3A8888%2Fwordpress%2F2022%2F09%2F07%2Fit-is-a-long-established-fact-that-a-reader%2F&#038;via=Crunchify"><i
+                                                                    class="fab fa-twitter"></i></a>
+                                                        </li>
+                                                        <li><a
+                                                                href="https://twitter.com/intent/tweet?text=It%20is%20a%20long%20established%20fact%20that%20a%20reader&#038;url=http%3A%2F%2Flocalhost%3A8888%2Fwordpress%2F2022%2F09%2F07%2Fit-is-a-long-established-fact-that-a-reader%2F&#038;via=Crunchify"><i
+                                                                    class="fab fa-pinterest-p"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="news-one__date">
+                                        <p>07 Sep,22</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!--News One Single End-->
                     </div>
                 </div>
             </section>
+            <!--News One End-->
         </div>
 
         <!-- the loop -->
@@ -1839,26 +1800,26 @@
                                                                         class="footer-widget__links-list list-unstyled clearfix ml-0">
                                                                         <li id="menu-item-763"
                                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-763">
-                                                                            <a href ="./about/">About
+                                                                            <a href ="about">About
                                                                                 Us</a>
                                                                         </li>
                                                                         <li id="menu-item-764"
                                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-764">
-                                                                            <a href ="./contact/">Contact</a>
+                                                                            <a href ="contact">Contact</a>
                                                                         </li>
                                                                         <li id="menu-item-765"
                                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-765">
-                                                                            <a href ="./news-sidebar/">Latest
+                                                                            <a href ="#/news-sidebar/">Latest
                                                                                 News</a>
                                                                         </li>
                                                                         <li id="menu-item-766"
                                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-766">
-                                                                            <a href ="./events/">Recent
+                                                                            <a href ="tf-2022">Recent
                                                                                 Events</a>
                                                                         </li>
                                                                         <li id="menu-item-767"
                                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-767">
-                                                                            <a href ="./donation/">Donations</a>
+                                                                            <a href ="get_involved">Donations</a>
                                                                         </li>
                                                                     </ul>
                                                                 </div>
@@ -2038,6 +1999,8 @@
         var wpformsElementorVars = { "captcha_provider": "recaptcha", "recaptcha_type": "v2" };
     </script>
     <script src='./js/wpforms-lite-assets-js-integrations-elementor-frontend.min.js' id='wpforms-elementor-js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="./js/script.js"></script>
     <!-- <script>
         const video = document.getElementById("myVideo");
         video.currentTime = 05; // starting time in seconds

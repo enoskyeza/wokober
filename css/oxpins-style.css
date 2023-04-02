@@ -18029,6 +18029,10 @@ textarea.form-control {
 	overflow: hidden;
 }
 
+.tf-gallery-home {
+	margin-top: -10px;
+}
+
 @media (max-width:425px) {
 	.tf-gallery{
 		height: 200px;
