@@ -17675,8 +17675,28 @@ form[id*=give-form] #give-final-total-wrap {
 }
 
 /* =========================
-    Causes Details Page
+    Toy festival Details Page
 =========================*/
+.card-body-bg {
+	background: var(--oxpins-black);
+	color: white;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.card-body-bg h5 {
+	color: var(--oxpins-primary);
+}
+
+.row-custom {
+	margin-left: -5px;
+	margin-right: -5px;
+  }
+
+.col-custom {
+padding-left: 5px;
+padding-right: 5px;
+}
+
 .details_big_vid {
 	height: 375px;
 	border-radius: 10px;
@@ -18981,3 +19001,4 @@ textarea.form-control {
 .gallery_overlay a img {
     width: auto;
 }
+
