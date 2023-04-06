@@ -19002,3 +19002,12 @@ textarea.form-control {
     width: auto;
 }
 
+.tf-nav {
+	margin-top: -37px;
+}
+
+@media (max-width: 767px) {
+	.tf-nav {
+		margin-top: 0px;
+	}
+}
