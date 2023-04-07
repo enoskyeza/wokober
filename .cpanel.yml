@@ -7,6 +7,8 @@ deployment:
     - /bin/cp get_involved.html $DEPLOYPATH
     - /bin/cp tf-2022.html $DEPLOYPATH
     - /bin/cp contact.html $DEPLOYPATH
+    - /bin/cp gallery.html $DEPLOYPATH
+    - /bin/cp -R files $DEPLOYPATH
     - /bin/cp -R images $DEPLOYPATH
     - /bin/cp -R fonts $DEPLOYPATH
     - /bin/cp -R css $DEPLOYPATH
