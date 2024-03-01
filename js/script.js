@@ -55,7 +55,7 @@
        // logo Slider
        var projectSlider = tns({
         container: '.logo-slider',
-        items: 6,
+        items: 3,
         slideBy:'page',
         speed: 500,
         autoplay: true,
@@ -67,10 +67,11 @@
         nextButton: '.next',
         responsive: {
             640: {
-              items: 6
+              items: 3
             },
             700: {
-              gutter: 20
+              items: 6,
+              gutter: 0
             },
             900: {
               items: 6
