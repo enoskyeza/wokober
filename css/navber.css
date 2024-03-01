@@ -1,3 +1,32 @@
+:root {
+	--oxpins-font: 'Montserrat', sans-serif;
+	--oxpins-font-two: 'Montserrat', sans-serif;
+	--oxpins-sayinistic-font: 'the_sayinisticitalic';
+	--oxpins-font-three: 'Noteworthy', sans-serif;
+	--oxpins-gray: #6f7775;
+	--oxpins-gray-rgb: 111, 119, 117;
+	--oxpins-base: #0036fc;
+	--oxpins-base-rgb: 94, 143, 253;
+	--oxpins-primary: #9fdefe;
+	--oxpins-primary-rgb: 159, 222, 254;
+	--secondary: #F5E2C8;
+	--secondary-rgb: 245, 226, 200;
+	--oxpins-black: #001666;
+	--oxpins-black-rgb: 0, 22, 102;
+	--oxpins-white: #ffffff;
+	--oxpins-white-rgb: 255, 255, 255;
+	--oxpins-extra: #D7F1FE;
+	--oxpins-extra-rgb: 249, 244, 232;
+	--oxpins-extra-two: #f2f0ec;
+	--oxpins-extra-two-rgb: 242, 240, 236;
+	--oxpins-bdr-color: #eee9db;
+	--oxpins-bdr-color-rgb: 238, 233, 219;
+	--oxpins-letter-space-big: 0em;
+	--oxpins-letter-space-small: -0.0em;
+	--oxpins-bdr-radius: 20px;
+	--transition: .4s all ease-in-out;
+}
+
 .topbar-area {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -1341,108 +1370,75 @@
         Home Page
 =========================*/
 /* --Banner-- */
-#home_one_banner {
+#hero_section {
     background-image: url('../img/banner/home-banner-bg.png');
-    padding: 60px 0;
+    /* padding: 60px 0; */
     background-repeat: no-repeat;
     background-size: cover;
+    height: 60vh;
+    overflow: hidden;
 }
 
-.banner_one_img {
-    position: relative;
-    text-align: right;
+.hero_section_container{
+    background: yellow;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-.banner_one_text h1 span {
-    font-weight: 700;
+.get_involved_section_card{
+    padding: 25px 50px;
+    color: white;
 }
 
-.banner_one_text .color_big {
-    position: relative;
-    z-index: 999;
+.get_involved_section_card h5{
+    color: white;
+    margin-bottom: 13px;
 }
 
-.banner_one_text .color_big::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 20px;
-    background: var(--bg-color);
-    bottom: 21px;
-    left: 0;
-    z-index: -1;
+
+/* CSS */
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 50px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  margin: 0;
+  outline: none;
+  font-size: smaller;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
 }
 
-.banner_one_text p {
-    padding-top: 20px;
-    font-size: 18px;
-    line-height: 30px;
+.button-28:disabled {
+  pointer-events: none;
 }
 
-.banner_element img {
-    position: absolute;
-    box-shadow: 10px 12px 30px rgba(0, 0, 0, 0.1);
+.button-28:hover {
+  color: var(--oxpins-black);
+  background-color: white;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
 }
 
-.element_1 {
-    top: 44%;
-    left: 64px;
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
 }
 
-.element_2 {
-    top: 23%;
-    right: -14%;
+.cbg_primary{
+    background-color: var(--oxpins-base);
 }
 
-.element_3 {
-    bottom: 0;
-    left: 67%;
-}
-
-.shape-1 {
-    -webkit-animation: left1right 5s linear 0s infinite;
-    animation: left1right 5s linear 0s infinite;
-}
-
-@keyframes left1right {
-
-    50% {
-        -ms-transform: translateY(20px);
-        /* IE 9 */
-        -webkit-transform: translateY(20px);
-        /* Chrome, Safari, Opera */
-        transform: translateY(20px);
-    }
-}
-
-.shape-2 {
-    -webkit-animation: left2right 3s linear 0s infinite;
-    animation: left2right 3s linear 0s infinite;
-}
-
-@keyframes left2right {
-
-    50% {
-        -ms-transform: translateY(20px);
-        /* IE 9 */
-        -webkit-transform: translateY(20px);
-        /* Chrome, Safari, Opera */
-        transform: translateY(20px);
-    }
-}
-
-.shape-3 {
-    -webkit-animation: left13right 9s linear 0s infinite;
-    animation: left3right 9s linear 0s infinite;
-}
-
-@keyframes left3right {
-
-    50% {
-        -ms-transform: translateY(20px);
-        /* IE 9 */
-        -webkit-transform: translateY(20px);
-        /* Chrome, Safari, Opera */
-        transform: translateY(20px);
-    }
+.cbg_dark{
+    background-color: var(--oxpins-black);
 }
