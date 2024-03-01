@@ -1397,48 +1397,222 @@
 }
 
 
-/* CSS */
-.button-28 {
-  appearance: none;
-  background-color: transparent;
-  border: 2px solid white;
-  border-radius: 50px;
-  box-sizing: border-box;
-  color: white;
-  cursor: pointer;
-  margin: 0;
-  outline: none;
-  font-size: smaller;
-  text-align: center;
-  text-decoration: none;
-  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  will-change: transform;
+
+/* NEW ABOUT SECTION */
+
+.new_section_padding{
+    padding-top: 100px;
 }
 
-.button-28:disabled {
-  pointer-events: none;
+.custom_about_img{
+    width: 100%;
+    height: 230px;
+    margin-bottom: 15px;
 }
 
-.button-28:hover {
-  color: var(--oxpins-black);
-  background-color: white;
-
-  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-  transform: translateY(-2px);
+.row-eq-height {
+    display: flex;
+    display: -webkit-flex;  /* Safari compatibility */
+    flex-wrap: wrap;
 }
 
-.button-28:active {
-  box-shadow: none;
-  transform: translateY(0);
+.custom_about_content {
+    display: flex;
+    flex-direction: column;
 }
 
-.cbg_primary{
+.custom_about_content_left{
+    display: flex;
+    flex-direction: column;
+}
+
+.custom_about_button{
+    align-self: flex-start;
+    justify-self: flex-end;
+}
+
+
+.custom_about_video {
+    margin-top: 70px;
+    position: relative; /* Enable absolute positioning for child elements */
+    width: 100%; /* Set width to fill the container */
+}
+
+.custom_about_vid::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.custom_about_vid::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the button */
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Create a circular button */
+    background-color: #fff; /* White button color */
+    opacity: 1; /* Initially hide the button */
+    transition: opacity 0.5s ease; /* Add smooth transition effect */
+}
+
+.custom_about_vid:hover::before,
+.custom_about_vid:hover::after {
+    opacity: 0; /* Show the overlay and button on hover */
+}
+ */
+
+
+
+.custom_about_big_img {
+    padding-top: 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+.custom_about_big_img img {
+    width: 100%;
+    transition: var(--transition);
+}
+
+.custom_about_big_img img:hover {
+    transform: scale(1.3);
+}
+
+
+/* PROJECTS SECTION */
+.custom_project_img {
+    margin-bottom: 15px;
+}
+
+.custom_project_details{
+    display: flex;
+    gap: 20px;
+}
+
+.project_date {
+    background: var(--oxpins-black);
+    width: 80px;
+    height: 130px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    line-height: 50px;
+}
+
+.project_date li{
+    list-style-type: none;
+}
+
+.date-top{
+    font-size: 29px;
+    font-weight: 600;
+}
+
+
+
+/* BUTTONS CSS */
+.button-58 {
+    align-items: center;
+    background-color: var(--oxpins-black);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: Inter,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    justify-content: center;
+    outline: 0;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: 10px;
+    padding: 10px 25px;
+  }
+
+  .button-58:focus {
+    color: white;
+  }
+
+  .button-58:hover {
+      background-color: var(--oxpins-primary);
+      color: var(--oxpins-black);
+      border-color: none;
+      fill: white;
+  }
+
+  .button-58:active {
+    background-color: var(--oxpins-primary);
+    color: var(--oxpins-black);
+    border-color: none;
+    fill: white;
+  }
+
+
+  .button-28 {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    margin: 0;
+    outline: none;
+    font-size: smaller;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+  }
+
+  .button-28:disabled {
+    pointer-events: none;
+  }
+
+  .button-28:hover {
+    color: var(--oxpins-black);
+    background-color: white;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+
+  .button-28:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+
+  /* BACKGREOUND COLORS */
+  .cbg_primary{
+      background-color: var(--oxpins-primary);
+  }
+
+  .cbg_base{
     background-color: var(--oxpins-base);
 }
 
-.cbg_dark{
-    background-color: var(--oxpins-black);
-}
+  .cbg_dark{
+      background-color: var(--oxpins-black);
+  }
+
