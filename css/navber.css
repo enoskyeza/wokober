@@ -1401,7 +1401,7 @@
 /* NEW ABOUT SECTION */
 
 .new_section_padding{
-    padding-top: 100px;
+    padding-top: 70px;
 }
 
 .custom_about_img{
@@ -1488,6 +1488,17 @@
 }
 
 
+/* LOGO SECTION */
+.partners-logo-section{
+    padding: 50px 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner-logo{
+    padding-left: 50px;
+}
+
 /* PROJECTS SECTION */
 .custom_project_img {
     margin-bottom: 15px;
@@ -1521,6 +1532,25 @@
     font-size: 29px;
     font-weight: 600;
 }
+
+
+.tns-nav {
+    display: flex;
+    justify-content: end;
+    margin-top: -15px; /* Adjust spacing as needed */
+  }
+
+  .tns-nav button {
+    border: none;
+    padding: 6px;
+    border-radius: 50%;
+    background-color: #ddd; /* Adjust color as desired */
+    margin-left: 5px;
+  }
+
+  .tns-nav .tns-nav-active {
+    background-color:var(--oxpins-black); /* Adjust color as desired */
+  }
 
 
 

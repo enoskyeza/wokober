@@ -7242,7 +7242,7 @@ ul {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: var(--oxpins-black);
+	background-color: var(--oxpins-primary);
 	z-index: -1;
 }
 
