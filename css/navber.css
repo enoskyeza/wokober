@@ -2606,19 +2606,37 @@ form
   padding-top: 100px;
   position: relative;
 }
+
 .custom_testimonial_item {
     position: relative;
-  width: 80%;
 }
 
-.custom_testimonial_client_info {
-    position: absolute;
-    top: -50px;
-    left: 210px;
+@media (min-width:640px) {
+    .custom_testimonial_item {
+        width: 65%;
+    }
+}
+
+@media (min-width:760px) {
+    .custom_testimonial_item {
+        width: 68%;
+    }
+}
+
+@media (min-width:1090px) {
+    .custom_testimonial_item {
+        width: 75%;
+    }
+}
+
+@media (min-width:1200px) {
+    .custom_testimonial_item {
+        width: 80%;
+    }
 }
 
 .custom_testimonial_client_info h3 {
-    color: white;
+    color: var(--oxpins-black);
     line-height: 1.5;
     font-weight: 500;
     font-size: 16px;
