@@ -1520,7 +1520,7 @@
     font-weight: 400;
     font-size: 23px;
     color: #000;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .line_bottom {
@@ -1552,7 +1552,7 @@
 .custom_about_copy span{
     line-height: 1.4;
     display: block;
-    margin-block: 20px;
+    margin-bottom: 20px;
 }
 
 .custom_about_subtitle{
@@ -1668,8 +1668,34 @@
 }
 
 .custom_project_details{
+    font-family: Montserrat, sans-serif;
     display: flex;
     gap: 20px;
+    margin-bottom: 10px;
+}
+
+
+.custom_project_details h5{
+    font-size: 16px;
+    line-height: 1.5px;
+    margin-top: 12px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.custom_project_details span{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #a9a9a9;
+    margin-right: 10px;
+}
+
+.custom_project_details p{
+    line-height: 1.7;
+    font-weight: 400;
+    font-size: 14px;
+    color: #777;
 }
 
 .project_date {
