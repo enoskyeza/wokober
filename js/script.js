@@ -79,4 +79,31 @@
           }
       });
 
+       // Slider for testimonials
+    var testimonialSlider = tns({
+        container: '.testimonial-slider',
+        items: 1,
+        slideBy:'page',
+        speed: 500,
+        autoplay: true,
+        nav: false,
+        navPosition: 'bottom',
+        autoplayButtonOutput: false,
+        controlsContainer: '.project-slider-dots',
+        prevButton: '.previous',
+        nextButton: '.next',
+        responsive: {
+            640: {
+              items: 1
+            },
+            700: {
+              gutter: 0
+            },
+            900: {
+              items: 1
+            }
+          }
+      });
+
+
 })(jQuery);
