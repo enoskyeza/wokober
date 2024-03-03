@@ -2154,22 +2154,21 @@ form
     height: 60vh;
 }
 
+
 .hero_section_container {
-    max-height: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
 }
 
-.carousel-item {
-    max-height: 60 hv;
-    overflow: hidden;
+.carousel-inner, carousel-item{
+    height: 100%;
 }
 
-.hero_img_carousel {
-    width: 50%; /* Ensure full width coverage */
-    object-fit: cover; /* Resize and crop image to fit container */
-    object-position: top; /* Trim from the top */
-    height: auto; /* Allow image height to adjust proportionally */
+.carousel-item img {
+    min-height: 60vh;
+    min-width: 100%;
+    object-fit: cover;
 }
 
 .overlay {
@@ -2204,7 +2203,7 @@ form
     top: 10%;
     padding: 20px;
     color: #fff;
-    z-index: 2000;
+    z-index: 20;
     height: fit-content;
 }
 
@@ -2262,6 +2261,84 @@ form
     margin-bottom: 10px;
 }
 
+
+@media (max-width: 570px) {
+    .hero_caption_left,
+    .hero_caption_right{
+        align-items: start;
+        justify-content: start;
+        text-align: start;
+    }
+
+
+    .hero_caption_left{
+        margin-top: 50px;
+    }
+
+    .hero_title h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+}
+
+    .hero_subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    margin-block: 10px;
+}
+
+    .hero_copy {
+    font-weight: 300;
+    font-size: 15px;
+    color: white;
+    width: 100%;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+}
+
+@media (min-width:570px) and (max-width:930px) {
+    .hero_caption_left {
+    margin-top: 60px;
+
+}
+    .hero_caption_right {
+        margin-top: 85px;
+    }
+
+    .hero_caption_center {
+        margin-top: 75px;
+    }
+
+    .hero_title h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+}
+
+    .hero_subtitle {
+    font-weight: 500;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: white;
+    margin-block: 10px;
+}
+
+    .hero_copy {
+    font-weight: 300;
+    font-size: 15px;
+    color: white;
+    width: 60%;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+}
+
+
 .get_involved_section_card {
     padding: 25px 50px;
     color: white;
@@ -2270,6 +2347,18 @@ form
 .get_involved_section_card h5 {
     color: white;
     margin-bottom: 13px;
+}
+
+@media (max-width: 570px) {
+    .get_involved_section_card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .get_involved_section_card h5{
+        margin-bottom: 0;
+    }
 }
 
 /* NEW ABOUT SECTION */
@@ -2394,9 +2483,6 @@ form
     opacity: 0; /* Show the overlay and button on hover */
 }
 
-*
-
-/
 .custom_about_big_img {
     padding-top: 70px;
     position: relative;
@@ -2451,6 +2537,16 @@ form
     margin-top: 12px;
     margin-bottom: 15px;
     color: #333;
+}
+
+@media (max-width: 540px) {
+    .custom_project_details h5 {
+        line-height: 22px;
+        margin-bottom: 0px;
+}
+    .custom_project_details span {
+        font-size: 12px!important;
+    }
 }
 
 .custom_project_details span {
@@ -2959,3 +3055,4 @@ form
 .button-87:active {
   transform: scale(0.95);
 }
+
