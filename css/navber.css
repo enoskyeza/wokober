@@ -2835,3 +2835,85 @@ form
         transform: scale(1) translate(10px, -30px);
     }
 }
+
+
+/* ----------------------------
+    Make a donetion Page
+---------------------------------*/
+.sidebar_first .case_boxed_wrapper {
+    margin-bottom: 30px;
+}
+
+.donet_amount_area {
+    background: #FFFFFF;
+    box-shadow: -4px -4px 20px rgb(0 0 0 / 8%), 8px 10px 24px rgb(0 0 0 / 8%);
+    border-radius: 6px;
+    padding: 55px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input_donet_amount {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.input_donet_amount span {
+    font-size: 30px;
+}
+
+.input_donet_amount input {
+    border: none;
+    border-bottom: 1px solid var(--main-color);
+    font-size: 24px;
+    width: 55%;
+}
+
+.input_donet_amount input:focus {
+    border-bottom: 1px solid var(--main-color);
+    outline: none;
+}
+
+.donet_amount_form_area {
+    background: #FFFFFF;
+    box-shadow: -4px -4px 20px rgba(0, 0, 0, 0.08), 8px 10px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    padding: 25px 25px;
+}
+
+
+.donet_amount_form_area .form-group {
+    margin-top: 15px;
+}
+
+.doner_content_pbottom {
+    margin-bottom: 30px;
+}
+
+.payment_option_area {
+    padding-top: 30px;
+}
+
+.payment_option_area ul {
+    display: flex;
+}
+
+.payment_option_area ul li {
+    padding-right: 25px;
+}
+
+.payment_option_area ul li img {
+    cursor: pointer;
+}
+
+.payment_amount_submit {
+    padding-top: 30px;
+}
+
+.custom_form_title {
+    font-family: Montserrat, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.5;
+}
