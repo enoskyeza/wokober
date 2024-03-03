@@ -3,7 +3,7 @@
     // Services slider
     var gallerySlider = tns({
         container: '.my-slider',
-        items: 3,
+        items: 2,
         slideBy:'page',
         speed: 500,
         autoplay: true,
