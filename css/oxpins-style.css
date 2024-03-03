@@ -11653,6 +11653,10 @@ ul {
 	z-index: 1;
 }
 
+.page-header-bg{
+background-image:url(../images/page-header-bg-1.jpg) ;
+}
+
 .page-header-bg {
 	position: absolute;
 	top: 0;
