@@ -98,9 +98,6 @@
 
         }
 
-        body {
-            background: #f6f6f6 !important;
-        }
     </style>
 
 </head>
@@ -245,10 +242,8 @@ custom-cursor elementor-default elementor-template-full-width elementor-kit-31 e
                 <div class="page-header__inner">
                     <ul class="thm-breadcrumb list-unstyled ml-0" typeof="BreadcrumbList" vocab="https://schema.org/">
                         <!-- Breadcrumb NavXT 7.1.0 -->
-                        <li class="home"><span property="itemListElement" typeof="ListItem"><a property="item"
-                                                                                               typeof="WebPage"
-                                                                                               title="Go to Wokober."
-                                                                                               href="/" class="home"><span
+                        <li class="home"><span property="itemListElement" typeof="ListItem">
+                            <a property="item" typeof="WebPage" title="Go to Wokober." href="/" class="home"><span
                                 property="name">Wokober</span></a>
                                 <meta property="position" content="1">
                             </span></li>
@@ -270,7 +265,7 @@ custom-cursor elementor-default elementor-template-full-width elementor-kit-31 e
                 <div class="row" id="counter">
                     <div class="col-lg-8">
                         <div class="mb-5">
-                            <h3 class="custom_section_title line_bottom mb-5">Make a donation</h3>
+                            <h3 class="mb-3">Make a donation</h3>
                             <p>Through our educational efforts, we provide practical solutions to the current traditional
                                 systems of Education to the youth within our community and beyond.
                                 By donating to our organisation, you can help us continue to expand our outreach to even
@@ -280,36 +275,37 @@ custom-cursor elementor-default elementor-template-full-width elementor-kit-31 e
                         </div>
                         <div class="details_wrapper_area">
                             <form action="#!" id="donet_amount_main_form">
-                                <div class="donet_amount_form_area doner_content_pbottom">
-                                    <h3 class="custom_form_title">Your Donation</h3>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <!-- form group -->
-                                            <div class="form-group">
-                                                <label>Currency</label>
-                                                <select id="currency" class="form-select"
-                                                        name="currency">
+                                <div class="donet_amount_form_area doner_content_pbottom custom_donate_card">
+                                    <div class="custom_donate_top">
+                                        <h3 class="custom_form_title">Your Donation</h3>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <!-- form group -->
+                                                <div class="form-group">
+                                                    <label>Currency</label>
+                                                    <select id="currency" class="form-select"
+                                                            name="currency">
 
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>Donation amount</label>
-
-                                                <div class="input-group mb-3">
-                                                    <span id="donation_currency_symbol" class="input-group-text">$</span>
-                                                    <input id="donation_amount" class="form-control mb-0 number"
-                                                           name="amount" type="text" onkeypress="return CheckNumeric()"
-                                                           value="10"/>
-                                                    <span class="input-group-text">.00</span>
+                                                    </select>
                                                 </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Donation amount</label>
 
+                                                    <div class="input-group mb-3">
+                                                        <span id="donation_currency_symbol" class="input-group-text">$</span>
+                                                        <input id="donation_amount" class="form-control mb-0 number"
+                                                               name="amount" type="text" onkeypress="return CheckNumeric()"
+                                                               value="10"/>
+                                                        <span class="input-group-text">.00</span>
+                                                    </div>
+
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="donet_amount_form_area doner_content_pbottom">
+                                    <hr>
                                     <h3 class="custom_form_title">Your Details</h3>
                                     <div class="row">
                                         <div class="col-lg-6">
@@ -352,28 +348,18 @@ custom-cursor elementor-default elementor-template-full-width elementor-kit-31 e
                                                 <label>Country</label>
                                                 <select class="form-select form-select-sm ">
                                                     <option>-- Select Country --</option>
-                                                    <option>Bangladesh</option>
-                                                    <option>India</option>
-                                                    <option>Pakistan</option>
+                                                    <option>Uganda</option>
+                                                    <option>United States</option>
+                                                    <option>United Kingdom</option>
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12">
-                                            <div class="form-group">
-                                                <textarea rows="7" class="form-control" placeholder="Write your comment"
-                                                          required></textarea>
-                                            </div>
-                                        </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <!-- form button -->
-                                        <button type="submit" id="contact-submit"
-                                                class="btn btn-success mb-5 ">
-                                            Donate
-                                        </button>
-                                    </div>
+
+                                    <!-- form button -->
+                                    <button type="submit" id="contact-submit" class="button-87">
+                                        Donate
+                                    </button>
                                 </div>
                             </form>
                         </div>
@@ -382,7 +368,7 @@ custom-cursor elementor-default elementor-template-full-width elementor-kit-31 e
             </div>
         </section>
 
-
+        <section class="new_section_padding"></section>
         <!-- the loop -->
         <div data-elementor-type="wp-post" data-elementor-id="753" class="elementor elementor-753">
             <section
