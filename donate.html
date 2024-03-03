@@ -274,7 +274,7 @@ custom-cursor elementor-default elementor-template-full-width elementor-kit-31 e
                                 serve our community</p>
                         </div>
                         <div class="details_wrapper_area">
-                            <form action="#!" id="donet_amount_main_form">
+                            <form action="#!" id="donateForm">
                                 <div class="donet_amount_form_area doner_content_pbottom custom_donate_card">
                                     <div class="custom_donate_top">
                                         <h3 class="custom_form_title">Your Donation</h3>
@@ -311,36 +311,35 @@ custom-cursor elementor-default elementor-template-full-width elementor-kit-31 e
                                         <div class="col-lg-6">
                                             <div class="form-group">
                                                 <label>First name*</label>
-                                                <input type="text" class="form-control" placeholder=""
+                                                <input name="first_name" type="text" class="form-control" placeholder=""
                                                        required/>
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="form-group">
                                                 <label>Last name*</label>
-                                                <input type="text" class="form-control" placeholder=""
+                                                <input name="last_name" type="text" class="form-control" placeholder=""
                                                        required/>
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="form-group">
                                                 <label>Email*</label>
-                                                <input type="email" class="form-control" placeholder=""
+                                                <input name="email" type="email" class="form-control" placeholder=""
                                                        required/>
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="form-group">
                                                 <label>Phone number</label>
-                                                <input type="text" class="form-control" placeholder=""
-                                                       required/>
+                                                <input name="phone" type="text" class="form-control" placeholder="+256700111222"
+                                                       />
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="form-group">
                                                 <label>Address</label>
-                                                <input type="text" class="form-control" placeholder=""
-                                                       required/>
+                                                <textarea name="address" class="form-control" placeholder="" rows="2"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
@@ -357,7 +356,7 @@ custom-cursor elementor-default elementor-template-full-width elementor-kit-31 e
                                     </div>
 
                                     <!-- form button -->
-                                    <button type="submit" id="contact-submit" class="button-87">
+                                    <button type="submit" id="donate-submit" class="button-87">
                                         Donate
                                     </button>
                                 </div>
@@ -716,7 +715,8 @@ custom-cursor elementor-default elementor-template-full-width elementor-kit-31 e
     <script src="./js/script.js"></script>
 
     <!--Donation Scrips-->
-
+    <script defer src="https://checkout.flutterwave.com/v3.js"></script>
+    <script src="./js/donate.js"></script>
     <script>
         const currencies = {
             AUD: {name: "Australian Dollar", symbol: "$"},
