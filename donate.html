@@ -235,6 +235,7 @@
     class="home page-template page-template-elementor_header_footer page page-id-10 give-test-mode give-page custom-cursor elementor-default elementor-template-full-width elementor-kit-31 elementor-page elementor-page-10"
   >
     <div id="page" class="site page-wrapper">
+<<<<<<< HEAD
       <a class="skip-link screen-reader-text">Skip to content</a>
       <!-- the loop -->
 
@@ -1137,6 +1138,132 @@
     <!--Donation Scrips-->
     <script defer src="https://checkout.flutterwave.com/v3.js"></script>
     <script src="./js/donate.js"></script>
+=======
+        <a class="skip-link screen-reader-text">Skip to
+        content</a>
+
+        <!-- the loop -->
+        <app-navbar></app-navbar>
+
+        <!-- Make a donation Area -->
+        <section id="make_donation_area" class="section_padding">
+            <div class="container">
+                <div class="row" id="counter">
+                    <div class="col-lg-8">
+                        <div class="mb-5">
+                            <h3 class="mb-3">Make a donation</h3>
+                            <p>Through our educational efforts, we provide practical solutions to the current traditional
+                                systems of Education to the youth within our community and beyond.
+                                By donating to our organisation, you can help us continue to expand our outreach to even
+                                more individuals. Your contribution, no matter the amount, can make a significant
+                                difference. We appreciate your support and partnership in our mission to educate and
+                                serve our community</p>
+                        </div>
+                        <div class="details_wrapper_area">
+                            <form action="#!" id="donet_amount_main_form">
+                                <div class="donet_amount_form_area doner_content_pbottom custom_donate_card">
+                                    <div class="custom_donate_top">
+                                        <h3 class="custom_form_title">Your Donation</h3>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <!-- form group -->
+                                                <div class="form-group">
+                                                    <label>Currency</label>
+                                                    <select id="currency" class="form-select"
+                                                            name="currency">
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Donation amount</label>
+
+                                                    <div class="input-group mb-3">
+                                                        <span id="donation_currency_symbol" class="input-group-text">$</span>
+                                                        <input id="donation_amount" class="form-control mb-0 number"
+                                                               name="amount" type="text" onkeypress="return CheckNumeric()"
+                                                               value="10"/>
+                                                        <span class="input-group-text">.00</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <h3 class="custom_form_title">Your Details</h3>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label>First name*</label>
+                                                <input type="text" class="form-control" placeholder=""
+                                                       required/>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label>Last name*</label>
+                                                <input type="text" class="form-control" placeholder=""
+                                                       required/>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label>Email*</label>
+                                                <input type="email" class="form-control" placeholder=""
+                                                       required/>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label>Phone number</label>
+                                                <input type="text" class="form-control" placeholder=""
+                                                       required/>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label>Address</label>
+                                                <input type="text" class="form-control" placeholder=""
+                                                       required/>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label>Country</label>
+                                                <select class="form-select form-select-sm ">
+                                                    <option>-- Select Country --</option>
+                                                    <option>Uganda</option>
+                                                    <option>United States</option>
+                                                    <option>United Kingdom</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- form button -->
+                                    <button type="submit" id="contact-submit" class="button-87">
+                                        Donate
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="new_section_padding"></section>
+
+        <app-footer></app-footer>
+
+    </div>
+    <!-- #page -->
+
+
+    <!--Donation Scrips-->
+    <script src="./components.js"></script>
+>>>>>>> testing
     <script>
       const currencies = {
         ALL: { name: "Albanian Lek", symbol: "Lek" },
