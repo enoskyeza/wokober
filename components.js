@@ -263,7 +263,7 @@ class Navbar extends HTMLElement{
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li class="nav-item">
-                                                <a href="#" class="nav-link">Toy Festival 2022</a>
+                                                <a href="tf-2022.html" class="nav-link">Toy Festival 2022</a>
                                             </li>
                                             <li class="nav-item">
                                                 <a href="#" class="nav-link">Toy Festival 2023</a>
