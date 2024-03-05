@@ -1,6 +1,6 @@
 /* ---------------------
-	Jquery to validate Donate form and submit to flutterwave
-	--------------------- */
+  Jquery to validate Donate form and submit to flutterwave
+  --------------------- */
 (function ($) {
   "use strict";
 
@@ -10,10 +10,7 @@
       evt.preventDefault();
       let form = this
       var form_data = new FormData(form);
-      console.log(this, form_data);
-      for (let [key, value] of form_data){
-        console.log(key + ": " + value);
-      }
+     
       makePayment(form_data);
     });
   });
@@ -27,12 +24,38 @@
 
   function makePayment(formData) {
     const payload = {
-      public_key: "FLWPUBK_TEST-78135ef243cacdb926b16a903a38ec58-X",
+      // public_key: "FLWPUBK_TEST-78135ef243cacdb926b16a903a38ec58-X",
+      public_key: "FLWPUBK-e6e785df3edd3d1e4a5502ae39fb7ea2-X",
       tx_ref: generateTxRef(),
       amount: parseFloat(formData.get("amount").replace(/,/g, "")),
       currency: formData.get("currency"),
-      payment_options: "card, ussd, mobilemoneyuganda",
+      // payment_options: "card, ussd, mobilemoneyuganda",
       redirect_url: "https://www.wokober.com/donate.html",
+      // callback: function (payment) {
+      //   console.log(payment);
+      //   if (payment.data.id) {
+      //     const transactionId = payment.data.id;
+      //     $.ajax({
+      //       url: "src/ProcessPayment.php",
+      //       type: "GET",
+      //       data: {
+      //         transactionId: transactionId
+      //       },
+      //       success: function (response) {
+      //         console.log("Validation response:", response);
+      //         // Handle success response here
+      //       },
+      //       error: function (xhr, status, error) {
+      //         console.error("Validation error:", error);
+      //         // Handle error here
+      //       }
+      //     });
+      //   } else {
+      //     console.error("Transaction ID not found in payment data");
+      //     // Handle case where transaction ID is missing
+      //   }
+
+      // },
       meta: {
         address_line1: formData.get("address"),
         // city: formData.get("city"),
@@ -47,11 +70,9 @@
       customizations: {
         title: "Donation Payment",
         description: "Payment for a donation",
-        logo: "https://www.wokober.com/images/img/Logo-01.png",
+        logo: "https://www.wokober.com/images/img/logo-mobile.png",
       },
     };
-
-    console.log(payload);
 
     FlutterwaveCheckout(payload);
   }
