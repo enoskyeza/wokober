@@ -199,9 +199,6 @@
     <script src="./js/dist-hooks.min.js" id="wp-hooks-js"></script>
     <script src="./js/dist-i18n.min.js" id="wp-i18n-js"></script>
 
-    <!-- navber css -->
-    <link rel="stylesheet" href="./css/navber.css" />
-
     <!-- Icons -->
     <link
       rel="icon"
@@ -229,6 +226,9 @@
         --secondary-rgb: 245, 226, 200;
       }
     </style>
+
+    <!-- navber css -->
+    <link rel="stylesheet" href="./css/navber.css" />
   </head>
 
   <body
@@ -309,7 +309,6 @@
                           <label>First name*</label>
                           <input
                             name="first_name"
-                            type="text"
                             class="form-control"
                             placeholder=""
                             required
@@ -321,7 +320,6 @@
                           <label>Last name*</label>
                           <input
                             name="last_name"
-                            type="text"
                             class="form-control"
                             placeholder=""
                             required
@@ -333,7 +331,6 @@
                           <label>Email*</label>
                           <input
                             name="email"
-                            type="email"
                             class="form-control"
                             placeholder=""
                             required
@@ -345,7 +342,6 @@
                           <label>Phone number</label>
                           <input
                             name="phone"
-                            type="text"
                             class="form-control"
                             placeholder="+256700111222"
                           />
@@ -354,23 +350,24 @@
                       <div class="col-lg-6">
                         <div class="form-group">
                           <label>Address</label>
-                          <textarea
+                          <input
                             name="address"
                             class="form-control"
-                            placeholder=""
-                            rows="2"
-                          ></textarea>
+                          />
+<!--                          <textarea-->
+<!--                            name="address"-->
+<!--                            class="form-control"-->
+<!--                            placeholder=""-->
+<!--                            rows="2"-->
+<!--                          ></textarea>-->
                         </div>
                       </div>
                       <div class="col-lg-6">
                         <div class="form-group">
-                          <label>Country</label>
-                          <select class="form-select form-select-sm">
-                            <option>-- Select Country --</option>
-                            <option>Uganda</option>
-                            <option>United States</option>
-                            <option>United Kingdom</option>
-                          </select>
+                          <label for="country">Country</label>
+                          <input class="form-control"
+                                 id="country" name="country" list="countries">
+                          <datalist id="countries"></datalist>
                         </div>
                       </div>
                     </div>
@@ -393,6 +390,7 @@
     <!-- #page -->
 
     <!--Donation Scrips-->
+    <script src="./js/countries.js"></script>
     <script src="./components.js"></script>
     <script defer src="https://checkout.flutterwave.com/v3.js"></script>
     <script src="./js/donate.js"></script>

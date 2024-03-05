@@ -1,3 +1,158 @@
+class Navbar extends HTMLElement{
+    connectedCallback(){
+        this.innerHTML = `
+        <!-- Header Area -->
+        <header class="main-header-one">
+
+            <!-- Navbar Bar -->
+            <div class="navbar-area">
+<!--                <div class="main-responsive-nav">-->
+<!--                    <div class="container">-->
+<!--                        <div class="main-responsive-menu">-->
+<!--                            <div class="main-menu__logo">-->
+<!--                                <a href="/"><img decoding="async" width="150" height="50px" src="./images/img/Logo-01.png"-->
+<!--                                                 alt="Wokober"></a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+                <div class="main-navbar">
+                    <div class="container">
+                        <nav class="navbar navbar-expand-md navbar-light">
+                            <div class="main-menu__logo">
+                                <a href="/"><img decoding="async" width="150" height="50" src="./images/img/Logo-01.png"
+                                                 alt="Wokober"></a>
+                            </div>
+                            <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                                <ul class="navbar-nav">
+                                    <!-- <li class="nav-item">
+                                        <a href="index.html" class="nav-link active">Home</a>
+                                    </li> -->
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" style="font-size:14px;">
+                                            About
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link"
+                                                   style="font-size:14px;">Causes</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link">Causes Details</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" style="font-size:14px;">
+                                            Toy Festivals
+
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="tf-2022.html" class="nav-link">Toy Festival 2022</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link">Toy Festival 2023</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" style="font-size:14px;">
+                                            Mentorship Programmes
+
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link">MP 2023</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link">MP 2024</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" style="font-size:14px;">
+                                            Get Involved
+
+                                        </a>
+                                        <!--                                    <ul class="dropdown-menu">-->
+                                        <!--                                        <li class="nav-item">-->
+                                        <!--                                            <a href="news.html" class="nav-link">News</a>-->
+                                        <!--                                        </li>-->
+                                        <!--                                        <li class="nav-item">-->
+                                        <!--                                            <a href="news-details.html" class="nav-link">News Details</a>-->
+                                        <!--                                        </li>-->
+                                        <!--                                    </ul>-->
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" style="font-size:14px;">Blog</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="contact.html" class="nav-link" style="font-size:14px;">Contact Us</a>
+                                    </li>
+                                </ul>
+                                <div class="others-options d-flex align-items-center">
+                                    <div class="option-item">
+                                        <a href="#" class="btn btn-warning">Donate</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+<!--                <div class="others-option-for-responsive">-->
+<!--                    <div class="container">-->
+<!--                        <div class="dot-menu">-->
+<!--                            <div class="inner">-->
+<!--                                <div class="circle circle-one"></div>-->
+<!--                                <div class="circle circle-two"></div>-->
+<!--                                <div class="circle circle-three"></div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="container">-->
+<!--                            <div class="option-inner">-->
+<!--                                <div class="others-options d-flex align-items-center">-->
+<!--                                    <div class="option-item">-->
+<!--                                        <a href="#" class="btn  btn_navber bg-warning">Donate</a>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+        </header>
+        <!-- New Nav Section End -->
+
+
+        <!--Page Header Start-->
+        <section class="page-header">
+            <div class="page-header-bg"></div>
+            <div class="container">
+                <div class="page-header__inner">
+                    <ul class="thm-breadcrumb list-unstyled ml-0" typeof="BreadcrumbList" vocab="https://schema.org/">
+                        <!-- Breadcrumb NavXT 7.1.0 -->
+                        <li class="home"><span property="itemListElement" typeof="ListItem">
+                            <a property="item" typeof="WebPage" title="Go to Wokober." href="/" class="home"><span
+                                property="name">Wokober</span></a>
+                                <meta property="position" content="1">
+                            </span></li>
+                        <li class="post post-page current-item"><span property="itemListElement" typeof="ListItem"><span
+                                property="name" class="post post-page current-item">Donate</span>
+                                <meta property="url" content="#here">
+                                <meta property="position" content="2">
+                            </span></li>
+                    </ul>
+                    <!--                <h2> Get Involved </h2>-->
+                </div>
+            </div>
+        </section>
+        <!--Page Header End-->
+        `
+    }
+}
+
 class Footer extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `
@@ -212,160 +367,6 @@ class Footer extends HTMLElement{
     }
 }
 
-class Navbar extends HTMLElement{
-    connectedCallback(){
-        this.innerHTML = `
-        <!-- Header Area -->
-        <header class="main-header-one">
-
-            <!-- Navbar Bar -->
-            <div class="navbar-area">
-                <div class="main-responsive-nav">
-                    <div class="container">
-                        <div class="main-responsive-menu">
-                            <div class="main-menu__logo">
-                                <a href="/"><img decoding="async" width="150" height="50px" src="./images/img/Logo-01.png"
-                                                 alt="Wokober"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="main-navbar">
-                    <div class="container">
-                        <nav class="navbar navbar-expand-md navbar-light">
-                            <div class="main-menu__logo">
-                                <a href="/"><img decoding="async" width="150" height="50" src="./images/img/Logo-01.png"
-                                                 alt="Wokober"></a>
-                            </div>
-                            <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                                <ul class="navbar-nav">
-                                    <!-- <li class="nav-item">
-                                        <a href="index.html" class="nav-link active">Home</a>
-                                    </li> -->
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link" style="font-size:14px;">
-                                            About
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                                <a href="#" class="nav-link"
-                                                   style="font-size:14px;">Causes</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="#" class="nav-link">Causes Details</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link" style="font-size:14px;">
-                                            Toy Festivals
-
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                                <a href="tf-2022.html" class="nav-link">Toy Festival 2022</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="#" class="nav-link">Toy Festival 2023</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link" style="font-size:14px;">
-                                            Mentorship Programmes
-
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                                <a href="#" class="nav-link">MP 2023</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="#" class="nav-link">MP 2024</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link" style="font-size:14px;">
-                                            Get Involved
-
-                                        </a>
-                                        <!--                                    <ul class="dropdown-menu">-->
-                                        <!--                                        <li class="nav-item">-->
-                                        <!--                                            <a href="news.html" class="nav-link">News</a>-->
-                                        <!--                                        </li>-->
-                                        <!--                                        <li class="nav-item">-->
-                                        <!--                                            <a href="news-details.html" class="nav-link">News Details</a>-->
-                                        <!--                                        </li>-->
-                                        <!--                                    </ul>-->
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link" style="font-size:14px;">Blog</a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a href="contact.html" class="nav-link" style="font-size:14px;">Contact Us</a>
-                                    </li>
-                                </ul>
-                                <div class="others-options d-flex align-items-center">
-                                    <div class="option-item">
-                                        <a href="#" class="btn btn-warning">Donate</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-                <div class="others-option-for-responsive">
-                    <div class="container">
-                        <div class="dot-menu">
-                            <div class="inner">
-                                <div class="circle circle-one"></div>
-                                <div class="circle circle-two"></div>
-                                <div class="circle circle-three"></div>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="option-inner">
-                                <div class="others-options d-flex align-items-center">
-                                    <div class="option-item">
-                                        <a href="#" class="btn  btn_navber bg-warning">Donate</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- New Nav Section End -->
-
-
-        <!--Page Header Start-->
-        <section class="page-header">
-            <div class="page-header-bg"></div>
-            <div class="container">
-                <div class="page-header__inner">
-                    <ul class="thm-breadcrumb list-unstyled ml-0" typeof="BreadcrumbList" vocab="https://schema.org/">
-                        <!-- Breadcrumb NavXT 7.1.0 -->
-                        <li class="home"><span property="itemListElement" typeof="ListItem">
-                            <a property="item" typeof="WebPage" title="Go to Wokober." href="/" class="home"><span
-                                property="name">Wokober</span></a>
-                                <meta property="position" content="1">
-                            </span></li>
-                        <li class="post post-page current-item"><span property="itemListElement" typeof="ListItem"><span
-                                property="name" class="post post-page current-item">Donate</span>
-                                <meta property="url" content="#here">
-                                <meta property="position" content="2">
-                            </span></li>
-                    </ul>
-                    <!--                <h2> Get Involved </h2>-->
-                </div>
-            </div>
-        </section>
-        <!--Page Header End-->
-        `
-    }
-}
 
 class HeadLinks extends HTMLElement{
     connectedCallback(){
