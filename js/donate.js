@@ -32,7 +32,7 @@
       amount: parseFloat(formData.get("amount").replace(/,/g, "")),
       currency: formData.get("currency"),
       payment_options: "card, ussd, mobilemoneyuganda",
-      redirect_url: "https://unitedapostolicchurchug.org/donation-now.html",
+      redirect_url: "https://www.wokober.com/donate.html",
       meta: {
         address_line1: formData.get("address"),
         // city: formData.get("city"),
@@ -47,6 +47,7 @@
       customizations: {
         title: "Donation Payment",
         description: "Payment for a donation",
+        logo: "https://www.wokober.com/images/img/Logo-01.png",
       },
     };
 
