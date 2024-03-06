@@ -30,32 +30,32 @@
       amount: parseFloat(formData.get("amount").replace(/,/g, "")),
       currency: formData.get("currency"),
       // payment_options: "card, ussd, mobilemoneyuganda",
-      redirect_url: "https://www.wokober.com/donate.html",
-      // callback: function (payment) {
-      //   console.log(payment);
-      //   if (payment.data.id) {
-      //     const transactionId = payment.data.id;
-      //     $.ajax({
-      //       url: "src/ProcessPayment.php",
-      //       type: "GET",
-      //       data: {
-      //         transactionId: transactionId
-      //       },
-      //       success: function (response) {
-      //         console.log("Validation response:", response);
-      //         // Handle success response here
-      //       },
-      //       error: function (xhr, status, error) {
-      //         console.error("Validation error:", error);
-      //         // Handle error here
-      //       }
-      //     });
-      //   } else {
-      //     console.error("Transaction ID not found in payment data");
-      //     // Handle case where transaction ID is missing
-      //   }
+      // redirect_url: "https://www.wokober.com/donate.html",
+      callback: function (payment) {
+        console.log(payment);
+        if (payment.transaction_id) {
+          const transactionId = payment.transaction_id;
+          $.ajax({
+            url: "src/ProcessPayment.php",
+            type: "GET",
+            data: {
+              transactionId: transactionId
+            },
+            success: function (response) {
+              console.log("Validation response:", response);
+              // Handle success response here
+            },
+            error: function (xhr, status, error) {
+              console.error("Validation error:", error);
+              // Handle error here
+            }
+          });
+        } else {
+          console.error("Transaction ID not found in payment data");
+          // Handle case where transaction ID is missing
+        }
 
-      // },
+      },
       meta: {
         address_line1: formData.get("address"),
         // city: formData.get("city"),
