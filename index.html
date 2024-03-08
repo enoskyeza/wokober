@@ -1113,6 +1113,9 @@
         var mobileMenuIcon = document.querySelector('#mobileMenuIcon');
         var navbarLinks = document.querySelector('#navbarCustom');
 
+        mobileMenuIcon.addEventListener('click', function() {
+            navbarLinks.classList.toggle('show');
+        });
 
         header.classList.toggle("sticky", window.scrollY > 0)
 
@@ -1122,10 +1125,6 @@
             logo.setAttribute("src", "./images/img/Logo-02.png");
         }
 
-        mobileMenuIcon.addEventListener('click', function() {
-            navbarLinks.classList.toggle('show');
-            console.log("Clicked...")
-        });
     })
 </script>
 </body>
