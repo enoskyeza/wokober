@@ -90,7 +90,8 @@
             <img id="LogoId" class="logo_img" decoding="async" width="150" height="50" src="./images/img/Logo-02.png"
                  alt="Wokober Logo">
         </a>
-        <ul>
+        <div class="mobile-menu-icon" id="mobileMenuIcon">&#9776;</div>
+        <ul class="navbar_custom" id="navbarCustom">
             <li>
                 <a href="#about.html">About</a></li>
             <li>
@@ -1109,6 +1110,9 @@
     window.addEventListener("scroll", function () {
         var header = document.querySelector("header")
         var logo = document.querySelector("#LogoId");
+        var mobileMenuIcon = document.querySelector('#mobileMenuIcon');
+        var navbarLinks = document.querySelector('#navbarCustom');
+
 
         header.classList.toggle("sticky", window.scrollY > 0)
 
@@ -1117,6 +1121,11 @@
         } else {
             logo.setAttribute("src", "./images/img/Logo-02.png");
         }
+
+        mobileMenuIcon.addEventListener('click', function() {
+            navbarLinks.classList.toggle('show');
+            console.log("Clicked...")
+        });
     })
 </script>
 </body>
