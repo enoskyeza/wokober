@@ -199,9 +199,7 @@ class Footer extends HTMLElement{
                                                                             innovative designs, captivating story
                                                                             telling, and transformative education.</p>
                                                                     </div>
-                                                                    <a href="#"
-                                                                       class="thm-btn main-slider-three__btn ">Contact
-                                                                        Us</a>
+                                                                    <button href="#" class="donate_button">Donate</button>
                                                                 </div>
                                                             </div>
                                                         </div>
