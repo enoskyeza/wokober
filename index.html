@@ -1107,12 +1107,17 @@
 <script src="./js/script.js"></script>
 <script src="./components.js"></script>
 <script type="text/javascript">
-    window.addEventListener("scroll", function () {
-        var header = document.querySelector("header")
-        var logo = document.querySelector("#LogoId");
         var mobileMenuIcon = document.querySelector('#mobileMenuIcon');
         var navbarLinks = document.querySelector('#navbarCustom');
 
+        mobileMenuIcon.addEventListener('click', function() {
+            navbarLinks.classList.toggle('show');
+        });
+</script>
+<script type="text/javascript">
+    window.addEventListener("scroll", function () {
+        var header = document.querySelector("header")
+        var logo = document.querySelector("#LogoId");
 
         header.classList.toggle("sticky", window.scrollY > 0)
 
@@ -1122,10 +1127,6 @@
             logo.setAttribute("src", "./images/img/Logo-02.png");
         }
 
-        mobileMenuIcon.addEventListener('click', function() {
-            navbarLinks.classList.toggle('show');
-            console.log("Clicked...")
-        });
     })
 </script>
 </body>

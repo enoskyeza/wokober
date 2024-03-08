@@ -39,46 +39,6 @@ header.sticky {
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
-    .navbar_custom {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        align-items: flex-start; /* Align items to the start of the column */
-    }
-
-    .navbar_custom {
-        display: none; /* Hide the links by default on smaller screens */
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px; /* Adjust the distance from the top as needed */
-        left: 0;
-        background-color: #fff; /* Background color for the mobile menu */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
-        z-index: 1; /* Ensure the menu is on top of other elements */
-    }
-
-    .navbar_custom.show {
-        display: flex; /* Show the links when the mobile menu is active */
-    }
-
-    .navbar_custom ul {
-        flex-direction: column;
-    }
-
-    .navbar_custom li {
-        margin: 0; /* Remove right margin to stack items vertically */
-        margin-bottom: 10px; /* Add spacing between the list items */
-    }
-
-    .mobile-menu-icon {
-        display: block; /* Show the mobile menu icon */
-    }
-
-    .btn.donate_button {
-        display: none;
-        margin-top: 10px; /* Add spacing between the mobile menu icon and donate button */
-    }
-}
 
 .hero_logo{
     position: relative;
@@ -255,4 +215,51 @@ br.md_view {
         display: block;
     }
 
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar_custom {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start of the column */
+    }
+
+    .navbar_custom {
+        display: none; /* Hide the links by default on smaller screens */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjust the distance from the top as needed */
+        left: 0;
+        background-color: #fff; /* Background color for the mobile menu */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+        z-index: 1; /* Ensure the menu is on top of other elements */
+    }
+
+    .navbar_custom.show {
+        display: flex; /* Show the links when the mobile menu is active */
+
+    }
+
+    .navbar_custom ul {
+        flex-direction: column;
+    }
+
+    .navbar_custom li {
+        margin: 0; /* Remove right margin to stack items vertically */
+        margin-bottom: 10px; /* Add spacing between the list items */
+    }
+
+    header ul li a{
+        color: #333!important;
+    }
+
+    .mobile-menu-icon {
+        display: block; /* Show the mobile menu icon */
+    }
+
+    .btn.donate_button {
+        display: none;
+        margin-top: 10px; /* Add spacing between the mobile menu icon and donate button */
+    }
 }
