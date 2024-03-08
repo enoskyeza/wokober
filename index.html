@@ -90,17 +90,18 @@
             <img id="LogoId" class="logo_img" decoding="async" width="150" height="50" src="./images/img/Logo-02.png"
                  alt="Wokober Logo">
         </a>
-        <ul>
+        <div class="mobile-menu-icon" id="mobileMenuIcon">&#9776;</div>
+        <ul class="navbar_custom" id="navbarCustom">
             <li>
-                <a>About</a></li>
+                <a href="#about.html">About</a></li>
             <li>
-                <a>Toy Festivals</a></li>
+                <a href="tf-2022.html">Toy Festivals</a></li>
             <li>
-                <a>Mentorship Programmes</a></li>
+                <a href="#mp-2023.html">Mentorship Programmes</a></li>
             <li>
-                <a>Get Involved</a></li>
+                <a href="">Get Involved</a></li>
             <li>
-                <a>Contact Us</a></li>
+                <a href="contact.html">Contact Us</a></li>
         </ul>
         <a href="donate.html" class="btn donate_button">Donate</a>
     </header>
@@ -1109,6 +1110,9 @@
     window.addEventListener("scroll", function () {
         var header = document.querySelector("header")
         var logo = document.querySelector("#LogoId");
+        var mobileMenuIcon = document.querySelector('#mobileMenuIcon');
+        var navbarLinks = document.querySelector('#navbarCustom');
+
 
         header.classList.toggle("sticky", window.scrollY > 0)
 
@@ -1117,6 +1121,11 @@
         } else {
             logo.setAttribute("src", "./images/img/Logo-02.png");
         }
+
+        mobileMenuIcon.addEventListener('click', function() {
+            navbarLinks.classList.toggle('show');
+            console.log("Clicked...")
+        });
     })
 </script>
 </body>
