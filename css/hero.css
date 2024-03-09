@@ -189,83 +189,6 @@ br.md_view {
     display: none;
 }
 
-
-@media (max-width: 420px) {
-    .hero_caption {
-        padding: 0 0 120px 40px;
-    }
-
-    .sentence h3{
-        line-height: 1.5;
-        font-weight: 400;
-        font-size: 24px;
-        margin: 0;
-        width: 300px;
-    }
-    br.sm_view{
-        display: block;
-    }
-
-    .block {
-        height: 80%;
-    }
-}
-
-@media screen and (min-width: 421px) and (max-width: 920px) {
-    br.md_view{
-        display: block;
-    }
-
-}
-
-
-@media screen and (max-width: 768px) {
-    .navbar_custom {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        align-items: flex-start; /* Align items to the start of the column */
-    }
-
-    .navbar_custom {
-        display: none; /* Hide the links by default on smaller screens */
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px; /* Adjust the distance from the top as needed */
-        left: 0;
-        background-color: #fff; /* Background color for the mobile menu */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
-        z-index: 1; /* Ensure the menu is on top of other elements */
-    }
-
-    .navbar_custom.show {
-        display: flex; /* Show the links when the mobile menu is active */
-
-    }
-
-    .navbar_custom ul {
-        flex-direction: column;
-    }
-
-    .navbar_custom li {
-        margin: 0; /* Remove right margin to stack items vertically */
-        margin-bottom: 10px; /* Add spacing between the list items */
-    }
-
-    header ul li a{
-        color: #333!important;
-    }
-
-    .mobile-menu-icon {
-        display: block; /* Show the mobile menu icon */
-    }
-
-    .btn.donate_button {
-        display: none;
-        margin-top: 10px; /* Add spacing between the mobile menu icon and donate button */
-    }
-}
-
-
 header.other_pages{
     position: relative;
     width: 100%!important;
@@ -274,7 +197,7 @@ header.other_pages{
     align-items: center;
     transition: 0.6s;
     padding: 20px 100px;
-    z-index: 10000;
+    z-index: 1000;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 
 }
@@ -288,13 +211,11 @@ header.other_pages.sticky {
     position: fixed;
     top: 0;
     left: 0;
-    margin-bottom: 100px;
-    /*padding: 10px 100px;*/
-    /*background: #fff;*/
-    /*box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);*/
 }
 
-
+.other_pages .mobile-menu-icon {
+    color: blue;
+}
 
 /***
 
@@ -389,5 +310,97 @@ header.other_pages.sticky {
 
 .page-title .bread-crumb li a.home {
 	font-size: 24px;
+}
+
+
+
+/***
+
+====================================================================
+	RESPONSIVENESS
+====================================================================
+
+***/
+@media screen and (max-width: 1303px) {
+    header.other_pages{
+        padding: 20px 20px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .navbar_custom {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start of the column */
+    }
+
+    .navbar_custom {
+        display: none; /* Hide the links by default on smaller screens */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjust the distance from the top as needed */
+        left: 0;
+        background-color: #fff; /* Background color for the mobile menu */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+        z-index: 1; /* Ensure the menu is on top of other elements */
+    }
+
+    .navbar_custom.show {
+        display: flex; /* Show the links when the mobile menu is active */
+
+    }
+
+    .navbar_custom ul {
+        flex-direction: column;
+    }
+
+    .navbar_custom li {
+        margin: 0; /* Remove right margin to stack items vertically */
+        margin-bottom: 10px; /* Add spacing between the list items */
+    }
+
+    header ul li a{
+        color: #333!important;
+    }
+
+    .mobile-menu-icon {
+        display: block; /* Show the mobile menu icon */
+    }
+
+    .btn.donate_button {
+        display: none;
+        margin-top: 10px; /* Add spacing between the mobile menu icon and donate button */
+    }
+}
+
+
+@media (max-width: 420px) {
+    .hero_caption {
+        padding: 0 0 120px 40px;
+    }
+
+    .sentence h3{
+        line-height: 1.5;
+        font-weight: 400;
+        font-size: 24px;
+        margin: 0;
+        width: 300px;
+    }
+    br.sm_view{
+        display: block;
+    }
+
+    .block {
+        height: 80%;
+    }
+}
+
+@media screen and (min-width: 421px) and (max-width: 920px) {
+    br.md_view{
+        display: block;
+    }
+
 }
 
