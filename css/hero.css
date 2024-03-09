@@ -8,7 +8,7 @@
 }
 
 body{
-    background: #000;
+    /*background: #000;*/
     min-height: 200vh;
 }
 
@@ -30,6 +30,7 @@ header.sticky {
     background: #fff;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 
 
 .mobile-menu-icon {
@@ -262,4 +263,29 @@ br.md_view {
         display: none;
         margin-top: 10px; /* Add spacing between the mobile menu icon and donate button */
     }
+}
+
+
+header.other_pages{
+    position: relative;
+    width: 100%!important;
+    display: flex!important;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 100px;
+    z-index: 10000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+header.other_pages ul li a{
+    color: #333!important;
+}
+
+
+header.sticky {
+    padding: 10px 100px;
+    background: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }

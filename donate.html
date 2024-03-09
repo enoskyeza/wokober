@@ -229,6 +229,7 @@
 
     <!-- navber css -->
     <link rel="stylesheet" href="./css/custom.css" />
+    <link rel="stylesheet" href="./css/hero.css">
   </head>
 
   <body
@@ -240,26 +241,6 @@
       <!-- the loop -->
       <app-navbar></app-navbar>
 
-    <header class="">
-        <a href="/" class="hero_logo">
-            <img id="LogoId" class="logo_img" decoding="async" width="150" height="50" src="./images/img/Logo-02.png"
-                 alt="Wokober Logo">
-        </a>
-        <div class="mobile-menu-icon" id="mobileMenuIcon">&#9776;</div>
-        <ul class="navbar_custom" id="navbarCustom">
-            <li>
-                <a href="#about.html">About</a></li>
-            <li>
-                <a href="tf-2022.html">Toy Festivals</a></li>
-            <li>
-                <a href="#mp-2023.html">Mentorship Programmes</a></li>
-            <li>
-                <a href="">Get Involved</a></li>
-            <li>
-                <a href="contact.html">Contact Us</a></li>
-        </ul>
-        <a href="donate.html" class="btn donate_button">Donate</a>
-    </header>
 
       <section class="pre_content">
 
@@ -411,6 +392,31 @@
       <app-footer></app-footer>
     </div>
     <!-- #page -->
+
+    <!-- NavBar Scripts   -->
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header")
+            var logo = document.querySelector("#LogoId");
+
+            header.classList.toggle("sticky", window.scrollY > 0)
+
+            if (window.scrollY > 0) {
+                logo.setAttribute("src", "./images/img/Logo-01.png");
+            } else {
+                logo.setAttribute("src", "./images/img/Logo-01.png");
+            }
+
+        })
+    </script>
+    <script type="text/javascript">
+          var mobileMenuIcon = document.querySelector('#mobileMenuIcon');
+          var navbarLinks = document.querySelector('#navbarCustom');
+
+          mobileMenuIcon.addEventListener('click', function() {
+              navbarLinks.classList.toggle('show');
+          });
+    </script>
 
     <!--Donation Scrips-->
     <script src="./js/countries.js"></script>

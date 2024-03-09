@@ -513,7 +513,9 @@
     <style> </style> <!-- Fonts Plugin CSS -->
 
     <!-- navber css -->
-    <link rel="stylesheet" href="./css/navber.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+    <link rel="stylesheet" href="css/hero.css">
+
 </head>
 
 <body
@@ -996,6 +998,33 @@
     <script src="./js/script.js"></script>
 
     <script src="./components.js"></script>
+
+
+    <!-- NavBar Scripts   -->
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header")
+            var logo = document.querySelector("#LogoId");
+
+            header.classList.toggle("sticky", window.scrollY > 0)
+
+            if (window.scrollY > 0) {
+                logo.setAttribute("src", "./images/img/Logo-01.png");
+            } else {
+                logo.setAttribute("src", "./images/img/Logo-01.png");
+            }
+
+        })
+    </script>
+    <script type="text/javascript">
+          var mobileMenuIcon = document.querySelector('#mobileMenuIcon');
+          var navbarLinks = document.querySelector('#navbarCustom');
+
+          mobileMenuIcon.addEventListener('click', function() {
+              navbarLinks.classList.toggle('show');
+          });
+    </script>
+
 </body>
 
 </html>
