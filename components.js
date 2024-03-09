@@ -18,7 +18,7 @@ class Navbar extends HTMLElement {
                     <li>
                         <a href="#">Get Involved</a></li>
                     <li>
-                        <a href="contact0.html">Contact Us</a></li>
+                        <a href="contact.html">Contact Us</a></li>
                 </ul>
                 <a href="donate.html" class="btn donate_button">Donate</a>
             </header>
