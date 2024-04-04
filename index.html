@@ -85,33 +85,36 @@
 
     <!--    Hero section    -->
     <!--    Nav bar     -->
-    <header class="">
-        <a href="/" class="hero_logo">
-            <img id="LogoId" class="logo_img" decoding="async" width="150" height="50" src="./images/img/Logo-02.png"
-                 alt="Wokober Logo">
-        </a>
-        <div class="mobile-menu-icon" id="mobileMenuIcon">&#9776;</div>
-        <ul class="navbar_custom" id="navbarCustom">
-            <li>
-                <a href="#about.html">About</a></li>
-            <li>
-                <a href="tf-2022.html">Toy Festivals</a></li>
-            <li>
-                <a href="mp-2023.html">Mentorship Programmes</a></li>
-            <li>
-                <a href="">Get Involved</a></li>
-            <li>
-                <a href="contact.html">Contact Us</a></li>
-        </ul>
-        <a href="donate.html" class="btn donate_button">Donate</a>
+    <header id="home-nav">
+            <a href="/" class="hero_logo">
+                <img id="LogoId" class="logo_img" decoding="async" width="250" height="100"
+                     src="./images/img/Logo-02.png"
+                     alt="Wokober Logo">
+            </a>
+            <div class="mobile-menu-icon" id="mobileMenuIcon">&#9776;</div>
+            <ul class="navbar_custom" id="navbarCustom">
+                <li>
+                    <a href="#about.html">About</a></li>
+                <li>
+                    <a href="tf-2022.html">Toy Festivals</a></li>
+                <li>
+                    <a href="mp-2023.html">Mentorship Programmes</a></li>
+                <li>
+                    <a href="">Get Involved</a></li>
+                <li>
+                    <a href="contact.html">Blog</a></li>
+                <li>
+                    <a href="contact.html">Contact Us</a></li>
+            </ul>
+            <a href="donate.html" class="btn donate_button">Donate</a>
     </header>
 
     <!-- Carousel Section -->
-    <section >
+    <section>
         <div class="hero_vid">
             <div class="vid-container">
                 <video autoplay muted loop id="myVideo" poster="videos/preview2.webp">
-                    <source src="videos/bg_vid_short.mp4" type="video/mp4">
+                    <source src="videos/final_vid.mp4" type="video/mp4">
                     Your browser does not support HTML5 video.
                 </video>
             </div>
@@ -123,12 +126,12 @@
                             <h3>Pioneering a new <br class="sm_view">approach <br class="md_view">
                                 to creative <br class="sm_view"> learning</h3>
                         </div>
-<!--                        <div class="sentence">Second Sentence</div>-->
-<!--                        <div class="sentence">Third Sentence</div>-->
+                        <!--                        <div class="sentence">Second Sentence</div>-->
+                        <!--                        <div class="sentence">Third Sentence</div>-->
                     </div>
                 </div>
 
-<!--                <h3></h3>-->
+                <!--                <h3></h3>-->
             </div>
 
         </div>
@@ -188,7 +191,7 @@
                     <button class="button-58 mt-3 custom_about_button">More +</button>
                 </div>
                 <div class="col col-12 col-md-12 col-lg-5 custom_about_content_left">
-                    <img class="custom_about_img" src="./images/img/about/about_4.jpg" alt="...">
+                    <img class="custom_about_img" src="./images/img/about/about_1.jpg" alt="...">
                     <!--                    <h4 class="custom_about_subtitle">-->
                     <!--                        Our story-->
                     <!--                    </h4>-->
@@ -1106,12 +1109,12 @@
 <script src="./js/script.js"></script>
 <script src="./components.js"></script>
 <script type="text/javascript">
-        var mobileMenuIcon = document.querySelector('#mobileMenuIcon');
-        var navbarLinks = document.querySelector('#navbarCustom');
+    var mobileMenuIcon = document.querySelector('#mobileMenuIcon');
+    var navbarLinks = document.querySelector('#navbarCustom');
 
-        mobileMenuIcon.addEventListener('click', function() {
-            navbarLinks.classList.toggle('show');
-        });
+    mobileMenuIcon.addEventListener('click', function () {
+        navbarLinks.classList.toggle('show');
+    });
 </script>
 <script type="text/javascript">
     window.addEventListener("scroll", function () {
@@ -1122,8 +1125,10 @@
 
         if (window.scrollY > 0) {
             logo.setAttribute("src", "./images/img/Logo-01.png");
+            header.removeAttribute('id')
         } else {
             logo.setAttribute("src", "./images/img/Logo-02.png");
+            header.setAttribute('id', "home-nav")
         }
 
     })
