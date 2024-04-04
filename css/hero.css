@@ -88,8 +88,8 @@ header ul li a{
 
 #home-nav {
     margin-top: 25px;
-    margin-left: 10%;
-    max-width: 80%;
+    margin-left: 5%;
+    max-width: 90%;
     border-radius: 8px;
     background: rgba(0,0,255, 0.7);
     backdrop-filter: blur(10px);
