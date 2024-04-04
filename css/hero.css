@@ -459,22 +459,48 @@ header.other_pages.sticky {
 
 @media (max-width: 420px) {
     .hero_caption {
-        padding: 0 0 120px 40px;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+        padding: 0 0 0 0;
     }
 
+    .animation-container {
+        position: absolute;
+        height: 100vh;
+        width: 100vw!important;
+        top: 0;
+        padding: 20px;
+        background: rgba(0,0,0, 0.6);
+    }
+
+    .sentence{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        max-width: 100vw;
+        word-wrap: break-word!important;
+    }
     .sentence h3{
         line-height: 1.5;
-        font-weight: 400;
-        font-size: 24px;
+        font-weight: 600;
+        font-size: 50px;
         margin: 0;
-        width: 300px;
+        /*width: 300px;*/
+        width: 100%;
+        overflow-wrap: break-word!important;
+        text-align: left;
     }
+
     br.sm_view{
-        display: block;
+        display: none;
     }
 
     .block {
         height: 80%;
+        display: none;
     }
 
     header a img{
