@@ -392,6 +392,127 @@ header.other_pages.sticky {
 }
 
 
+/***
+
+====================================================================
+	ABOUT PAGE STYLES
+====================================================================
+
+***/
+
+.section-padding{
+    padding-block: 100px;
+}
+
+.about-page-main {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.bg-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #f7f9ff;
+    height: 100%;
+    width: 30%;
+    z-index: -10;
+}
+
+
+.about-page-title{
+    margin-bottom: 30px;
+}
+
+
+.about-page-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.about-page-left {
+    height: 500px;
+    width: 32%;
+}
+
+.about-page-left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.about-page-right{
+    width: 65%;
+}
+
+.about-cause{
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+
+.about-cause-item {
+    padding: 15px;
+}
+
+.about-cta {
+    background: blue;
+    color: white;
+}
+
+.about-cta h3{
+ color: white;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.about-cta h2{
+ color: white;
+    margin-bottom: 20px;
+}
+
+.about-cta p{
+ color: white;
+    margin: auto;
+    max-width: 80%;
+    margin-bottom: 20px;
+}
+
+.partner-btn {
+    background: orange;
+    color: white;
+    padding: 15px;
+    border: orange;
+    margin-right: 15px;
+}
+
+.volunteer-btn {
+    background: none;
+    color: white;
+    padding: 15px;
+}
+
+.sponsors-container{
+}
+
+.logo-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    justify-content: space-between;
+}
+
+.logo-icon {
+    margin-block: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /***
 
