@@ -1,54 +1,156 @@
 class Navbar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <!-- Header Area -->
-            <header class="other_pages">
-                <a href="/" class="hero_logo">
-                    <img id="LogoId" class="logo_img" decoding="async" width="150" height="50" src="./images/img/Logo-01.png"
-                         alt="Wokober Logo">
-                </a>
-                <div class="mobile-menu-icon" id="mobileMenuIcon">&#9776;</div>
-                <ul class="navbar_custom" id="navbarCustom">
-                    <li>
-                        <a href="#about.html">About</a></li>
-                    <li>
-                        <a href="tf-2022.html">Toy Festivals</a></li>
-                    <li>
-                        <a href="mp-2023.html">Mentorship Programmes</a></li>
-                    <li>
-                        <a href="#">Get Involved</a></li>
-                    <li>
-                        <a href="contact.html">Contact Us</a></li>
-                </ul>
-                <a href="donate.html" class="btn donate_button">Donate</a>
-            </header>
-    
-        <!-- New Nav Section End -->
-
-
-        <!--Page Header Start-->
-<!--        <section class="page-header">-->
-<!--            <div class="page-header-bg"></div>-->
-<!--            <div class="container">-->
-<!--                <div class="page-header__inner">-->
-<!--                    <ul class="thm-breadcrumb list-unstyled ml-0" typeof="BreadcrumbList" vocab="https://schema.org/">-->
-<!--                        &lt;!&ndash; Breadcrumb NavXT 7.1.0 &ndash;&gt;-->
-<!--                        <li class="home"><span property="itemListElement" typeof="ListItem">-->
-<!--                            <a property="item" typeof="WebPage" title="Go to Wokober." href="/" class="home"><span-->
-<!--                                property="name">Wokober</span></a>-->
-<!--                                <meta property="position" content="1">-->
-<!--                            </span></li>-->
-<!--                        <li class="post post-page current-item"><span property="itemListElement" typeof="ListItem"><span-->
-<!--                                property="name" class="post post-page current-item">Donate</span>-->
-<!--                                <meta property="url" content="#here">-->
-<!--                                <meta property="position" content="2">-->
-<!--                            </span></li>-->
-<!--                    </ul>-->
-<!--                    &lt;!&ndash;                <h2> Get Involved </h2>&ndash;&gt;-->
+            <!-- Main Header-->
+            <header class="main-header">
+        
+                <!-- Header Upper -->
+                <div class="header-upper">
+                    <div class="auto-container">
+                        <div class="wrapper-box">
+                            <div class="logo-column">
+                                <div class="logo-box">
+                                    <div class="logo">
+                                        <a href="/" class="hero_logo">
+                                            <img id="LogoId" class="logo_img" decoding="async" width="200" height="auto"
+                                                 src="./images/img/Logo-01.png"
+                                                 alt="Wokober Logo">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-column">
+                                <div class="option-wrapper">
+                                    <div class="nav-outer">
+        
+                                        <!-- Main Menu -->
+                                        <nav class="main-menu navbar-expand-xl navbar-dark">
+        
+                                            <div class="collapse navbar-collapse">
+                                                <ul class="navigation">
+                                                    <li class="dropdown" id="about"><a href="#">About</a>
+                                                        <ul class="hide-menu nav-submenu">
+                                                            <li><a href="about.html">About Us</a></li>
+                                                            <li><a href="about.html#team">Our Team</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="dropdown" id="tf"><a href="#">Toy Festivals</a>
+                                                        <ul class="hide-menu nav-submenu">
+                                                            <li><a href="tf-2022.html">TF 2022</a></li>
+                                                            <li><a href="tf2023.html">TF 2023</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="current" id="mp"><a href="mp-2023.html">Mentorship Programmes</a>
+                                                        <!--                                                <ul>-->
+                                                        <!--                                                    <li><a href="causes-1.html">Style 01 - Grid View</a></li>-->
+                                                        <!--                                                </ul>-->
+                                                    </li>
+                                                    <li class="dropdown" id="gi"><a href="#">Get Involved</a>
+                                                        <!--                                                <ul>-->
+                                                        <!--                                                    <li><a href="events-1.html">Events</a></li>-->
+                                                        <!--                                                    <li><a href="event-details.html">Single Event</a></li>-->
+                                                        <!--                                                </ul>-->
+                                                    </li>
+                                                    <li class="dropdown" id="blog"><a href="#">Blog</a>
+                                                        <!--                                                <ul>-->
+                                                        <!--                                                    <li><a href="blog.html">Classic Grid View</a></li>-->
+                                                        <!--                                                    <li><a href="blog-fullwidth.html">Fullwidth Masonry</a></li>-->
+                                                        <!--                                                    <li><a href="blog-list.html">List With Sidebar</a></li>-->
+                                                        <!--                                                    <li><a href="blog-details.html">Single Post</a></li>-->
+                                                        <!--                                                </ul>-->
+                                                    </li>
+                                                    <li id="contact"><a href="contact.html">Contact</a></li>
+                                                </ul>
+                                            </div>
+                                        </nav><!-- Main Menu End-->
+                                    </div>
+                                    <div class="link-btn">
+                                        <a href="donate.html" class="theme-btn btn-style-one"><span>Donate</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Header Upper-->
+        
+                <!--End Header Upper-->
+<!--                <div class="sticky-header">-->
+<!--                    <div class="auto-container">-->
+<!--                        <div class="wrapper-box">-->
+<!--                            <div class="logo-column">-->
+<!--                                <div class="logo-box">-->
+<!--                                    <div class="logo"><a href="/" class="hero_logo">-->
+<!--                                        <img id="LogoId" class="logo_img" decoding="async" width="150" height="50"-->
+<!--                                             src="./images/img/Logo-01.png"-->
+<!--                                             alt="Wokober Logo">-->
+<!--                                    </a></div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="menu-column">-->
+<!--                                <div class="nav-outer">-->
+<!--        -->
+<!--                                    <div class="nav-inner">-->
+<!--        -->
+<!--                                        &lt;!&ndash; Main Menu &ndash;&gt;-->
+<!--                                        <nav class="main-menu navbar-expand-xl navbar-dark">-->
+<!--        -->
+<!--                                            <div class="collapse navbar-collapse">-->
+<!--                                                <ul class="navigation">-->
+<!--                                                </ul>-->
+<!--                                            </div>-->
+<!--                                        </nav>&lt;!&ndash; Main Menu End&ndash;&gt;-->
+<!--        -->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
 <!--                </div>-->
-<!--            </div>-->
-<!--        </section>-->
-        <!--Page Header End-->
+        
+<!--                 Mobile Menu  -->
+                <div class="mobile-menu style-one">
+                    <div class="menu-box">
+                        <div class="logo"><a href="/" class="hero_logo">
+                            <img id="LogoId" class="logo_img" decoding="async" width="150" height="50"
+                                 src="./images/img/Logo-01.png"
+                                 alt="Wokober Logo">
+                        </a></a>
+                        </div>
+                        
+                             <div class="link-btn">
+                                        <a href="donate.html" class="theme-btn btn-style-one"><span>Donate</span></a>
+                             </div>
+                        <!-- Main Menu -->
+                        <nav class="main-menu navbar-expand-xl navbar-dark">
+                            <div class="navbar-header">
+                                <!-- Toggle Button -->
+                                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="flaticon-menu"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navigation">
+        
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- Main Menu End-->
+                        <!--Search Box-->
+                        
+                    </div>
+        
+                </div>
+<!--                 End Mobile Menu -->
+        
+                <div class="nav-overlay">
+                    <div class="cursor"></div>
+                    <div class="cursor-follower"></div>
+                </div>
+            </header>
+            <!-- End Main Header -->
         `
     }
 }
@@ -266,8 +368,5 @@ class Footer extends HTMLElement {
 }
 
 
-
 customElements.define('app-navbar', Navbar)
 customElements.define('app-footer', Footer)
-customElements.define('app-scripts', Scripts)
-customElements.define('app-headlinks', HeadLinks)
