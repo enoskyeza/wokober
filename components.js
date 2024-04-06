@@ -64,8 +64,8 @@ class Navbar extends HTMLElement {
                                             </div>
                                         </nav><!-- Main Menu End-->
                                     </div>
-                                    <div class="donate-button">
-                                        <a href="donate.html" class="theme-btn btn-style-one"><span>Donate</span></a>
+                                    <div class="">
+                                        <a href="donate.html" class="donate-button"><span>Donate</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -118,8 +118,8 @@ class Navbar extends HTMLElement {
                         </a></a>
                         </div>
                         
-                             <div class="link-btn">
-                                        <a href="donate.html" class="theme-btn btn-style-one"><span>Donate</span></a>
+                             <div class="">
+                                        <a href="donate.html" class="donate-button"><span>Donate</span></a>
                              </div>
                         <!-- Main Menu -->
                         <nav class="main-menu navbar-expand-xl navbar-dark">
