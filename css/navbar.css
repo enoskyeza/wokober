@@ -519,7 +519,7 @@
 .main-menu .navigation>li>ul>li>ul>li>a:before,
 .main-menu .navigation>li>ul>li>a:before {
 	position: absolute;
-	content: "\f122";
+	content: "\f128";
 	font-size: 13px;
 	font-family: Flaticon;
 	color: var(--theme-color);
