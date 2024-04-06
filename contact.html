@@ -129,16 +129,24 @@
     <link rel="stylesheet" href="./css/custom.css" />
     <link rel="stylesheet" href="./css/hero.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link href="./assets/css/animate.css" rel="stylesheet">
+    <link href="./assets/css/responsive.css" rel="stylesheet">
+    <link href="./assets/css/flaticon.css" rel="stylesheet">
+    <link href="./assets/css/font-awesome.css" rel="stylesheet">
+
   </head>
 
   <body
-    class="home page-template page-template-elementor_header_footer page page-id-10 give-test-mode give-page custom-cursor elementor-default elementor-template-full-width elementor-kit-31 elementor-page elementor-page-10"
+    class="home page-template page-template-elementor_header_footer page page-id-10 give-test-mode give-page
+    custom-cursor elementor-default elementor-template-full-width elementor-kit-31 elementor-page elementor-page-10"
   >
     <div id="page" class="site page-wrapper">
       <a class="skip-link screen-reader-text">Skip to content</a>
 
       <!-- the loop -->
-      <app-navbar></app-navbar>
+      <app-navbar class=""></app-navbar>
 
 
       <section class="page-title" style="background-image:url(images/page-header-bg-1.jpg); background-position: center">
@@ -239,30 +247,69 @@
     <!-- #page -->
 
     <!-- NavBar Scripts   -->
-    <script type="text/javascript">
+    <script src="./components.js"></script>
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/TweenMax.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script>
+        // Get the list items
+        const navigationList = document.querySelector('.navigation');
+
+        // Find the list item with the class "current"
+        const currentListItem = navigationList.querySelector('.current');
+
+        // Remove the class "current" from the current list item
+        currentListItem.classList.remove('current');
+
+        // Find the list item with the text "Toy Festivals"
+        const toyFestivalsListItem = navigationList.querySelector('#contact');
+
+        // Add the class "current" to the Toy Festivals list item
+        toyFestivalsListItem.classList.add('current');
+
+
+        // Get all list items
+        const listItems = document.querySelectorAll('.dropdown');
+
+
+        // Add click event listener to each list item
+        listItems.forEach(function (listItem) {
+            listItem.addEventListener('mouseenter', function () {
+                // Get the ID of the clicked list item
+                const id = this.getAttribute('id');
+
+                // Get the <ul> element inside the clicked list item by its ID
+                const ulElement = document.querySelector(`#${id} ul`);
+
+                ulElement.classList.remove('hide-menu');
+
+            });
+
+            listItem.addEventListener('mouseleave', function () {
+                // Get the ID of the clicked list item
+                const id = this.getAttribute('id');
+
+                // Get the <ul> element inside the clicked list item by its ID
+                const ulElement = document.querySelector(`#${id} ul`);
+
+                // Set a timeout to add the "hide-menu" class after 1000 milliseconds (1 second)
+                timeoutId = setTimeout(function () {
+                    ulElement.classList.add('hide-menu');
+                }, 2000);
+
+            });
+
+        });
+
         window.addEventListener("scroll", function () {
-            var header = document.querySelector("header")
-            var logo = document.querySelector("#LogoId");
+            const header = document.querySelector("app-navbar")
 
-            header.classList.toggle("sticky", window.scrollY > 0)
-
-            if (window.scrollY > 0) {
-                logo.setAttribute("src", "./images/img/Logo-01.png");
-            } else {
-                logo.setAttribute("src", "./images/img/Logo-01.png");
-            }
+            header.classList.toggle("sticky-nav", window.scrollY > 0)
+            header.classList.toggle('drop-animation', window.scrollY > 0)
 
         })
-    </script>
-    <script type="text/javascript">
-          var mobileMenuIcon = document.querySelector('#mobileMenuIcon');
-          var navbarLinks = document.querySelector('#navbarCustom');
 
-          mobileMenuIcon.addEventListener('click', function() {
-              navbarLinks.classList.toggle('show');
-          });
     </script>
-    <script src="./components.js"></script>
 
   </body>
 </html>

@@ -21,6 +21,7 @@
     <link href="./assets/css/custom-animate.css" rel="stylesheet">
     <link href="./assets/css/jquery.fancybox.min.css" rel="stylesheet">
     <link href="./assets/css/owl.css" rel="stylesheet">
+    <link href="./css/global.css" rel="stylesheet">
     <link href="./assets/css/style.css" rel="stylesheet">
     <link href="./assets/css/responsive.css" rel="stylesheet">
     <link href="./css/gallery.css" rel="stylesheet">
@@ -75,8 +76,8 @@
                                         <ul class="navigation">
                                             <li class="dropdown"><a href="#">About</a>
                                                 <ul>
-                                                    <li><a href="#">About Us</a></li>
-                                                    <li><a href="#">Our Team</a></li>
+                                                    <li><a href="about.html">About Us</a></li>
+                                                    <li><a href="about.html#team">Our Team</a></li>
                                                 </ul>
                                             </li>
                                             <li class="dropdown"><a href="#">Toy Festivals</a>
@@ -144,7 +145,8 @@
                                         <ul class="navigation">
                                         </ul>
                                     </div>
-                                </nav><!-- Main Menu End-->
+                                </nav>
+                                <!-- Main Menu End-->
 
                             </div>
                         </div>
@@ -214,48 +216,50 @@
     </header>
     <!-- End Main Header -->
 
+    <app-navbar></app-navbar>
+
     <!-- Hidden Sidebar -->
-    <section class="hidden-sidebar close-sidebar">
-        <div class="wrapper-box">
-            <div class="hidden-sidebar-close"><span class="flaticon-cross"></span></div>
-            <div class="logo"><a href="#"><img src="images/img/Logo-01.png" alt=""></a></div>
-            <div class="content">
-                <div class="about-widget-four sidebar-widget">
-                    <h3>To improve learning environment in primary schools</h3>
-                    <div class="text">We denounce with righteous indignation and dislike men who we are to beguiled
-                        demoralized by the charms of pleasures that moment, so we blinded desires, that they
-                        indignations.
-                    </div>
-                </div>
-                <!-- News Widget -->
-                <div class="news-widget-two sidebar-widget">
-                    <div class="widget-title">News & Updates</div>
-                    <div class="post-wrapper">
-                        <div class="image"><a href="blog-details.html"><img src="images/resource/post-thumb-1.jpg"
-                                                                            alt=""></a></div>
-                        <div class="category">LIFE SAVING</div>
-                        <h4><a href="blog-details.html">Goodsoul partners with lafarge on national literacy
-                            competition</a></h4>
-                    </div>
-                    <div class="post-wrapper">
-                        <div class="image"><a href="blog-details.html"><img src="images/resource/post-thumb-2.jpg"
-                                                                            alt=""></a></div>
-                        <div class="category">Education</div>
-                        <h4><a href="blog-details.html">Goodsoul improves education infrastructure</a></h4>
-                    </div>
-                </div>
-                <!-- Newsletter Widget -->
-                <div class="newsletter-widget-two">
-                    <div class="widget-title">Newsletter Subscription</div>
-                    <form action="#">
-                        <input type="email" placeholder="Enter Email Address">
-                        <button class="theme-btn btn-style-one w-100"><i
-                                class="flaticon-next"></i><span>Subscribe Us</span></button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+<!--    <section class="hidden-sidebar close-sidebar">-->
+<!--        <div class="wrapper-box">-->
+<!--            <div class="hidden-sidebar-close"><span class="flaticon-cross"></span></div>-->
+<!--            <div class="logo"><a href="#"><img src="images/img/Logo-01.png" alt=""></a></div>-->
+<!--            <div class="content">-->
+<!--                <div class="about-widget-four sidebar-widget">-->
+<!--                    <h3>To improve learning environment in primary schools</h3>-->
+<!--                    <div class="text">We denounce with righteous indignation and dislike men who we are to beguiled-->
+<!--                        demoralized by the charms of pleasures that moment, so we blinded desires, that they-->
+<!--                        indignations.-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; News Widget &ndash;&gt;-->
+<!--                <div class="news-widget-two sidebar-widget">-->
+<!--                    <div class="widget-title">News & Updates</div>-->
+<!--                    <div class="post-wrapper">-->
+<!--                        <div class="image"><a href="blog-details.html"><img src="images/resource/post-thumb-1.jpg"-->
+<!--                                                                            alt=""></a></div>-->
+<!--                        <div class="category">LIFE SAVING</div>-->
+<!--                        <h4><a href="blog-details.html">Goodsoul partners with lafarge on national literacy-->
+<!--                            competition</a></h4>-->
+<!--                    </div>-->
+<!--                    <div class="post-wrapper">-->
+<!--                        <div class="image"><a href="blog-details.html"><img src="images/resource/post-thumb-2.jpg"-->
+<!--                                                                            alt=""></a></div>-->
+<!--                        <div class="category">Education</div>-->
+<!--                        <h4><a href="blog-details.html">Goodsoul improves education infrastructure</a></h4>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; Newsletter Widget &ndash;&gt;-->
+<!--                <div class="newsletter-widget-two">-->
+<!--                    <div class="widget-title">Newsletter Subscription</div>-->
+<!--                    <form action="#">-->
+<!--                        <input type="email" placeholder="Enter Email Address">-->
+<!--                        <button class="theme-btn btn-style-one w-100"><i-->
+<!--                                class="flaticon-next"></i><span>Subscribe Us</span></button>-->
+<!--                    </form>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
 
     <!-- Page Title -->
     <section class="page-title" style="background-image:url(images/page-header-bg-1.jpg); background-position: center">
@@ -651,9 +655,9 @@
 
 <!-- JS -->
 <script src="./assets/js/jquery.js"></script>
+<script src="./assets/js/TweenMax.min.js"></script>
 <script src="./assets/js/popper.min.js"></script>
 <script src="./assets/js/bootstrap.min.js"></script>
-<script src="./assets/js/TweenMax.min.js"></script>
 <script src="./assets/js/wow.js"></script>
 <script src="./assets/js/owl.js"></script>
 <script src="./assets/js/appear.js"></script>

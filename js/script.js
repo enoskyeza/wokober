@@ -5,8 +5,9 @@
         container: '.my-slider',
         items: 2,
         slideBy:'page',
-        speed: 500,
+        speed: 4300,
         autoplay: true,
+        autoplayTimeout: 6750,
         nav: false,
         navPosition: 'bottom',
         autoplayButtonOutput: false,
@@ -21,6 +22,12 @@
               gutter: 0
             },
             900: {
+              items: 4
+            },
+            990: {
+              items: 5
+            },
+            1180: {
               items: 6
             }
           }
@@ -32,33 +39,24 @@
         items: 1,
         slideBy:'page',
         speed: 500,
+          autoplayTimeout:8000,
         autoplay: true,
-        nav: true,
+        nav: false,
         navPosition: 'bottom',
         autoplayButtonOutput: false,
         controlsContainer: '.project-slider-dots',
         prevButton: '.previous',
         nextButton: '.next',
-        responsive: {
-            640: {
-              items: 1
-            },
-            700: {
-              gutter: 0
-            },
-            900: {
-              items: 1
-            }
-          }
       });
 
        // logo Slider
-       var projectSlider = tns({
+       var logoSlider = tns({
         container: '.logo-slider',
         items: 3,
         slideBy:'page',
-        speed: 500,
+        speed: 2500,
         autoplay: true,
+           autoplayTimeout: 7500,
         nav: false,
         navPosition: 'bottom',
         autoplayButtonOutput: false,
@@ -84,7 +82,7 @@
         container: '.testimonial-slider',
         items: 1,
         slideBy:'page',
-        speed: 500,
+        speed: 2365,
         autoplay: true,
         nav: false,
         navPosition: 'bottom',
