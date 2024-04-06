@@ -16,12 +16,13 @@
 
 :root {
 	--theme-color: #0036fc;
+	--theme-color-light: #00a4fc;
 	--theme-color-two: #ffbf00;
-	--theme-color-three: #d40032;
+	--theme-color-three: #0036fc;
 	--theme-color-four: #02c06d;
 	--theme-color-five: #18bec2;
-	--dark-color: #302c51;
-	--dark-color-two: #302c51;
+	--dark-color: #031065;
+	--dark-color-two: #031065;
 	--rubik: 'Montserrat', sans-serif;
 	--prata: 'Montserrat', serif;
 	--anim-menu-btn-size: 30px;
@@ -233,6 +234,25 @@ li {
 	border-radius: 29px;
 	padding: 15px 48px;
 	border: 2px solid var(--theme-color);
+	text-transform: uppercase;
+	overflow: hidden;
+}
+
+.btn-style-one.light{
+	color: white;
+	border: 2px solid white;
+}
+
+.donate-button {
+	position: relative;
+	line-height: 24px;
+	background: orange;
+	color: black;
+	font-size: 18px;
+	font-weight: 600;
+	border-radius: 29px;
+	padding: 15px 28px;
+	border: 2px solid orange;
 	text-transform: uppercase;
 	overflow: hidden;
 }
@@ -1543,6 +1563,10 @@ li {
 
 .theme-color-five {
 	color: var(--theme-color-five);
+}
+
+.theme-bg-light{
+	background-color: var(--theme-color-light) ;
 }
 
 .theme-bg {

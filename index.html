@@ -72,8 +72,27 @@
     </style>
 
     <!--    Custom styles-->
-    <link rel="stylesheet" href="./css/custom.css"/>
+    <link rel="stylesheet" href="./css/custom.css">
     <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+<!--    <link href="./assets/css/animate.css" rel="stylesheet">-->
+<!--    <link href="./assets/css/responsive.css" rel="stylesheet">-->
+<!--    <link href="./assets/css/flaticon.css" rel="stylesheet">-->
+<!--    <link href="./assets/css/font-awesome.css" rel="stylesheet">-->
+
+    <!-- Stylesheets -->
+<!--<link href="assets/css/bootstrap.css" rel="stylesheet">-->
+<link href="assets/css/jquery-ui.css" rel="stylesheet">
+<link href="assets/css/swiper.min.css" rel="stylesheet">
+<link href="assets/css/flaticon.css" rel="stylesheet">
+<link href="assets/css/font-awesome.css" rel="stylesheet">
+<link href="assets/css/animate.css" rel="stylesheet">
+<link href="assets/css/custom-animate.css" rel="stylesheet">
+<link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
+<link href="assets/css/owl.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+<link href="assets/css/responsive.css" rel="stylesheet">
 
 </head>
 
@@ -83,33 +102,160 @@
         content</a>
     <!-- the loop -->
 
-    <!--    Hero section    -->
-    <!--    Nav bar     -->
-    <header id="home-nav">
-            <a href="/" class="hero_logo">
-                <img id="LogoId" class="logo_img" decoding="async" width="250" height="100"
-                     src="./images/img/Logo-02.png"
-                     alt="Wokober Logo">
-            </a>
-            <ul class="navbar_custom" id="navbarCustom">
-                <li>
-                    <a href="#about.html">About</a></li>
-                <li>
-                    <a href="tf-2022.html">Toy Festivals</a></li>
-                <li>
-                    <a href="mp-2023.html">Mentorship Programmes</a></li>
-                <li>
-                    <a href="">Get Involved</a></li>
-                <li>
-                    <a href="contact.html">Blog</a></li>
-                <li>
-                    <a href="contact.html">Contact</a></li>
-            </ul>
-            <a href="donate.html" class="btn donate_button">Donate</a>
-            <div class="mobile-menu-icon" id="mobileMenuIcon">&#9776;</div>
-    </header>
+    <!-- Main Header-->
+    <header class="main-header">
 
-    <!-- Carousel Section -->
+        <!-- Header Upper -->
+        <div class="header-upper" style="background: none">
+            <div class="auto-container" >
+                <div class="wrapper-box" >
+                    <div class="logo-column">
+                        <div class="logo-box">
+                            <div class="logo">
+                                <a href="/" class="hero_logo">
+                                    <img id="LogoId" class="logo_img" decoding="async" width="200" height="auto"
+                                         src="./images/img/Logo-01.png"
+                                         alt="Wokober Logo">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-column">
+                        <div class="option-wrapper">
+                            <div class="nav-outer">
+
+                                <!-- Main Menu -->
+                                <nav class="main-menu navbar-expand-xl navbar-dark">
+
+                                    <div class="collapse navbar-collapse">
+                                        <ul class="navigation">
+                                            <li class="dropdown"><a href="#" >About</a>
+                                                <ul>
+                                                    <li><a href="about.html">About Us</a></li>
+                                                    <li><a href="#">Gallery</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown"><a href="#">Toy Festivals</a>
+                                                <ul>
+                                                    <li><a href="tf-2022.html">TF 2022</a></li>
+                                                    <li><a href="#">TF 2023</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class=""><a href="mp-2023.html">Mentorship Programmes</a>
+                                                <!--                                                <ul>-->
+                                                <!--                                                    <li><a href="causes-1.html">Style 01 - Grid View</a></li>-->
+                                                <!--                                                </ul>-->
+                                            </li>
+                                            <li class="dropdown"><a href="#">Get Involved</a>
+                                                <!--                                                <ul>-->
+                                                <!--                                                    <li><a href="events-1.html">Events</a></li>-->
+                                                <!--                                                    <li><a href="event-details.html">Single Event</a></li>-->
+                                                <!--                                                </ul>-->
+                                            </li>
+                                            <li class="dropdown"><a href="#">Blog</a>
+                                                <!--                                                <ul>-->
+                                                <!--                                                    <li><a href="blog.html">Classic Grid View</a></li>-->
+                                                <!--                                                    <li><a href="blog-fullwidth.html">Fullwidth Masonry</a></li>-->
+                                                <!--                                                    <li><a href="blog-list.html">List With Sidebar</a></li>-->
+                                                <!--                                                    <li><a href="blog-details.html">Single Post</a></li>-->
+                                                <!--                                                </ul>-->
+                                            </li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </nav><!-- Main Menu End-->
+                            </div>
+                            <div class="">
+                                <a href="donate.html" class="theme-btn donate-button"><span>Donate</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Header Upper-->
+
+        <!--End Header Upper-->
+        <div class="sticky-header">
+            <div class="auto-container" >
+                <div class="wrapper-box">
+                    <div class="logo-column">
+                        <div class="logo-box">
+                            <div class="logo"><a href="/" class="hero_logo">
+                                <img id="LogoId" class="logo_img" decoding="async" width="150" height="50"
+                                     src="./images/img/Logo-01.png"
+                                     alt="Wokober Logo">
+                            </a></div>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <div class="nav-outer">
+
+                            <div class="nav-inner">
+
+                                <!-- Main Menu -->
+                                <nav class="main-menu navbar-expand-xl navbar-dark">
+
+                                    <div class="collapse navbar-collapse">
+                                        <ul class="navigation">
+                                        </ul>
+                                    </div>
+                                </nav><!-- Main Menu End-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu style-one">
+            <div class="menu-box row" style="background: none">
+                <div class="col logo">
+                    <a href="/" class="hero_logo">
+                        <img id="LogoId" class="logo_img" decoding="async" width="150" height="50"
+                         src="./images/img/Logo-01.png"
+                         alt="Wokober Logo">
+                    </a>
+                </div>
+
+                <div class="col d-flex align-items-center justify-content-end">
+                    <div class="" style="margin-right: 100px">
+                        <a href="donate.html" class="theme-btn donate-button"><span>Donate</span></a>
+                    </div>
+                    <!-- Main Menu -->
+                    <nav class="main-menu navbar-expand-xl navbar-dark">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="flaticon-menu"></span>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navigation">
+
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- Main Menu End-->
+                </div>
+            </div>
+
+        </div>
+        <!-- End Mobile Menu -->
+
+        <div class="nav-overlay">
+            <div class="cursor"></div>
+            <div class="cursor-follower"></div>
+        </div>
+    </header>
+    <!-- End Main Header -->
+
+    <!-- hero Section -->
     <section>
         <div class="hero_vid">
             <div class="vid-container d-none d-md-block">
@@ -118,20 +264,20 @@
                     Your browser does not support HTML5 video.
                 </video>
             </div>
-            <div class="arrow-scroll d-none d-md-block">
-                    <div class="arrow"></div>
-                    <div class="arrow"></div>
-                    <div class="arrow"></div>
-            </div>
-            <div class="hero_caption d-sm-none" style="background-image: url('images/img/about/about.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+<!--            <div class="arrow-scroll d-none d-md-block">-->
+<!--                    <div class="arrow"></div>-->
+<!--                    <div class="arrow"></div>-->
+<!--                    <div class="arrow"></div>-->
+<!--            </div>-->
+            <div class="hero_caption">
                 <div class="animation-container">
                     <div class="block"></div>
                     <div class="sentence-container">
                         <div class="sentence">
-                            <h3>Pioneering <br>a new <br>approach
-                                to <br>creative <br>learning</h3>
-<!--                            <h3>Pioneering a new <br class="sm_view">approach <br class="md_view">-->
-<!--                                to creative <br class="sm_view"> learning</h3>-->
+<!--                            <h3>Pioneering <br>a new <br>approach-->
+<!--                                to <br>creative <br>learning</h3>-->
+                            <h3>Pioneering a new <br class="sm_view">approach <br class="md_view">
+                                to creative <br class="sm_view"> learning</h3>
                         </div>
                         <!--                        <div class="sentence">Second Sentence</div>-->
                         <!--                        <div class="sentence">Third Sentence</div>-->
@@ -146,8 +292,8 @@
     <!--    Hero section End    -->
 
 
-    <!-- Get Involved Section -->
-    <section>
+    <!-- MINI CTA -->
+    <section class="mini-cta">
         <div class="row ">
             <div class="col-sm-4 get_involved_section_card cbg_dark">
                 <h5>Become A Partner</h5>
@@ -168,7 +314,7 @@
         </div>
     </section>
 
-    <!-- New About Section -->
+    <!-- ABOUT SECTION -->
     <section class="new_section_padding new_about_section" id="neo_about">
         <div class="container">
             <div class="row g-4 row-eq-height">
@@ -222,52 +368,241 @@
     </section>
 
     <section>
-        <!-- Video About Wokober -->
-        <div class="custom_about_video">
+        <div class="container">
+            <div class="custom_about_video">
             <iframe width="100%" height="600" src="https://www.youtube.com/embed/8Nsn9T8XHh8?si=WBrlCb5KbbPd3kEP"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
         </div>
+        </div>
     </section>
 
-    <!-- Events & Projects Section -->
-    <section class="new_section_padding custom_project_section">
+    <!--  GET INVOLVED  -->
+    <section class="new_section_padding"></section>
+    <section class="team-section">
+        <div class="container">
+            <div class="row m-0 d-md-flex justify-content-between align-items-end">
+                <div class="col sec-title light">
+                    <h1>Team behind Wokober</h1>
+                    <div class="text">Our work would not be possible without the work of our dedicated volunteers.</div>
+                </div>
+                <!--Link Btn-->
+                <div class="col link-btn mb-50 d-flex justify-content-end">
+                    <a href="#" class="theme-btn btn-style-one light"><span>Meet All Members</span></a>
+                </div>
+            </div>
+            <div class="wrapper-box">
+                <div class="row">
+                    <!-- Team Blokc One -->
+                    <div class="col-lg-4 team-block-one">
+                        <div class="inner-box wow fadeInDown" data-wow-delay="200ms">
+                            <div class="image"><a href="#"><img src="images/img/team-01.jpg" alt=""></a></div>
+                            <div class="lower-content">
+                                <h4> <a href="#">Ben Wokorach</a></h4>
+                                <div class="designation">Founder</div>
+                            </div>
+                            <ul class="social-icon-two">
+                                <li><a href="#"><span class="fab fa-facebook"></span></a></li>
+                                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                                <li><a href="#"><span class="fab fa-skype"></span></a></li>
+                                <li><a href="#"><span class="fab fa-linkedin"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Team Blokc One -->
+                    <div class="col-lg-4 team-block-one">
+                        <div class="inner-box wow fadeInUp" data-wow-delay="400ms">
+                            <div class="image"><a href="#"><img src="images/img/team-02.jpg" alt=""></a></div>
+                            <div class="lower-content">
+                                <h4> <a href="#">Kagga Paul</a></h4>
+                                <div class="designation">Team Lead - Wokober Toy Festival</div>
+                            </div>
+                            <ul class="social-icon-two">
+                                <li><a href="#"><span class="fab fa-facebook"></span></a></li>
+                                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                                <li><a href="#"><span class="fab fa-skype"></span></a></li>
+                                <li><a href="#"><span class="fab fa-linkedin"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Team Blokc One -->
+                    <div class="col-lg-4 team-block-one">
+                        <div class="inner-box wow fadeInDown" data-wow-delay="200ms">
+                            <div class="image"><a href="#"><img src="images/img/team-04.jpg" alt=""></a></div>
+                            <div class="lower-content">
+                                <h4> <a href="#">Opiyo Morris</a></h4>
+                                <div class="designation">Facilitator Mentorship Program</div>
+                            </div>
+                            <ul class="social-icon-two icon-color">
+                                <li><a href="#"><span class="fab fa-facebook"></span></a></li>
+                                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                                <li><a href="#"><span class="fab fa-skype"></span></a></li>
+                                <li><a href="#"><span class="fab fa-linkedin"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer -->
+    <section class="about-cta text-center">
+        <div class="container">
+        <h3 >
+                        <span>Get Involved.</span>
+        </h3>
+        <h2>Partner or Volunteer with us.</h2>
+        <p>This journey of discovery and mentorship of underprivileged children with great potentials within
+            underserved communities of war stricken Northern Uganda, needs as many hands as possible in efforts to
+            multiply the impact of our programs on the lives of the children and communities we serve.
+        </p>
+            <div class="about-btn">
+        <button class="partner-btn">Become a Partner</button>
+        <button class="volunteer-btn">Become a Volunteer</button>
+            </div>
+        </div>
+    </section>
+
+    <!--   BRANDING  -->
+    <section class="branding-section client-section style-two">
+        <div class="auto-container">
+            <div class="sec-title text-center">
+                <h5>Our Partners</h5>
+                <h1>Those who contributed to this <br>excellent service</h1>
+            </div>
+            <div class="">
+            <div>
+                <h3 class="partner-section"></h3>
+            </div>
+            <div class="logo-slider">
+                <div class="partner-logo">
+                    <img width="135" height="96" src="./images/img/brands/brand-01.png"
+                         class="attachment-full size-full" alt="" decoding="async"
+                         srcset="./images/img/brands/brand-01.png 135w, ./images/img/brands/brand-01.png 112w"
+                         sizes="(max-width: 135px) 100vw, 135px"/>
+                </div>
+                <div class="partner-logo">
+                    <img width="" height="96" src="./images/img/brands/brand-02.png"
+                         class="attachment-full size-full" alt="" decoding="async"
+                         srcset="./images/img/brands/brand-02.png 135w, ./images/img/brands/brand-02.png 112w"
+                         sizes="(max-width: 135px) 100vw, 135px"/>
+                </div>
+                <div class="partner-logo">
+                    <img width="" height="96" src="./images/img/brands/brand-03.png"
+                         class="attachment-full size-full" alt="" decoding="async"
+                         srcset="./images/img/brands/brand-03.png 135w, ./images/img/brands/brand-03.png 112w"
+                         sizes="(max-width: 135px) 100vw, 135px"/>
+                </div>
+                <div class="partner-logo">
+                    <img width="" height="96" src="./images/img/brands/brand-04.png"
+                         class="attachment-full size-full" alt="" decoding="async"
+                         srcset="./images/img/brands/brand-04.png 135w, ./images/img/brands/brand-04.png 112w"
+                         sizes="(max-width: 135px) 100vw, 135px"/>
+                </div>
+                <div class="partner-logo">
+                    <img width="" height="96" src="./images/img/brands/brand-05.png"
+                         class="attachment-full size-full" alt="" decoding="async"
+                         srcset="./images/img/brands/brand-05.png 135w, ./images/img/brands/brand-05.png 112w"
+                         sizes="(max-width: 135px) 100vw, 135px"/>
+                </div>
+                <div class="partner-logo">
+                    <img width="" height="96" src="./images/img/brands/brand-06.png"
+                         class="attachment-full size-full" alt="" decoding="async"
+                         srcset="./images/img/brands/brand-06.png 135w, ./images/img/brands/brand-06.png 112w"
+                         sizes="(max-width: 135px) 100vw, 135px"/>
+                </div>
+                <div class="partner-logo">
+                    <img width="" height="96" src="./images/img/brands/brand-07.png"
+                         class="attachment-full size-full" alt="" decoding="async"
+                         srcset="./images/img/brands/brand-07.png 135w, ./images/img/brands/brand-07.png 112w"
+                         sizes="(max-width: 135px) 100vw, 135px"/>
+                </div>
+                <div class="partner-logo">
+                    <img width="" height="96" src="./images/img/brands/brand-11.png"
+                         class="attachment-full size-full" alt="" decoding="async"
+                         srcset="./images/img/brands/brand-11.png 135w, ./images/img/brands/brand-11.png 112w"
+                         sizes="(max-width: 135px) 100vw, 135px"/>
+                </div>
+                <div class="partner-logo">
+                    <img width="" height="96" src="./images/img/brands/brand-12.png"
+                         class="attachment-full size-full" alt="" decoding="async"
+                         srcset="./images/img/brands/brand-12.png 135w, ./images/img/brands/brand-12.png 112w"
+                         sizes="(max-width: 135px) 100vw, 135px"/>
+                </div>
+                <div class="partner-logo">
+                    <img width="" height="96" src="./images/img/brands/brand-08.png"
+                         class="attachment-full size-full" alt="" decoding="async"
+                         srcset="./images/img/brands/brand-08.png 135w, ./images/img/brands/brand-08.png 112w"
+                         sizes="(max-width: 135px) 100vw, 135px"/>
+                </div>
+                <div class="partner-logo">
+                    <img width="" height="96" src="./images/img/brands/brand-09.png"
+                         class="attachment-full size-full" alt="" decoding="async"
+                         srcset="./images/img/brands/brand-09.png 135w, ./images/img/brands/brand-09.png 112w"
+                         sizes="(max-width: 135px) 100vw, 135px"/>
+                </div>
+                <div class="partner-logo">
+                    <img width="" height="96" src="./images/img/brands/brand-10.png"
+                         class="attachment-full size-full" alt="" decoding="async"
+                         srcset="./images/img/brands/brand-10.png 135w, ./images/img/brands/brand-10.png 112w"
+                         sizes="(max-width: 135px) 100vw, 135px"/>
+                </div>
+
+            </div>
+        </div>
+<!--            <div class="sponsors-carousel owl-carousel owl-theme owl-nav-none owl-dots-none">-->
+<!--                <div class="image" data-toggle="tooltip" data-placement="top" title="media partner"><a href="#"><img src="images/clients/client-1.png" alt=""></a></div>-->
+<!--                <div class="image" data-toggle="tooltip" data-placement="top" title="media partner"><a href="#"><img src="images/clients/client-2.png" alt=""></a></div>-->
+<!--                <div class="image" data-toggle="tooltip" data-placement="top" title="media partner"><a href="#"><img src="images/clients/client-3.png" alt=""></a></div>-->
+<!--                <div class="image" data-toggle="tooltip" data-placement="top" title="media partner"><a href="#"><img src="images/clients/client-4.png" alt=""></a></div>-->
+<!--                <div class="image" data-toggle="tooltip" data-placement="top" title="media partner"><a href="#"><img src="images/clients/client-5.png" alt=""></a></div>-->
+<!--            </div>-->
+<!--            <div class="text-two">To learn about becoming a partner, contact us at: <a href="mailto:support@goodsoul.com">support@goodsoul.com</a> or <a href="tel:+8889991234">1-888-999-1234</a></div>-->
+        </div>
+    </section>
+
+
+    <!-- EVENTS & PROJECTS -->
+    <section class="section-padding custom_project_section">
         <div class="container">
             <div class="row g-3">
                 <div class="col-12 col-lg-6 col-xl-5 ">
-                    <h3 class="custom_section_title line_bottom">
-                        Projects and Events
-                    </h3>
-                    <div class="custom_project_details ">
-                        <div class="project_date">
-                            <div class="border-bottom border-white  date-top">9</div>
-                            <div class="text-white text-uppercase" style="
-                                    font-weight: 400;">Mar
-                            </div>
-                        </div>
-                        <div class="">
-                            <div class="">
-                                <h5 class="">
-                                    <a>Sendai Exhibition</a>
-                                </h5>
-                                <span class="">
-                                        <i class="fa fa-clock-o mr-5 text-theme-colored"></i>
-                                        at 9.00 am - 4.30 pm
-                                    </span>
-                                <span class="">
-                                        <i class="fa fa-map-marker mr-5"></i>
-                                        Japan
-                                    </span>
-                                <p class="">Leveraging Toy making as a creative learning tool towards a
-                                    sustainable future.</p>
-                            </div>
-                        </div>
+
+                    <div class="sec-title text-start">
+                        <h5>Our Projects</h5>
+                        <h1>What we have <br>been up to.</h1>
                     </div>
+<!--                    <div class="custom_project_details ">-->
+<!--                        <div class="project_date">-->
+<!--                            <div class="border-bottom border-white  date-top">9</div>-->
+<!--                            <div class="text-white text-uppercase" style="-->
+<!--                                    font-weight: 400;">Mar-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="">-->
+<!--                            <div class="">-->
+<!--                                <h5 class="">-->
+<!--                                    <a>Sendai Exhibition</a>-->
+<!--                                </h5>-->
+<!--                                <span class="">-->
+<!--                                        <i class="fa fa-clock-o mr-5 text-theme-colored"></i>-->
+<!--                                        at 9.00 am - 4.30 pm-->
+<!--                                    </span>-->
+<!--                                <span class="">-->
+<!--                                        <i class="fa fa-map-marker mr-5"></i>-->
+<!--                                        Japan-->
+<!--                                    </span>-->
+<!--                                <p class="">Leveraging Toy making as a creative learning tool towards a-->
+<!--                                    sustainable future.</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
                     <div class="custom_project_details ">
                         <div class="project_date">
-                            <div class="border-bottom border-white date-top">15</div>
-                            <div class="text-white text-uppercase" style="
+                            <div class="date-top">15</div>
+                            <div class="border-top border-white text-white text-uppercase date-bottom" style="
                                     font-weight: 400;">DEC
                             </div>
                         </div>
@@ -292,8 +627,8 @@
                     </div>
                     <div class="custom_project_details ">
                         <div class="project_date">
-                            <div class="border-bottom border-white date-top">28</div>
-                            <div class="text-white text-uppercase" style="
+                            <div class="date-top">28</div>
+                            <div class="border-top border-white text-white text-uppercase" style="
                                     font-weight: 400;">Feb
                             </div>
                         </div>
@@ -319,9 +654,9 @@
                     </div>
                     <div class="custom_project_details ">
                         <div class="project_date">
-                            <div class="border-bottom border-white date-top">28</div>
-                            <div class="text-white text-uppercase" style="
-                                    font-weight: 400;">Feb
+                            <div class="date-top">16</div>
+                            <div class="border-top border-white text-white text-uppercase" style="
+                                    font-weight: 400;">Dec
                             </div>
                         </div>
                         <div class="">
@@ -408,208 +743,7 @@
     </section>
 
 
-    <!--Become Volunteer One Start-->
-    <section class="new_section_padding"></section>
-    <section class="become-volunteer-one custom_volunteer_section">
-        <div class="become-volunteer-one__bg-box">
-            <div class="become-volunteer-one__bg jarallax" data-jarallax data-speed="0.2" data-imgposition="50% 0%"
-                 style="background-image: url(images/img/volunteer-bg2-01.jpg);">
-            </div>
-        </div>
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-12 col-lg-6 order-lg-2 ">
-                    <h3 class="custom_section_title line_bottom text-uppercase">
-                        Partner or Volunteer with us today
-                    </h3>
-                    <p class="lead">
-                        Education is the key that unlocks the golden door to freedom.”- George Washington Carver.
-                        This journey of discovery and mentorship of underprivileged children with great potentials
-                        within underserved communities of war stricken Northern Uganda, needs as many hands as
-                        possible in efforts to multiply the impact of our programs on the lives of the children and
-                        communities we serve.
-                    </p>
-
-                    <h4>How?</h4>
-                    <ul>
-                        <li>Cooperate Social Responsibility towards Education by your Company.</li>
-                        <li>Grants from organizations passionate about Education Transformation, access and equity.
-                        </li>
-                        <li>Personal or group in-kind donations to the program activities.</li>
-                        <li>Becoming a program good will ambassador in your area, company, organization, city or
-                            country.
-                        </li>
-                        <li>Come to Uganda and volunteer through exchange of your valuable skills and experiences
-                            with the children and communities we serve for a specific period of time. For
-                            international exchange volunteers, you can always reach out to us directly or through
-                            AIESEC in Uganda.
-                        </li>
-                    </ul>
-
-                </div>
-                <div class="col-12 col-lg-6 order-lg-1 d-flex ">
-                    <div class="form_card">
-                        <div class="form_card_wrapper">
-                            <div class=" text-center">
-                                <h3 class="custom_section_title lin">Fill Form to Apply</h3>
-                            </div>
-                            <form id="contact-form text-start" role="form">
-                                <div class="controls">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group custom_volunteer_form-group">
-                                                <label for="form_name">Firstname *</label>
-                                                <input id="form_name" type="text" name="name" class="form-control"
-                                                       placeholder="Enter firstname" required="required"
-                                                       data-error="Firstname is required.">
-
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group custom_volunteer_form-group">
-                                                <label for="form_lastname">Lastname *</label>
-                                                <input id="form_lastname" type="text" name="surname"
-                                                       class="form-control" placeholder="Enter lastname"
-                                                       required="required" data-error="Lastname is required.">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group custom_volunteer_form-group">
-                                                <label for="form_email">Email *</label>
-                                                <input id="form_email" type="email" name="email"
-                                                       class="form-control" placeholder="Enter email"
-                                                       required="required" data-error="Valid email is required.">
-
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group custom_volunteer_form-group">
-                                                <label for="form_need">Select position</label>
-                                                <select id="form_need" name="need" class="form-control"
-                                                        required="required" data-error="Select position.">
-                                                    <option value="" selected disabled>--Select Position--</option>
-                                                    <option>Apply to be Partner</option>
-                                                    <option>Apply to be Volunteer</option>
-                                                    <option>Apply to be Mentor</option>
-                                                    <option>Other</option>
-                                                </select>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group custom_volunteer_form-group">
-                                                <label for="form_message">Message</label>
-                                                <textarea id="form_message" name="message" class="form-control"
-                                                          placeholder="Write your message here." rows="4"
-                                                          required="required"
-                                                          data-error="Please, leave us a message."></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <input type="submit" class="btn btn-success btn-send  pt-2 btn-block"
-                                                   value="Submit">
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Become Volunteer One End-->
-
-    <!--Brand One Start-->
-    <section class="partners-logo-section">
-        <div class="">
-            <div>
-                <h3 class="partner-section"></h3>
-            </div>
-            <div class="logo-slider">
-                <div class="partner-logo">
-                    <img width="135" height="96" src="./images/img/brands/brand-01.png"
-                         class="attachment-full size-full" alt="" decoding="async"
-                         srcset="./images/img/brands/brand-01.png 135w, ./images/img/brands/brand-01.png 112w"
-                         sizes="(max-width: 135px) 100vw, 135px"/>
-                </div>
-                <div class="partner-logo">
-                    <img width="" height="96" src="./images/img/brands/brand-02.png"
-                         class="attachment-full size-full" alt="" decoding="async"
-                         srcset="./images/img/brands/brand-02.png 135w, ./images/img/brands/brand-02.png 112w"
-                         sizes="(max-width: 135px) 100vw, 135px"/>
-                </div>
-                <div class="partner-logo">
-                    <img width="" height="96" src="./images/img/brands/brand-03.png"
-                         class="attachment-full size-full" alt="" decoding="async"
-                         srcset="./images/img/brands/brand-03.png 135w, ./images/img/brands/brand-03.png 112w"
-                         sizes="(max-width: 135px) 100vw, 135px"/>
-                </div>
-                <div class="partner-logo">
-                    <img width="" height="96" src="./images/img/brands/brand-04.png"
-                         class="attachment-full size-full" alt="" decoding="async"
-                         srcset="./images/img/brands/brand-04.png 135w, ./images/img/brands/brand-04.png 112w"
-                         sizes="(max-width: 135px) 100vw, 135px"/>
-                </div>
-                <div class="partner-logo">
-                    <img width="" height="96" src="./images/img/brands/brand-05.png"
-                         class="attachment-full size-full" alt="" decoding="async"
-                         srcset="./images/img/brands/brand-05.png 135w, ./images/img/brands/brand-05.png 112w"
-                         sizes="(max-width: 135px) 100vw, 135px"/>
-                </div>
-                <div class="partner-logo">
-                    <img width="" height="96" src="./images/img/brands/brand-06.png"
-                         class="attachment-full size-full" alt="" decoding="async"
-                         srcset="./images/img/brands/brand-06.png 135w, ./images/img/brands/brand-06.png 112w"
-                         sizes="(max-width: 135px) 100vw, 135px"/>
-                </div>
-                <div class="partner-logo">
-                    <img width="" height="96" src="./images/img/brands/brand-07.png"
-                         class="attachment-full size-full" alt="" decoding="async"
-                         srcset="./images/img/brands/brand-07.png 135w, ./images/img/brands/brand-07.png 112w"
-                         sizes="(max-width: 135px) 100vw, 135px"/>
-                </div>
-                <div class="partner-logo">
-                    <img width="" height="96" src="./images/img/brands/brand-11.png"
-                         class="attachment-full size-full" alt="" decoding="async"
-                         srcset="./images/img/brands/brand-11.png 135w, ./images/img/brands/brand-11.png 112w"
-                         sizes="(max-width: 135px) 100vw, 135px"/>
-                </div>
-                <div class="partner-logo">
-                    <img width="" height="96" src="./images/img/brands/brand-12.png"
-                         class="attachment-full size-full" alt="" decoding="async"
-                         srcset="./images/img/brands/brand-12.png 135w, ./images/img/brands/brand-12.png 112w"
-                         sizes="(max-width: 135px) 100vw, 135px"/>
-                </div>
-                <div class="partner-logo">
-                    <img width="" height="96" src="./images/img/brands/brand-08.png"
-                         class="attachment-full size-full" alt="" decoding="async"
-                         srcset="./images/img/brands/brand-08.png 135w, ./images/img/brands/brand-08.png 112w"
-                         sizes="(max-width: 135px) 100vw, 135px"/>
-                </div>
-                <div class="partner-logo">
-                    <img width="" height="96" src="./images/img/brands/brand-09.png"
-                         class="attachment-full size-full" alt="" decoding="async"
-                         srcset="./images/img/brands/brand-09.png 135w, ./images/img/brands/brand-09.png 112w"
-                         sizes="(max-width: 135px) 100vw, 135px"/>
-                </div>
-                <div class="partner-logo">
-                    <img width="" height="96" src="./images/img/brands/brand-10.png"
-                         class="attachment-full size-full" alt="" decoding="async"
-                         srcset="./images/img/brands/brand-10.png 135w, ./images/img/brands/brand-10.png 112w"
-                         sizes="(max-width: 135px) 100vw, 135px"/>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!--Brand One End-->
-
-    <!--Testimonial One Start-->
+    <!--  TESTIMONIALS  -->
     <section class="testimonial-one">
         <div class="testimonial-one-bg jarallax" data-jarallax data-speed="0.2" data-imgposition="50% 0%"
              style="background-image: url('./images/img/gallery/g-09-01.jpg');">
@@ -739,12 +873,20 @@
             </div>
         </div>
     </section>
-    <!--Testimonial One End-->
 
-    <!-- Gallery Section -->
-
-    <!--Gallery One Start-->
-    <section class="tf-gallery tf-gallery-home">
+    <!--  GALLERY  -->
+    <section class="gallery-section" style="background-color: #b6e5ff">
+        <div class="fluid-container" >
+            <div class="wrapper-box" >
+                <div class="content-column">
+                    <div class="sec-title">
+                        <h5>Our Gallery</h5>
+                        <h1>Gallery of our works</h1>
+                    </div>
+                    <div class="link-btn"><a href="#"><span class="flaticon-next"></span>More from Gallery </a></div>
+                </div>
+                <div class="portfolio-column">
+                     <div class="tf-gallery tf-gallery-home">
         <div class="my-slider img-slider-wrapper">
             <div class="my-img-slider slider-img-item">
                 <img src="./images/img/gallery/home-gallery/g-01.jpg" alt="toy festival gallery">
@@ -781,15 +923,20 @@
             <button class="previous"></button>
             <button class="next"></button>
         </div>
+    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <!--Gallery One End-->
 
-    <!-- News letter section -->
+
+    <!--  BLOG  -->
     <section class="new_section_padding custom_news_section">
         <div class="container">
-            <h3 class="custom_section_title text-uppercase text-center">
-                Latest News <span>& Updates</span>
-            </h3>
+            <div class="sec-title text-center">
+                <h5>News & Updates</h5>
+                <h1>Recent blog post</h1>
+            </div>
             <div class="row row-eq-height">
                 <!--News One Single Start-->
                 <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
@@ -976,8 +1123,6 @@
             </div>
         </div>
     </section>
-    <!--News One End-->
-
 
     <app-footer></app-footer>
 </div>
@@ -1115,117 +1260,33 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 <script src="./js/script.js"></script>
 <script src="./components.js"></script>
-<script type="text/javascript">
-    var mobileMenuIcon = document.querySelector('#mobileMenuIcon');
-    var navbarLinks = document.querySelector('#navbarCustom');
 
-    mobileMenuIcon.addEventListener('click', function () {
-        navbarLinks.classList.toggle('show');
-    });
-</script>
-<script type="text/javascript">
+<!--    NAV STYLES  -->
+<script>
+
     window.addEventListener("scroll", function () {
-        var header = document.querySelector("header")
-        var logo = document.querySelector("#LogoId");
+            const header = document.querySelector('header')
 
-        header.classList.toggle("sticky", window.scrollY > 0)
+            header.classList.toggle('sticky-header-nav', window.scrollY > 0)
 
-        if (window.scrollY > 0) {
-            logo.setAttribute("src", "./images/img/Logo-01.png");
-            header.removeAttribute('id')
-        } else {
-            logo.setAttribute("src", "./images/img/Logo-02.png");
-            header.setAttribute('id', "home-nav")
-        }
-
-    })
+        })
 </script>
+
+
+<!-- JS -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/TweenMax.min.js"></script>
+<script src="assets/js/wow.js"></script>
+<script src="assets/js/owl.js"></script>
+<script src="assets/js/appear.js"></script>
+<script src="assets/js/swiper.min.js"></script>
+<script src="assets/js/jquery.fancybox.js"></script>
+<script src="assets/js/menu-nav-btn.js"></script>
+<script src="assets/js/jquery-ui.js"></script>
+<!-- Custom JS -->
+<script src="js/script.js"></script>
 </body>
 
 </html>
-
-
-<!--<nav class="navbar navbar-expand-md navbar-light">-->
-<!--                        <div class="main-menu__logo">-->
-<!--                            <a href="/"><img decoding="async" width="150" height="50" src="./images/img/Logo-01.png"-->
-<!--                                             alt="Wokober"></a>-->
-<!--                        </div>-->
-<!--                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">-->
-<!--                            <ul class="navbar-nav nav_font_size">-->
-<!--                                &lt;!&ndash; <li class="nav-item">-->
-<!--                                    <a href="index.html" class="nav-link active">Home</a>-->
-<!--                                </li> &ndash;&gt;-->
-<!--                                <li class="nav-item">-->
-<!--                                    <a href="#" class="nav-link" style="font-size:14px;">-->
-<!--                                        About-->
-<!--                                    </a>-->
-<!--                                    <ul class="dropdown-menu">-->
-<!--                                        <li class="nav-item">-->
-<!--                                            <a href="#" class="nav-link"-->
-<!--                                               style="font-size:14px;">About Us</a>-->
-<!--                                        </li>-->
-<!--                                        <li class="nav-item">-->
-<!--                                            <a href="#" class="nav-link">Team</a>-->
-<!--                                        </li>-->
-<!--                                        <li class="nav-item">-->
-<!--                                            <a href="#" class="nav-link">Gallery</a>-->
-<!--                                        </li>-->
-<!--                                    </ul>-->
-<!--                                </li>-->
-<!--                                <li class="nav-item">-->
-<!--                                    <a href="#" class="nav-link" style="font-size:14px;">-->
-<!--                                        Toy Festivals-->
-
-<!--                                    </a>-->
-<!--                                    <ul class="dropdown-menu">-->
-<!--                                        <li class="nav-item">-->
-<!--                                            <a href="tf-2022.html" class="nav-link">Toy Festival 2022</a>-->
-<!--                                        </li>-->
-<!--                                        <li class="nav-item">-->
-<!--                                            <a href="#" class="nav-link">Toy Festival 2023</a>-->
-<!--                                        </li>-->
-<!--                                    </ul>-->
-<!--                                </li>-->
-<!--                                <li class="nav-item">-->
-<!--                                    <a href="#" class="nav-link" style="font-size:14px;">-->
-<!--                                        Mentorship Programmes-->
-
-<!--                                    </a>-->
-<!--                                    <ul class="dropdown-menu">-->
-<!--                                        <li class="nav-item">-->
-<!--                                            <a href="#" class="nav-link">MP 2023</a>-->
-<!--                                        </li>-->
-<!--                                        <li class="nav-item">-->
-<!--                                            <a href="#" class="nav-link">MP 2024</a>-->
-<!--                                        </li>-->
-<!--                                    </ul>-->
-<!--                                </li>-->
-<!--                                <li class="nav-item">-->
-<!--                                    <a href="#" class="nav-link" style="font-size:14px;">-->
-<!--                                        Get Involved-->
-
-<!--                                    </a>-->
-<!--&lt;!&ndash;                                    <ul class="dropdown-menu">&ndash;&gt;-->
-<!--&lt;!&ndash;                                        <li class="nav-item">&ndash;&gt;-->
-<!--&lt;!&ndash;                                            <a href="news.html" class="nav-link">News</a>&ndash;&gt;-->
-<!--&lt;!&ndash;                                        </li>&ndash;&gt;-->
-<!--&lt;!&ndash;                                        <li class="nav-item">&ndash;&gt;-->
-<!--&lt;!&ndash;                                            <a href="news-details.html" class="nav-link">News Details</a>&ndash;&gt;-->
-<!--&lt;!&ndash;                                        </li>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    </ul>&ndash;&gt;-->
-<!--                                </li>-->
-<!--                                <li class="nav-item">-->
-<!--                                    <a href="#" class="nav-link" style="font-size:14px;">Blog</a>-->
-<!--                                </li>-->
-
-<!--                                <li class="nav-item">-->
-<!--                                    <a href="contact0.html" class="nav-link" style="font-size:14px;">Contact Us</a>-->
-<!--                                </li>-->
-<!--                            </ul>-->
-<!--                            <div class="others-options d-flex align-items-center">-->
-<!--                                <div class="option-item">-->
-<!--                                    <a href="./donate.html" class="btn btn-warning">Donate</a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </nav>-->

@@ -2363,7 +2363,7 @@
 .team-section {
 	position: relative;
 	padding: 110px 0 0px;
-	background: #302c51;
+	background: var(--dark-color);
 }
 
 .team-section.style-two {
