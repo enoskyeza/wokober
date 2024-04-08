@@ -36,6 +36,27 @@ body{
     /*object-fit: cover;*/
 }
 
+.vid-caption-carousel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+.vid-caption-carousel .carousel-inner .carousel-item{
+    position: relative;
+    bottom:40px;
+    height: 100%;
+    width: 100%;
+}
+
+.vid-caption-carousel .carousel-inner .carousel-item .carousel-caption h2{
+    font-size: 32px;
+    color: white;
+    font-weight: 600;
+}
 
 .hero-caption{
     position: absolute;
@@ -207,7 +228,7 @@ br.md_view {
 .hero-stats{
     position: relative;
     top: -65px;
-    z-index: 2;
+    z-index: 3;
 }
 
 .stat-item h3{
