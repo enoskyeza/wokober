@@ -734,6 +734,43 @@
 
 
 /* BUTTONS CSS */
+.button-58-light {
+    align-items: center;
+    background-color: var(--oxpins-white);
+    border: none;
+    border-radius: 0;
+    color: var(--oxpins-black);
+    cursor: pointer;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    justify-content: center;
+    outline: 0;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: 10px;
+    padding: 10px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button-58-light:hover {
+    background-color: #ffc45a;
+    color: var(--oxpins-black);
+    border: none;
+    fill: white;
+}
+
+.button-58-light:active {
+    background-color: var(--oxpins-primary);
+    color: var(--oxpins-black);
+    border-color: none;
+    fill: white;
+}
+
 .button-58 {
     align-items: center;
     background-color: var(--oxpins-black);

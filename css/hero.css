@@ -15,22 +15,25 @@ body{
 }
 
 .hero_vid {
+    padding: 0;
     position: relative;
     width: 100%;
-    height: 77vh;
+    height: fit-content;
     /*background: url("../images/img/carousel/wokober_14.jpg");*/
     /*background-size:cover ;*/
 }
 
 .vid-container{
-    height: 77vh;
-    overflow: hidden;
+    height: fit-content;
+    /*overflow: hidden;*/
 }
 
 .vid-container video{
+    padding: 0;
+    margin: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    /*height: 100%;*/
+    /*object-fit: cover;*/
 }
 
 
@@ -76,21 +79,18 @@ body{
 }
 
 
-.mini-cta{
-    /*height: 10vh;*/
-}
-
 .hero_vid::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 99%;
     background: radial-gradient(circle at center, rgba(0, 0, 255, 0.1), rgba(0, 0, 255, 0.2)); /* Adjust the color and opacity as needed */
     z-index: 1; /* Adjust the z-index to control the overlay's stacking order */
-    backdrop-filter: blur(2px);
+    /*backdrop-filter: blur(2px);*/
 }
+
 
 .hero_caption {
     position: absolute;
@@ -204,6 +204,69 @@ br.md_view {
 }
 
 
+.hero-stats{
+    position: relative;
+    top: -65px;
+    z-index: 2;
+}
+
+.stat-item h3{
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.stat-item .value{
+    color: white;
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.stat-item p{
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.mini-cta h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+
+@media (min-width: 1570px) {
+    .hero-stats{
+    position: relative;
+    top: -150px;
+    z-index: 2;
+}
+    .hero_vid::before {
+        height: 100%;
+    }
+
+    .vid-container{
+    max-height: 828px;
+    width: 100%;
+        overflow: hidden;
+    /*height: 100%;*/
+    /*object-fit: cover;*/
+}
+}
+
+@media (max-width: 760px) {
+    .vid-container {
+        margin-top: 100px;
+    }
+
+    .hero-stats{
+    position: relative;
+    top: -9px;
+    z-index: 2;
+}
+}
 /***
 
 ====================================================================
@@ -369,7 +432,7 @@ br.md_view {
 }
 
 .about-cta {
-    position: absolute;
+    position: relative;
     width: 100%;
     background: blue;
     color: white;
@@ -593,9 +656,9 @@ br.md_view {
 }
 
 .sticky-header-nav{
-    background: rgba(255,255,255,0.7)!important;
+    background: rgba(255,255,255,0.6)!important;
     position: fixed!important;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(7px);
     z-index: 20;
 }
 
@@ -621,14 +684,4 @@ br.md_view {
     background: red;
     display: flex;
 
-}
-
-.branding-section{
-    margin-top: 420px;
-}
-
-@media (max-width: 750px) {
-.branding-section{
-    margin-top: 500px;
-}
 }

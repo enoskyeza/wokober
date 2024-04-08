@@ -103,7 +103,7 @@
     <!-- the loop -->
 
     <!-- Main Header-->
-    <header class="main-header">
+    <header class="main-header sticky-header-nav">
 
         <!-- Header Upper -->
         <div class="header-upper" style="background: none">
@@ -258,14 +258,14 @@
     <!-- hero Section -->
     <section>
         <div class="hero_vid">
-            <div class="vid-container d-none d-md-block">
+            <div class="vid-container">
                 <video autoplay muted loop id="myVideo" poster="videos/preview2.webp">
                     <source src="videos/final_vid.mp4" type="video/mp4">
                     Your browser does not support HTML5 video.
                 </video>
             </div>
             <div class="hero-caption">
-                    <h2>Pioneering a new approach to creative learning</h2>
+<!--                    <h2>Pioneering a new approach to creative learning</h2>-->
 <!--                    <h2>Educated a new approach to creative learning</h2>-->
 <!--                    <h2>Cincinating a new approach to creative learning</h2>-->
             </div>
@@ -275,29 +275,51 @@
 
 
     <!-- MINI CTA -->
-    <section class="mini-cta">
-        <div class="row ">
-            <div class="col-sm-4 get_involved_section_card cbg_dark">
-                <h5>Become A Partner</h5>
-                <button class="btn btn-outline-light button-28">Join Us</button>
-            </div>
-            <!--            <div class="col get_involved_section_card bg-primary">-->
-            <!--                <h5>Sponsor A Child</h5>-->
-            <!--                <button class="btn btn-outline-light button-28">Contact Us</button>-->
-            <!--            </div>-->
-            <div class="col-sm-4 get_involved_section_card bg-info">
-                <h5>Become A Volunteer</h5>
-                <button class="btn btn-outline-light button-28">Apply Now</button>
-            </div>
-            <div class="col-sm-4 get_involved_section_card cbg_base">
-                <h5>Donate to the cause</h5>
-                <a href="./donate.html" class="btn btn-outline-light button-28">Donate</a>
+<!--    <section class="mini-cta d-none">-->
+<!--        <div class="row ">-->
+<!--            <div class="col-sm-4 get_involved_section_card cbg_dark">-->
+<!--                <h5>Become A Partner</h5>-->
+<!--                <button class="btn btn-outline-light button-28">Join Us</button>-->
+<!--            </div>-->
+<!--            &lt;!&ndash;            <div class="col get_involved_section_card bg-primary">&ndash;&gt;-->
+<!--            &lt;!&ndash;                <h5>Sponsor A Child</h5>&ndash;&gt;-->
+<!--            &lt;!&ndash;                <button class="btn btn-outline-light button-28">Contact Us</button>&ndash;&gt;-->
+<!--            &lt;!&ndash;            </div>&ndash;&gt;-->
+<!--            <div class="col-sm-4 get_involved_section_card bg-info">-->
+<!--                <h5>Become A Volunteer</h5>-->
+<!--                <button class="btn btn-outline-light button-28">Apply Now</button>-->
+<!--            </div>-->
+<!--            <div class="col-sm-4 get_involved_section_card cbg_base">-->
+<!--                <h5>Donate to the cause</h5>-->
+<!--                <a href="./donate.html" class="btn btn-outline-light button-28">Donate</a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+    <section class="hero-stats">
+        <div class="container bg-success">
+            <div class="row">
+                <div class="stat-item p-4 text-white col-sm-6 col-lg-4 cbg_dark">
+                    <h3>Served over</h3>
+                    <h2 class="font-weight-bold mb-3 value" data-target="200">0</h2>
+                    <p class="lead">Students around Northern Uganda.</p>
+                </div>
+                <div class="stat-item p-4 col-sm-6 col-lg-4 bg-primary">
+                    <h3>Enrolled</h3>
+                    <h2 class="font-weight-bold mb-3 value" data-target="40">0</h2>
+                    <p class="lead">Students in our Mentorship Programme</p>
+                </div>
+                <div class="stat-item mini-cta p-4 col-md-12 col-lg-4 bg-info">
+                    <h3>Become Part of the Cause</h3>
+                    <h2>With you we can grow and make more impact</h2>
+                    <button class="btn btn-outline-light button-58-light">Get Involved</button>
+                </div>
             </div>
         </div>
     </section>
 
+
     <!-- ABOUT SECTION -->
-    <section class="new_section_padding new_about_section" id="neo_about">
+    <section class="" id="neo_about">
         <div class="container">
             <div class="row g-4 row-eq-height">
                 <div class="col col-md-12 col-lg-7 custom_about_content py-5">
@@ -367,11 +389,11 @@
             <div class="row m-0 d-md-flex justify-content-between align-items-end">
                 <div class="col sec-title light">
                     <h1>Team behind Wokober</h1>
-                    <div class="text">Our work would not be possible without the work of our dedicated volunteers.</div>
+                    <div class="text">Our work would not be possible without the work of our dedicated team.</div>
                 </div>
                 <!--Link Btn-->
                 <div class="col link-btn mb-50 d-flex justify-content-end">
-                    <a href="#" class="theme-btn btn-style-one light"><span>Meet All Members</span></a>
+                    <a href="about.html#team" class="theme-btn btn-style-one light"><span>Meet All Members</span></a>
                 </div>
             </div>
             <div class="wrapper-box">
@@ -395,7 +417,7 @@
                     <!-- Team Blokc One -->
                     <div class="col-lg-4 team-block-one">
                         <div class="inner-box wow fadeInUp" data-wow-delay="400ms">
-                            <div class="image"><a href="#"><img src="images/img/team-02.jpg" alt=""></a></div>
+                            <div class="image"><a href="#"><img src="images/img/paul.jpg" alt=""></a></div>
                             <div class="lower-content">
                                 <h4> <a href="#">Kagga Paul</a></h4>
                                 <div class="designation">Team Lead - Wokober Toy Festival</div>
@@ -436,13 +458,13 @@
                         <span>Get Involved.</span>
         </h3>
         <h2>Partner or Volunteer with us.</h2>
-        <p>This journey of discovery and mentorship of underprivileged children with great potentials within
-            underserved communities of war stricken Northern Uganda, needs as many hands as possible in efforts to
-            multiply the impact of our programs on the lives of the children and communities we serve.
+        <p>This journey of discovery and mentorship of a generation of innovators, entrepreneurs and leaders to uplift
+            the society of Northern Uganda and  beyond, needs as many hands as possible in efforts to
+            multiply the current impact of our programs on the lives of the children and communities.
         </p>
             <div class="about-btn">
-        <button class="partner-btn">Become a Partner</button>
-        <button class="volunteer-btn">Become a Volunteer</button>
+        <button class="partner-btn fw-bold">Become a Partner</button>
+        <button class="volunteer-btn fw-bold">Become a Volunteer</button>
             </div>
         </div>
     </section>
@@ -1245,13 +1267,34 @@
 
 <!--    NAV STYLES  -->
 <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const counters = document.querySelectorAll('.value');
+        const speed = 400; // Adjust the speed of counting
 
-    window.addEventListener("scroll", function () {
-            const header = document.querySelector('header')
+        counters.forEach(counter => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
 
-            header.classList.toggle('sticky-header-nav', window.scrollY > 0)
+                const inc = target / speed;
 
-        })
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + inc);
+                    setTimeout(updateCount, 1);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+
+            updateCount();
+        });
+    });
+    // window.addEventListener("scroll", function () {
+    //         const header = document.querySelector('header')
+    //
+    //         header.classList.toggle('sticky-header-nav', window.scrollY > 0)
+    //
+    //     })
     //
     // document.addEventListener('DOMContentLoaded', function () {
     // const captions = document.querySelectorAll('.hero-caption h2');
