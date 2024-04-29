@@ -30,8 +30,9 @@ class Navbar extends HTMLElement {
                                                 <ul class="navigation">
                                                     <li class="dropdown" id="about"><a href="#">About</a>
                                                         <ul class="hide-menu nav-submenu">
-                                                            <li><a href="about.html">About Us</a></li>
-                                                            <li><a href="about.html#team">Our Team</a></li>
+                                                    <li><a href="about.html">About Us</a></li>
+                                                    <li><a href="about.html#team">Our Team</a></li>
+                                                    <li><a href="gallery.html">Gallery</a></li>
                                                         </ul>
                                                     </li>
                                                     <li class="dropdown" id="tf"><a href="#">Toy Festivals</a>
