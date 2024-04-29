@@ -461,18 +461,28 @@ br.md_view {
     z-index: 1;
 }
 
-.about-cta h3{
+.gallery-cta {
+    position: relative;
+    width: 100%;
+    background: blue;
+    color: white;
+    padding: 120px 0 80px 0;
+    margin-bottom: -20px;
+    z-index: 1;
+}
+
+.about-cta h3, .gallery-cta h3{
  color: white;
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 10px;
 }
-.about-cta h2{
+.about-cta h2, .gallery-cta h2{
  color: white;
     margin-bottom: 20px;
 }
 
-.about-cta p{
+.about-cta p, .gallery-cta p{
  color: white;
     margin: auto;
     max-width: 80%;
@@ -487,11 +497,19 @@ br.md_view {
     margin-right: 15px;
 }
 
+.partner-btn:hover, .volunteer-btn:hover {
+    background: aqua;
+    border: none;
+}
+
 .volunteer-btn {
     background: none;
     color: white;
     padding: 15px;
+    border: solid white 1px;
 }
+
+
 
 .sponsors-container{
 }
