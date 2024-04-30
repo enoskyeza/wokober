@@ -46,7 +46,7 @@ class Navbar extends HTMLElement {
                                                         <!--                                                    <li><a href="causes-1.html">Style 01 - Grid View</a></li>-->
                                                         <!--                                                </ul>-->
                                                     </li>
-                                                    <li class="dropdown" id="gi"><a href="#">Get Involved</a>
+                                                    <li class="" id="get-involved"><a href="get_involved.html">Get Involved</a>
                                                         <!--                                                <ul>-->
                                                         <!--                                                    <li><a href="events-1.html">Events</a></li>-->
                                                         <!--                                                    <li><a href="event-details.html">Single Event</a></li>-->
