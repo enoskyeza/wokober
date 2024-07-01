@@ -38,7 +38,7 @@ class Navbar extends HTMLElement {
                                                     <li class="dropdown" id="tf"><a href="#">Toy Festivals</a>
                                                         <ul class="hide-menu nav-submenu">
                                                             <li><a href="tf-2022.html">TF 2022</a></li>
-                                                            <li><a href="#">TF 2023</a></li>
+                                                            <li><a href="tf2023.html">TF 2023</a></li>
                                                         </ul>
                                                     </li>
                                                     <li class="current" id="mp"><a href="mp-2023.html">Mentorship Programmes</a>
