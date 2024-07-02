@@ -147,7 +147,7 @@
     <a class="skip-link screen-reader-text">Skip to content</a>
 
     <!-- the loop -->
-    <app-navbar></app-navbar>
+    <app-navbar style="z-index: 2000"></app-navbar>
 
 
     <section class="page-title" style="background-image:url(images/page-header-bg-1.jpg); background-position: center">
@@ -166,7 +166,7 @@
     <div class="sidebar-page-container">
         <div class="auto-container">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-12">
                     <div class="post-wrapper">
                         <!-- Single Blog Post -->
                         <div class="single-blog-post">
@@ -177,12 +177,31 @@
                                         <div class="author">
                                             <div class="author-thumb"><img src="images/resource/author-thumb-1.jpg"
                                                                            alt=""></div>
-                                            <div class="author-title"><a href="#">Rubin Santro</a></div>
+                                            <div class=" text-dark fw-bold"><a href="#">Kaunda Grounds, Gulu City</a></div>
                                         </div>
-                                        <div class="date"><span class="flaticon-clock"></span>Jun 05, 2019</div>
-                                        <div class="category"><span class="flaticon-folder"></span>Life saving</div>
-                                        <div class="views"><span class="flaticon-eye"></span>21 Views</div>
+                                        <div class="date text-dark fw-bold"><span class="flaticon-clock"></span>15-16 Dec, 2023</div>
+                                        <div class="category">
+                                            <a href="./files/Wokober-Annual-report-2023.pdf"
+                                            class="btn text-dark fw-bold btn_md w-100" style="background: transparent;" download><span class="flaticon-folder"></span>Download Report</a>
+                                        </div>
+                                        <div class="views">
+                                            <a href="https://www.youtube.com/watch?v=pO1cD-aX7p0"
+                                            class="btn  text-dark fw-bold btn_md w-100" target="_blank" style="background: transparent;">
+                                                <span class="flaticon-eye"></span>Watch Video
+                                            </a>
+                                        </div>
+
                                     </div>
+<!--                                    <div class="register_now_details">-->
+<!--                                        <a href="./files/Wokober-Toy-Festival-Report.pdf"-->
+<!--                                            class="btn bg-primary text-white fw-bold btn_md w-100" download>Download a-->
+<!--                                            full report on the event here.</a>-->
+<!--                                    </div>-->
+<!--                                    <div class="register_now_details">-->
+<!--                                        <a href="https://www.youtube.com/watch?v=x86eTdPwnjU"-->
+<!--                                            class="btn bg-danger text-white fw-bold btn_md w-100" target="_blank"> Watch-->
+<!--                                            full documentary of the event here.</a>-->
+<!--                                    </div>-->
                                     <div class="image"><img src="images/img/toy_festival/tf_2301.jpg" alt=""></div>
                                     <div class="text">The Toy and Innovation Festival WTIF aims to inspire and engage
                                         communities around quality education to uplift the society. It also aims to
@@ -221,48 +240,88 @@
                                     <div class="text">The toy making festival was successfully organized as a
                                         competitive event among children of general age brackets of 3 to 17 years.
                                     </div>
+                                    <div>
+                                        <div class="row px-3 pb-5">
+                                                    <div class="winner-card me-3">
+                                                      <div class="card-bg">
+                                                          <img src="./images/img/events/tf23/tf23-01.jpg" width="250" height="300" alt="tf23-winner">
+                                                      </div>
+                                                      <div class="blob first-position">
+                                                      </div>
+                                                    </div>
+                                                    <div class="winner-card me-3">
+                                                      <div class="card-bg">
+                                                          <img src="./images/img/events/tf23/tf23-04.jpg" width="250" height="300" alt="tf23-winner">
+                                                      </div>
+                                                      <div class="blob second-position"></div>
+                                                    </div>
+                                                    <div class="winner-card">
+                                                      <div class="card-bg">
+                                                          <img src="./images/img/events/tf23/tf23-07.jpg" width="250" height="300" alt="tf23-winner">
+                                                      </div>
+                                                      <div class="blob third-position"></div>
+                                                    </div>
+                                        </div>
 
-                                    <!-- tabs -->
-                                    <div class="pcss3t pcss3t-effect-scale pcss3t-theme-1 mb-5">
-                                        <input type="radio" name="pcss3t" checked id="tab1" class="tab-content-first">
-                                        <label for="tab1">Category 13-17</label>
+                                        <div class="row px-3 pb-5">
+                                                    <div class="winner-card me-3">
+                                                      <div class="card-bg">
+                                                          <img src="./images/img/events/tf23/tf23-02.jpg" width="250" height="300" alt="tf23-winner">
+                                                      </div>
+                                                      <div class="blob first-position">
+                                                      </div>
+                                                    </div>
+                                                    <div class="winner-card me-3">
+                                                      <div class="card-bg">
+                                                          <img src="./images/img/events/tf23/tf23-05.jpg" width="250" height="300" alt="tf23-winner">
+                                                      </div>
+                                                      <div class="blob second-position"></div>
+                                                    </div>
+                                                    <div class="winner-card">
+                                                      <div class="card-bg">
+                                                          <img src="./images/img/events/tf23/tf23-08.jpg" width="250" height="300" alt="tf23-winner">
+                                                      </div>
+                                                      <div class="blob third-position"></div>
+                                                    </div>
+                                        </div>
 
-                                        <input type="radio" name="pcss3t" id="tab2" class="tab-content-2">
-                                        <label for="tab2">Category 8-12</label>
-
-                                        <input type="radio" name="pcss3t" id="tab3" class="tab-content-3">
-                                        <label for="tab3">Category 3-7</label>
-
-                                        <ul>
-                                            <li class="tab-content tab-content-first typography">
-
-                                            </li>
-
-                                            <li class="tab-content tab-content-2 typography">
-
-                                            </li>
-
-                                            <li class="tab-content tab-content-3 typography">
-
-                                            </li>
-                                        </ul>
+                                        <div class="row px-3 pb-5">
+                                                    <div class="winner-card me-3">
+                                                      <div class="card-bg">
+                                                          <img src="./images/img/events/tf23/tf23-03.jpg" width="250" height="300" alt="tf23-winner">
+                                                      </div>
+                                                      <div class="blob first-position">
+                                                      </div>
+                                                    </div>
+                                                    <div class="winner-card me-3">
+                                                      <div class="card-bg">
+                                                          <img src="./images/img/events/tf23/tf23-06.jpg" width="250" height="300" alt="tf23-winner">
+                                                      </div>
+                                                      <div class="blob second-position"></div>
+                                                    </div>
+                                                    <div class="winner-card">
+                                                      <div class="card-bg">
+                                                          <img src="./images/img/events/tf23/tf23-09.jpg" width="250" height="300" alt="tf23-winner">
+                                                      </div>
+                                                      <div class="blob third-position"></div>
+                                                    </div>
+                                        </div>
                                     </div>
-                                    <!--/ tabs -->
 
                                     <div class="post-tag">
                                         <div class="wrapper-box">
                                             <div class="hint">Tags:</div>
                                             <ul class="tag">
-                                                <li><a href="#">Drinks & Food</a></li>
-                                                <li><a href="#">Programs</a></li>
-                                                <li><a href="#">Travel</a></li>
+                                                <li><a href="#">Toy Festival</a></li>
+                                                <li><a href="#">Creativity</a></li>
+                                                <li><a href="#">Innovation</a></li>
                                             </ul>
                                         </div>
                                         <ul class="social-icon-three">
-                                            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                                            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                                            <li><a href="#"><span class="fa fa-skype"></span></a></li>
-                                            <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                                            <li><a href="https://www.facebook.com/wokober" target="_blank"><span class="fa fa-facebook"></span></a></li>
+                                            <li><a href="https://x.com/wokober" target="_blank"><span class="fa fa-twitter"></span></a></li>
+                                            <li><a href="https://www.instagram.com/wokober/" target="_blank"><span class="fa fa-instagram"></span></a></li>
+                                            <li><a href="https://www.linkedin.com/in/wokober-education-foundation-474a83271/" target="_blank"><span class="fa fa-linkedin"></span></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -272,201 +331,201 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="sidebar">
-                        <!-- Search Widget -->
-                        <div class="sidebar-title">
-                            <h4>Search</h4>
-                        </div>
-                        <div class="sidebar-widget search-box">
-                            <form method="post" action="#">
-                                <div class="form-group">
-                                    <input type="search" name="search-field" value="" placeholder="Search...."
-                                           required="">
-                                    <button type="submit"><span class="flaticon-magnifying-glass"></span></button>
-                                </div>
-                            </form>
-                        </div>
-                        <!-- Category Widget -->
-                        <div class="sidebar-widget category-widget-two">
-                            <div class="sidebar-title">
-                                <h4>Categories</h4>
-                            </div>
-                            <ul>
-                                <li>
-                                    <div class="wrapper-box">
-                                        <div class="image">
-                                            <img src="assets/images/resource/category-thumb-1.jpg" alt="">
-                                            <span class="post-count">5</span>
-                                        </div>
-                                        <a href="#">Life savings </a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="wrapper-box">
-                                        <div class="image">
-                                            <img src="assets/images/resource/category-thumb-2.jpg" alt="">
-                                            <span class="post-count">8</span>
-                                        </div>
-                                        <a href="#">Life savings </a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="wrapper-box">
-                                        <div class="image">
-                                            <img src="assets/images/resource/category-thumb-3.jpg" alt="">
-                                            <span class="post-count">12</span>
-                                        </div>
-                                        <a href="#">Life savings </a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="wrapper-box">
-                                        <div class="image">
-                                            <img src="assets/images/resource/category-thumb-4.jpg" alt="">
-                                            <span class="post-count">6</span>
-                                        </div>
-                                        <a href="#">Life savings </a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <!--Popular Posts-->
-                        <div class="sidebar-widget post-widget-three">
-                            <div class="sidebar-title">
-                                <h4>Trending Post</h4>
-                            </div>
+<!--                <div class="col-lg-4">-->
+<!--                    <div class="sidebar">-->
+<!--                        &lt;!&ndash; Search Widget &ndash;&gt;-->
+<!--                        <div class="sidebar-title">-->
+<!--                            <h4>Search</h4>-->
+<!--                        </div>-->
+<!--                        <div class="sidebar-widget search-box">-->
+<!--                            <form method="post" action="#">-->
+<!--                                <div class="form-group">-->
+<!--                                    <input type="search" name="search-field" value="" placeholder="Search...."-->
+<!--                                           required="">-->
+<!--                                    <button type="submit"><span class="flaticon-magnifying-glass"></span></button>-->
+<!--                                </div>-->
+<!--                            </form>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash; Category Widget &ndash;&gt;-->
+<!--                        <div class="sidebar-widget category-widget-two">-->
+<!--                            <div class="sidebar-title">-->
+<!--                                <h4>Categories</h4>-->
+<!--                            </div>-->
+<!--                            <ul>-->
+<!--                                <li>-->
+<!--                                    <div class="wrapper-box">-->
+<!--                                        <div class="image">-->
+<!--                                            <img src="assets/images/resource/category-thumb-1.jpg" alt="">-->
+<!--                                            <span class="post-count">5</span>-->
+<!--                                        </div>-->
+<!--                                        <a href="#">Life savings </a>-->
+<!--                                    </div>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <div class="wrapper-box">-->
+<!--                                        <div class="image">-->
+<!--                                            <img src="assets/images/resource/category-thumb-2.jpg" alt="">-->
+<!--                                            <span class="post-count">8</span>-->
+<!--                                        </div>-->
+<!--                                        <a href="#">Life savings </a>-->
+<!--                                    </div>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <div class="wrapper-box">-->
+<!--                                        <div class="image">-->
+<!--                                            <img src="assets/images/resource/category-thumb-3.jpg" alt="">-->
+<!--                                            <span class="post-count">12</span>-->
+<!--                                        </div>-->
+<!--                                        <a href="#">Life savings </a>-->
+<!--                                    </div>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <div class="wrapper-box">-->
+<!--                                        <div class="image">-->
+<!--                                            <img src="assets/images/resource/category-thumb-4.jpg" alt="">-->
+<!--                                            <span class="post-count">6</span>-->
+<!--                                        </div>-->
+<!--                                        <a href="#">Life savings </a>-->
+<!--                                    </div>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash;Popular Posts&ndash;&gt;-->
+<!--                        <div class="sidebar-widget post-widget-three">-->
+<!--                            <div class="sidebar-title">-->
+<!--                                <h4>Trending Post</h4>-->
+<!--                            </div>-->
 
-                            <!-- Post -->
-                            <article class="post">
-                                <div class="thumb"><img src="assets/images/resource/post-thumb-1.jpg" alt=""><a
-                                        class="overlay overlay-style-one" href="blog-details.html"></a></div>
-                                <div class="content">
-                                    <div class="date">June 28, 2019</div>
-                                    <h5><a href="blog-details.html">Aid for Nigierians Health</a></h5>
-                                </div>
-                            </article>
+<!--                            &lt;!&ndash; Post &ndash;&gt;-->
+<!--                            <article class="post">-->
+<!--                                <div class="thumb"><img src="assets/images/resource/post-thumb-1.jpg" alt=""><a-->
+<!--                                        class="overlay overlay-style-one" href="blog-details.html"></a></div>-->
+<!--                                <div class="content">-->
+<!--                                    <div class="date">June 28, 2019</div>-->
+<!--                                    <h5><a href="blog-details.html">Aid for Nigierians Health</a></h5>-->
+<!--                                </div>-->
+<!--                            </article>-->
 
-                            <!-- Post -->
-                            <article class="post">
-                                <div class="thumb"><img src="assets/images/resource/post-thumb-2.jpg" alt=""><a
-                                        class="overlay overlay-style-one" href="blog-details.html"></a></div>
-                                <div class="content">
-                                    <div class="date">April 14, 2019</div>
-                                    <h5><a href="blog-details.html">Aid for Serians Education </a></h5>
-                                </div>
-                            </article>
+<!--                            &lt;!&ndash; Post &ndash;&gt;-->
+<!--                            <article class="post">-->
+<!--                                <div class="thumb"><img src="assets/images/resource/post-thumb-2.jpg" alt=""><a-->
+<!--                                        class="overlay overlay-style-one" href="blog-details.html"></a></div>-->
+<!--                                <div class="content">-->
+<!--                                    <div class="date">April 14, 2019</div>-->
+<!--                                    <h5><a href="blog-details.html">Aid for Serians Education </a></h5>-->
+<!--                                </div>-->
+<!--                            </article>-->
 
-                            <!-- Post -->
-                            <article class="post">
-                                <div class="thumb"><img src="assets/images/resource/post-thumb-3.jpg" alt=""><a
-                                        class="overlay overlay-style-one" href="blog-details.html"></a></div>
-                                <div class="content">
-                                    <div class="date">January 21, 2019</div>
-                                    <h5><a href="blog-details.html">Help for Homeless People</a></h5>
-                                </div>
-                            </article>
+<!--                            &lt;!&ndash; Post &ndash;&gt;-->
+<!--                            <article class="post">-->
+<!--                                <div class="thumb"><img src="assets/images/resource/post-thumb-3.jpg" alt=""><a-->
+<!--                                        class="overlay overlay-style-one" href="blog-details.html"></a></div>-->
+<!--                                <div class="content">-->
+<!--                                    <div class="date">January 21, 2019</div>-->
+<!--                                    <h5><a href="blog-details.html">Help for Homeless People</a></h5>-->
+<!--                                </div>-->
+<!--                            </article>-->
 
-                        </div>
-                        <!-- Tag-cloud Widget -->
-                        <div class="sidebar-widget tag-cloud-widget">
-                            <div class="sidebar-title">
-                                <h4>Tag Cloud </h4>
-                            </div>
-                            <ul class="clearfix">
-                                <li><a href="#">Beauty</a></li>
-                                <li><a href="#">Classic</a></li>
-                                <li><a href="#">Creative</a></li>
-                                <li><a href="#">Drinks & Food</a></li>
-                                <li><a href="#">Designs</a></li>
-                                <li><a href="#">Featured</a></li>
-                                <li><a href="#">Free Style</a></li>
-                                <li><a href="#">Grid</a></li>
-                                <li><a href="#">Photography</a></li>
-                                <li><a href="#">Programs</a></li>
-                                <li><a href="#">Travel</a></li>
-                            </ul>
-                        </div>
-                        <!-- End Widget -->
-                        <!-- Instagram Widget -->
-                        <div class="sidebar-widget instagram-widget-two">
-                            <div class="sidebar-title">
-                                <h4>Instagram</h4>
-                            </div>
-                            <div class="instagram-wrapper">
-                                <div class="image">
-                                    <img src="assets/images/resource/instagram-1.jpg" alt="">
-                                    <div class="overlay-link">
-                                        <ul>
-                                            <li><span class="flaticon-heart-2"></span>1k</li>
-                                            <li><span class="flaticon-comment-1"></span>84</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="image">
-                                    <img src="assets/images/resource/instagram-2.jpg" alt="">
-                                    <div class="overlay-link">
-                                        <ul>
-                                            <li><span class="flaticon-heart-2"></span>1k</li>
-                                            <li><span class="flaticon-comment-1"></span>84</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="image">
-                                    <img src="assets/images/resource/instagram-3.jpg" alt="">
-                                    <div class="overlay-link">
-                                        <ul>
-                                            <li><span class="flaticon-heart-2"></span>1k</li>
-                                            <li><span class="flaticon-comment-1"></span>84</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="image">
-                                    <img src="assets/images/resource/instagram-4.jpg" alt="">
-                                    <div class="overlay-link">
-                                        <ul>
-                                            <li><span class="flaticon-heart-2"></span>1k</li>
-                                            <li><span class="flaticon-comment-1"></span>84</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="image">
-                                    <img src="assets/images/resource/instagram-5.jpg" alt="">
-                                    <div class="overlay-link">
-                                        <ul>
-                                            <li><span class="flaticon-heart-2"></span>1k</li>
-                                            <li><span class="flaticon-comment-1"></span>84</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="image">
-                                    <img src="assets/images/resource/instagram-6.jpg" alt="">
-                                    <div class="overlay-link">
-                                        <ul>
-                                            <li><span class="flaticon-heart-2"></span>1k</li>
-                                            <li><span class="flaticon-comment-1"></span>84</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <a href="#" class="theme-btn"><span class="fa fa-instagram"></span>Follow Us</a>
-                            </div>
-                        </div>
-                        <!-- Newsletter Widget -->
-                        <div class="sidebar-title">
-                            <h4>Subscribe Us</h4>
-                        </div>
-                        <div class="sidebar-widget newsletter-widget-three">
-                            <div class="inner-content">
-                                <div class="text">Subscribe us and get latest news and <br>upcoming events.</div>
-                                <form action="#">
-                                    <input type="email" placeholder="Email Address...">
-                                    <button class="theme-btn btn-style-two text-center"><span>Subscribe Us</span>
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!--                        </div>-->
+<!--                        &lt;!&ndash; Tag-cloud Widget &ndash;&gt;-->
+<!--                        <div class="sidebar-widget tag-cloud-widget">-->
+<!--                            <div class="sidebar-title">-->
+<!--                                <h4>Tag Cloud </h4>-->
+<!--                            </div>-->
+<!--                            <ul class="clearfix">-->
+<!--                                <li><a href="#">Beauty</a></li>-->
+<!--                                <li><a href="#">Classic</a></li>-->
+<!--                                <li><a href="#">Creative</a></li>-->
+<!--                                <li><a href="#">Drinks & Food</a></li>-->
+<!--                                <li><a href="#">Designs</a></li>-->
+<!--                                <li><a href="#">Featured</a></li>-->
+<!--                                <li><a href="#">Free Style</a></li>-->
+<!--                                <li><a href="#">Grid</a></li>-->
+<!--                                <li><a href="#">Photography</a></li>-->
+<!--                                <li><a href="#">Programs</a></li>-->
+<!--                                <li><a href="#">Travel</a></li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash; End Widget &ndash;&gt;-->
+<!--                        &lt;!&ndash; Instagram Widget &ndash;&gt;-->
+<!--                        <div class="sidebar-widget instagram-widget-two">-->
+<!--                            <div class="sidebar-title">-->
+<!--                                <h4>Instagram</h4>-->
+<!--                            </div>-->
+<!--                            <div class="instagram-wrapper">-->
+<!--                                <div class="image">-->
+<!--                                    <img src="assets/images/resource/instagram-1.jpg" alt="">-->
+<!--                                    <div class="overlay-link">-->
+<!--                                        <ul>-->
+<!--                                            <li><span class="flaticon-heart-2"></span>1k</li>-->
+<!--                                            <li><span class="flaticon-comment-1"></span>84</li>-->
+<!--                                        </ul>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="image">-->
+<!--                                    <img src="assets/images/resource/instagram-2.jpg" alt="">-->
+<!--                                    <div class="overlay-link">-->
+<!--                                        <ul>-->
+<!--                                            <li><span class="flaticon-heart-2"></span>1k</li>-->
+<!--                                            <li><span class="flaticon-comment-1"></span>84</li>-->
+<!--                                        </ul>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="image">-->
+<!--                                    <img src="assets/images/resource/instagram-3.jpg" alt="">-->
+<!--                                    <div class="overlay-link">-->
+<!--                                        <ul>-->
+<!--                                            <li><span class="flaticon-heart-2"></span>1k</li>-->
+<!--                                            <li><span class="flaticon-comment-1"></span>84</li>-->
+<!--                                        </ul>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="image">-->
+<!--                                    <img src="assets/images/resource/instagram-4.jpg" alt="">-->
+<!--                                    <div class="overlay-link">-->
+<!--                                        <ul>-->
+<!--                                            <li><span class="flaticon-heart-2"></span>1k</li>-->
+<!--                                            <li><span class="flaticon-comment-1"></span>84</li>-->
+<!--                                        </ul>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="image">-->
+<!--                                    <img src="assets/images/resource/instagram-5.jpg" alt="">-->
+<!--                                    <div class="overlay-link">-->
+<!--                                        <ul>-->
+<!--                                            <li><span class="flaticon-heart-2"></span>1k</li>-->
+<!--                                            <li><span class="flaticon-comment-1"></span>84</li>-->
+<!--                                        </ul>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="image">-->
+<!--                                    <img src="assets/images/resource/instagram-6.jpg" alt="">-->
+<!--                                    <div class="overlay-link">-->
+<!--                                        <ul>-->
+<!--                                            <li><span class="flaticon-heart-2"></span>1k</li>-->
+<!--                                            <li><span class="flaticon-comment-1"></span>84</li>-->
+<!--                                        </ul>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <a href="#" class="theme-btn"><span class="fa fa-instagram"></span>Follow Us</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash; Newsletter Widget &ndash;&gt;-->
+<!--                        <div class="sidebar-title">-->
+<!--                            <h4>Subscribe Us</h4>-->
+<!--                        </div>-->
+<!--                        <div class="sidebar-widget newsletter-widget-three">-->
+<!--                            <div class="inner-content">-->
+<!--                                <div class="text">Subscribe us and get latest news and <br>upcoming events.</div>-->
+<!--                                <form action="#">-->
+<!--                                    <input type="email" placeholder="Email Address...">-->
+<!--                                    <button class="theme-btn btn-style-two text-center"><span>Subscribe Us</span>-->
+<!--                                    </button>-->
+<!--                                </form>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
             </div>
         </div>
     </div>

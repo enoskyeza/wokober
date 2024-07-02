@@ -1317,3 +1317,91 @@ padding: 30px;
     padding-left: 10px;
 }
 
+
+/***
+
+====================================================================
+	TOY FESTIVAL 2023
+====================================================================
+
+***/
+
+.winner-card {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  border-radius: 14px;
+  z-index: 1111;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 30px #bebebe, -10px -10px 30px #ffffff;
+  ;
+}
+
+.card-bg {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 240px;
+  height: 290px;
+  z-index: 2;
+  background: rgba(255, 255, 255, .95);
+  backdrop-filter: blur(24px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid white;
+}
+
+.card-bg img{
+    height: 100%;
+}
+
+.blob {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  opacity: 1;
+  filter: blur(12px);
+  animation: blob-bounce 5s infinite ease;
+}
+
+.first-position {
+  background-color: gold;
+}
+
+.second-position {
+  background-color: silver;
+}
+
+.third-position {
+  background-color: saddlebrown;
+}
+
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+  }
+
+  50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+  }
+
+  75% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+  }
+
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+}
