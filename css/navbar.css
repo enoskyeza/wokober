@@ -121,9 +121,31 @@
 	padding: 20px 30px;
 }
 
+.custom-mobile-menu .main-menu .navigation li .mobile-submenu {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.custom-mobile-menu .main-menu .navigation li .mobile-submenu li a{
+	display: block;
+	padding-left: 20px;
+	width: 100%;
+}
+
+.custom-mobile-menu .main-menu .navigation li .mobile-submenu li a:hover{
+	background-color: rgba(138, 137, 137, 0.1);
+	color: black;
+	padding-left: 40px;
+}
+
 .custom-mobile-menu .main-menu .navigation li {
 	position: relative;
 	display: flex;
+	flex-direction: column;
 	align-items: start;
 	float: none;
 	text-align: left;

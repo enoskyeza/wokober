@@ -103,22 +103,18 @@
         }
     });
 
-
-    //Mobile Nav Hide Show
-    // if ($('.mobile-menu').length) {
-    // 	var mobileMenuContent = $('.main-menu .navigation').html();
-    // 	$('.mobile-menu .navigation').append(mobileMenuContent);
-    // 	$('.sticky-header .navigation').append(mobileMenuContent);
-    // 	//Dropdown Button
-    // 	$('.mobile-menu li.dropdown .dropdown-btn').on('click', function() {
-    // 		$(this).prev('ul').slideToggle(500);
-    // 	});
-    // }
-
     //Submenu Dropdown Toggle
 	if ($('.navigation li.dropdown ul').length) {
 		$('.navigation li.dropdown').append('<div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>');
+
+        // Add event listener to the newly appended dropdown buttons
+        $('.dropdown-btn').on('click', function() {
+            // Find the previous sibling ul element and toggle the 'mobile-submenu' class
+            $(this).siblings('ul').toggleClass('mobile-submenu');
+        });
 	}
+
+
 
 
 })(jQuery);

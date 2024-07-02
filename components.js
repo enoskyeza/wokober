@@ -74,78 +74,77 @@ class Navbar extends HTMLElement {
                     </div>
                 </div>
                 <!--End Header Upper-->
-        
-                <!--End Header Upper-->
-<!--                <div class="sticky-header">-->
-<!--                    <div class="auto-container">-->
-<!--                        <div class="wrapper-box">-->
-<!--                            <div class="logo-column">-->
-<!--                                <div class="logo-box">-->
-<!--                                    <div class="logo"><a href="/" class="hero_logo">-->
-<!--                                        <img id="LogoId" class="logo_img" decoding="async" width="150" height="50"-->
-<!--                                             src="./images/img/Logo-01.png"-->
-<!--                                             alt="Wokober Logo">-->
-<!--                                    </a></div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="menu-column">-->
-<!--                                <div class="nav-outer">-->
-<!--        -->
-<!--                                    <div class="nav-inner">-->
-<!--        -->
-<!--                                        &lt;!&ndash; Main Menu &ndash;&gt;-->
-<!--                                        <nav class="main-menu navbar-expand-xl navbar-dark">-->
-<!--        -->
-<!--                                            <div class="collapse navbar-collapse">-->
-<!--                                                <ul class="navigation">-->
-<!--                                                </ul>-->
-<!--                                            </div>-->
-<!--                                        </nav>&lt;!&ndash; Main Menu End&ndash;&gt;-->
-<!--        -->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-        
-<!--                 Mobile Menu  -->
-                <div class="mobile-menu style-one">
-                    <div class="menu-box">
-                        <div class="logo"><a href="/" class="hero_logo">
-                            <img id="LogoId" class="logo_img" decoding="async" width="150" height="50"
+
+                <!-- New Mobile Menu  -->
+                <div class="custom-mobile-menu style-one">
+                    <div class="menu-box row" style="background: none">
+                        <div class="col logo">
+                            <a href="/" class="hero_logo">
+                                <img id="LogoId" class="logo_img" decoding="async" width="150" height="50"
                                  src="./images/img/Logo-01.png"
                                  alt="Wokober Logo">
-                        </a></a>
+                            </a>
                         </div>
-                        
-                             <div class="">
-                                        <a href="donate.html" class="btn-donate"><span>Donate</span></a>
-                             </div>
-                        <!-- Main Menu -->
-                        <nav class="main-menu navbar-expand-xl navbar-dark">
-                            <div class="navbar-header">
-                                <!-- Toggle Button -->
-                                <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                        aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="flaticon-menu"></span>
-                                </button>
-                            </div>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navigation">
         
-                                </ul>
+                        <div class="col mobile-nav-right">
+                            <!-- Main Menu -->
+                            <nav class="main-menu navbar-expand-xl navbar-dark">
+                                <div class="navbar-header">
+                                    <!-- Toggle Button -->
+                                    <button type="button" class="custom-navbar-toggler" data-toggle="collapse"
+                                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                            aria-expanded="false" aria-label="Toggle navigation" id="nav-toggle">
+                                        <span class="flaticon-menu"></span>
+                                    </button>
+                                </div>
+        
+                                <div class="collapse nav-collapse" id="navbarSupportedContent">
+                                        <ul class="navigation">
+                                            <li class="dropdown">
+                                                <a href="#">About</a>
+                                                <ul>
+                                                    <li><a href="about.html">About Us</a></li>
+                                                    <li><a href="about.html#team">Our Team</a></li>
+                                                    <li><a href="gallery.html">Gallery</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="#">Toy Festivals</a>
+                                                <ul>
+                                                    <li><a href="tf-2022.html">TF 2022</a></li>
+                                                    <li><a href="tf2023.html">TF 2023</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class=""><a href="mp-2023.html">Mentorship Programmes</a>
+                                                <!--                                                <ul>-->
+                                                <!--                                                    <li><a href="causes-1.html">Style 01 - Grid View</a></li>-->
+                                                <!--                                                </ul>-->
+                                            </li>
+                                            <li class=""><a href="get_involved.html">Get Involved</a>
+                                                <!--                                                <ul>-->
+                                                <!--                                                    <li><a href="events-1.html">Events</a></li>-->
+                                                <!--                                                    <li><a href="event-details.html">Single Event</a></li>-->
+                                                <!--                                                </ul>-->
+                                            </li>
+                                            <li class="">
+                                                <a href="#">Blog</a>
+                                            </li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                </div>
+                            </nav>
+                            <!-- Main Menu End-->
+                            <div class="">
+                                <a href="donate.html" class="btn-donate" id="donate">
+                                    <span>Donate</span>
+                                </a>
                             </div>
-                        </nav>
-                        <!-- Main Menu End-->
-                        <!--Search Box-->
-                        
+                        </div>
                     </div>
         
                 </div>
-<!--                 End Mobile Menu -->
-        
+                <!-- End Mobile Menu -->
+
                 <div class="nav-overlay">
                     <div class="cursor"></div>
                     <div class="cursor-follower"></div>

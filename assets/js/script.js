@@ -76,6 +76,7 @@
 		});
 	}
 
+
 	//Hidden Sidebar
 	if ($('.hidden-sidebar').length) {
 		var animButton = $(".anim-menu-btn"),
