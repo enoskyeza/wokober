@@ -61,10 +61,13 @@ body{
 @media (max-width: 470px) {
     .vid-caption-carousel .carousel-inner .carousel-item .carousel-caption{
         bottom: -2rem!important;
-    font-size: 28px;
+    }
+    .vid-caption-carousel .carousel-inner .carousel-item .carousel-caption h2{
+    font-size: 23px;
     color: white;
     font-weight: 600;
-}
+    }
+
     
 }
 
