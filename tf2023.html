@@ -481,6 +481,7 @@
 <script src="./assets/js/TweenMax.min.js"></script>
 <script src="./assets/js/script.js"></script>
 <script src="./components.js"></script>
+<script src="./js/script.js"></script>
 <script>
         // Get the list items
         const navigationList = document.querySelector('.navigation');
@@ -540,6 +541,20 @@
         })
 
     </script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const navToggle = document.getElementById('nav-toggle');
+    const navCollapse = document.querySelector('.nav-collapse');
+
+    navToggle.addEventListener('click', function() {
+        // Toggle the 'show' class on the navCollapse element
+        navCollapse.classList.toggle('show');
+
+        // Toggle the 'toggle-active' class on the navToggle button
+        navToggle.classList.toggle('toggler-active');
+    });
+});
+</script>
 
 </body>
 </html>
