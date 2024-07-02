@@ -675,77 +675,59 @@
     });
 </script>
 <script src="./components.js"></script>
-<script>
-    // Get the list items
-    const navigationList = document.querySelector('.navigation');
-
-    // Find the list item with the class "current"
-    const currentListItem = navigationList.querySelector('.current');
-
-    // Remove the class "current" from the current list item
-    currentListItem.classList.remove('current');
-
-    // Find the list item with the text "Toy Festivals"
-    const toyFestivalsListItem = navigationList.querySelector('#about');
-
-    // Add the class "current" to the Toy Festivals list item
-    toyFestivalsListItem.classList.add('current');
-
-
-    // Get all list items
-    const listItems = document.querySelectorAll('.dropdown');
-
-
-    // Add click event listener to each list item
-    listItems.forEach(function (listItem) {
-        listItem.addEventListener('mouseenter', function () {
-            // Get the ID of the clicked list item
-            const id = this.getAttribute('id');
-
-            // Get the <ul> element inside the clicked list item by its ID
-            const ulElement = document.querySelector(`#${id} ul`);
-
-            ulElement.classList.remove('hide-menu');
-
-        });
-
-        listItem.addEventListener('mouseleave', function () {
-            // Get the ID of the clicked list item
-            const id = this.getAttribute('id');
-
-            // Get the <ul> element inside the clicked list item by its ID
-            const ulElement = document.querySelector(`#${id} ul`);
-
-            // Set a timeout to add the "hide-menu" class after 1000 milliseconds (1 second)
-            timeoutId = setTimeout(function () {
-                ulElement.classList.add('hide-menu');
-            }, 2000);
-
-        });
-
-    });
-
-    window.addEventListener("scroll", function () {
-        const header = document.querySelector("app-navbar")
-
-        header.classList.toggle("sticky-nav", window.scrollY > 0)
-        header.classList.toggle('drop-animation', window.scrollY > 0)
-
-    })
-
-</script>
-    <script>
+  <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Manage current navigation item
+            const navigationList = document.querySelector('.navigation');
+            const currentListItem = navigationList.querySelector('.current');
+            if (currentListItem) currentListItem.classList.remove('current');
+            const contactListItem = navigationList.querySelector('#about');
+            if (contactListItem) contactListItem.classList.add('current');
+
+            // Handle dropdown menu on hover
+            const listItems = document.querySelectorAll('.dropdown');
+            listItems.forEach(function (listItem) {
+                listItem.addEventListener('mouseenter', function () {
+                    const ulElement = this.querySelector('ul');
+                    if (ulElement) ulElement.classList.remove('hide-menu');
+                });
+
+                listItem.addEventListener('mouseleave', function () {
+                    const ulElement = this.querySelector('ul');
+                    if (ulElement) {
+                        setTimeout(function () {
+                            ulElement.classList.add('hide-menu');
+                        }, 2000);
+                    }
+                });
+            });
+
+            // Handle sticky navbar on scroll
+            window.addEventListener("scroll", function () {
+                const header = document.querySelector("app-navbar");
+                if (header) {
+                    header.classList.toggle("sticky-nav", window.scrollY > 0);
+                    header.classList.toggle('drop-animation', window.scrollY > 0);
+                }
+            });
+
+            // Toggle navigation collapse on mobile
             const navToggle = document.getElementById('nav-toggle');
             const navCollapse = document.querySelector('.nav-collapse');
+            if (navToggle && navCollapse) {
+                navToggle.addEventListener('click', function() {
+                    navCollapse.classList.toggle('show');
+                    navToggle.classList.toggle('toggler-active');
+                });
+            }
 
-            navToggle.addEventListener('click', function() {
-                // Toggle the 'show' class on the navCollapse element
-                navCollapse.classList.toggle('show');
-
-                // Toggle the 'toggle-active' class on the navToggle button
-                navToggle.classList.toggle('toggler-active');
-            });
+            // Submenu Dropdown Toggle
+            if ($('.navigation li.dropdown ul').length) {
+                $('.navigation li.dropdown').append('<div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>');
+                $('.dropdown-btn').on('click', function() {
+                    $(this).siblings('ul').toggleClass('mobile-submenu');
+                });
+            }
         });
     </script>
 
