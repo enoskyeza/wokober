@@ -58,6 +58,16 @@ body{
     font-weight: 600;
 }
 
+@media (max-width: 470px) {
+    .vid-caption-carousel .carousel-inner .carousel-item .carousel-caption{
+        bottom: -2rem!important;
+    font-size: 28px;
+    color: white;
+    font-weight: 600;
+}
+    
+}
+
 .hero-caption{
     position: absolute;
     top: 0;
