@@ -104,4 +104,16 @@
       });
 
 
+	//Mobile Nav Hide Show
+	// if ($('.mobile-menu').length) {
+	// 	var mobileMenuContent = $('.main-menu .navigation').html();
+	// 	$('.mobile-menu .navigation').append(mobileMenuContent);
+	// 	$('.sticky-header .navigation').append(mobileMenuContent);
+	// 	//Dropdown Button
+	// 	$('.mobile-menu li.dropdown .dropdown-btn').on('click', function() {
+	// 		$(this).prev('ul').slideToggle(500);
+	// 	});
+	// }
+
+
 })(jQuery);

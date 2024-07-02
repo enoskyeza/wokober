@@ -167,7 +167,7 @@
                                 </nav><!-- Main Menu End-->
                             </div>
                             <div class="">
-                                <a href="donate.html" class="theme-btn donate-button"><span>Donate</span></a>
+                                <a href="donate.html" class="btn-donate" id="donate"><span>Donate</span></a>
                             </div>
                         </div>
                     </div>
@@ -211,7 +211,7 @@
         </div>
 
         <!-- Mobile Menu  -->
-        <div class="mobile-menu style-one">
+        <div class="custom-mobile-menu style-one d-none">
             <div class="menu-box row" style="background: none">
                 <div class="col logo">
                     <a href="/" class="hero_logo">
@@ -223,23 +223,57 @@
 
                 <div class="col d-flex align-items-center justify-content-end">
                     <div class="" style="margin-right: 100px">
-                        <a href="donate.html" class="theme-btn donate-button"><span>Donate</span></a>
+                        <a href="donate.html" class="btn-donate" id="donate">
+                            <span>Donate</span>
+                        </a>
                     </div>
                     <!-- Main Menu -->
                     <nav class="main-menu navbar-expand-xl navbar-dark">
                         <div class="navbar-header">
                             <!-- Toggle Button -->
-                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            <button type="button" class="nav-toggler" data-toggle="collapse"
                                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                     aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="flaticon-menu"></span>
                             </button>
                         </div>
 
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navigation">
-
-                            </ul>
+                        <div class="collapse nav-collapse" id="navbarSupportedContent">
+                                <ul class="navigation">
+                                    <li class="dropdown"><a href="#" >About</a>
+                                        <ul>
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="about.html#team">Our Team</a></li>
+                                            <li><a href="gallery.html">Gallery</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="#">Toy Festivals</a>
+                                        <ul>
+                                            <li><a href="tf-2022.html">TF 2022</a></li>
+                                            <li><a href="tf2023.html">TF 2023</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class=""><a href="mp-2023.html">Mentorship Programmes</a>
+                                        <!--                                                <ul>-->
+                                        <!--                                                    <li><a href="causes-1.html">Style 01 - Grid View</a></li>-->
+                                        <!--                                                </ul>-->
+                                    </li>
+                                    <li class=""><a href="get_involved.html">Get Involved</a>
+                                        <!--                                                <ul>-->
+                                        <!--                                                    <li><a href="events-1.html">Events</a></li>-->
+                                        <!--                                                    <li><a href="event-details.html">Single Event</a></li>-->
+                                        <!--                                                </ul>-->
+                                    </li>
+                                    <li class="dropdown"><a href="#">Blog</a>
+                                        <!--                                                <ul>-->
+                                        <!--                                                    <li><a href="blog.html">Classic Grid View</a></li>-->
+                                        <!--                                                    <li><a href="blog-fullwidth.html">Fullwidth Masonry</a></li>-->
+                                        <!--                                                    <li><a href="blog-list.html">List With Sidebar</a></li>-->
+                                        <!--                                                    <li><a href="blog-details.html">Single Post</a></li>-->
+                                        <!--                                                </ul>-->
+                                    </li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
                         </div>
                     </nav>
                     <!-- Main Menu End-->
