@@ -1,7 +1,7 @@
 /***
 
 ====================================================================
-	Main Header
+	NAVBAR BUTTONS
 ====================================================================
 
 ***/
@@ -13,7 +13,7 @@
  /*width: 6em;*/
  /*height: 2.6em;*/
  /*line-height: 2.5em;*/
- margin-top: 6px;
+ margin-top: 10px;
  position: relative;
  overflow: hidden;
  border: 2px solid var(--color);
@@ -55,6 +55,199 @@
 .btn-donate:active:before {
  background: #3a0ca3;
  transition: background 0s;
+}
+
+/*.custom-nav-toggler{*/
+/*	background: transparent;*/
+/*	border: none;*/
+/*	margin: 0;*/
+/*}*/
+
+/***
+
+====================================================================
+			Custom Mobile Menu
+====================================================================
+
+***/
+
+@media (min-width:1200px) {
+	.custom-mobile-menu {
+		display: none;
+	}
+}
+
+.custom-mobile-menu {
+	position: relative;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	max-width: 100%;
+	z-index: 9999;
+}
+
+.custom-mobile-menu .logo {
+	text-align: left;
+	padding-left: 25px;
+	display: flex;
+	align-items: start;
+}
+
+.mobile-nav-right{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0;
+}
+
+.custom-mobile-menu .menu-box {
+	position: relative;
+	width: 100%;
+	max-height: 100%;
+	padding: 15px 10px;
+}
+
+.custom-mobile-menu .menu-box .nav-collapse{
+	position: relative;
+	width: 100vw;
+	/*left: 0px;*/
+	/*background: black;*/
+}
+
+.custom-mobile-menu .navigation {
+	position: relative;
+	width: 100%;
+	list-style: none;
+	padding: 20px 30px;
+}
+
+.custom-mobile-menu .main-menu .navigation li {
+	position: relative;
+	display: flex;
+	align-items: start;
+	float: none;
+	text-align: left;
+	padding: 0;
+	margin-right: 0px;
+}
+
+.custom-mobile-menu .main-menu .navigation>li.current:before {
+	display: none;
+}
+
+.custom-mobile-menu .main-menu .navigation>li.current:after {
+	display: none;
+}
+
+.custom-mobile-menu .navigation li>a:before {
+	display: none;
+}
+
+.custom-mobile-menu .main-menu .navigation>li>ul>li:hover>a {
+	padding-left: 0;
+	font-weight: 400;
+}
+
+.custom-mobile-menu .main-menu .navigation>li.dropdown:hover>ul {
+	margin: 0;
+}
+
+.custom-mobile-menu .navigation li>ul>li:last-child {
+	border-bottom: none;
+}
+
+.mobile-menu .navigation li>ul>li:first-child {
+	border-top: 1px solid rgba(0, 0, 0, 0);
+}
+
+.custom-mobile-menu .navigation li>a {
+	position: relative;
+	display: block;
+	line-height: 24px;
+	padding: 8px 50px;
+	padding-left: 0;
+	font-size: 14px;
+	color: #858585;
+	text-transform: uppercase;
+	font-weight: 500;
+	text-align: left;
+}
+
+.custom-mobile-menu .navigation li>a:before {
+	position: absolute;
+	content: '';
+	background: #2f333b;
+	height: 6px;
+	width: 6px;
+	left: 30px;
+	top: 23px;
+}
+
+.custom-mobile-menu .navigation li.dropdown .dropdown-btn {
+	position: absolute;
+	right: 15px;
+	top: 0px;
+	width: 44px;
+	height: 44px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 44px;
+	color: #6a6d73;
+	cursor: pointer;
+	z-index: 5;
+	display: block !important;
+}
+
+.custom-mobile-menu .navigation li.dropdown .dropdown-btn:after {
+	content: '';
+	position: absolute;
+	left: 0px;
+	top: 1px;
+	width: 1px;
+	height: 24px;
+}
+
+.custom-mobile-menu .navigation li>ul,
+.custom-mobile-menu .navigation li>ul>li>ul {
+	display: none;
+	position: relative;
+	width: 100%;
+	-webkit-transition: 0s !important;
+	-o-transition: 0s !important;
+	transition: 0s !important;
+	left: 0;
+	padding-left: 20px;
+}
+
+.custom-mobile-menu .main-menu .navigation>li>ul>li:hover>ul {
+	left: 0;
+	margin-left: 0;
+}
+
+.custom-mobile-menu .main-menu .navigation>li>ul>li>ul>li>a:hover {
+	font-weight: 400;
+	padding-left: 0px;
+}
+
+.custom-navbar-toggler {
+	background: transparent;
+	font-size: 20px;
+	z-index: 9;
+	color: #000;
+	font-weight: 700;
+	border: none;
+}
+
+.toggler-active{
+	position: absolute;
+	right: 15px;
+	top: -48px;
+}
+
+.custom-mobile-menu .main-menu .navbar-collapse {
+	padding: 0px;
+	max-height: 300px;
+	overflow-x: hidden;
 }
 
 /***
@@ -462,7 +655,6 @@
 }
 
 .main-menu .nav-collapse {
-	background: red;
 	padding: 0px;
 }
 
