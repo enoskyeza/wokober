@@ -68,7 +68,7 @@ body{
     font-weight: 600;
     }
 
-    
+
 }
 
 .hero-caption{
@@ -736,4 +736,64 @@ br.md_view {
     background: red;
     display: flex;
 
+}
+
+
+/* OUR APPROACH SECTION */
+
+/* Section styling */
+.approach-section {
+    background: white
+}
+
+.sec-title h5 {
+    font-size: 1.5rem;
+    color: #007bff;
+    text-transform: uppercase;
+    font-weight: bold;
+} */
+
+.approach-copy {
+    line-height: 1.7;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    max-width: 80%;
+    margin-bottom: 20px;
+    /* color: #444; */
+    /* max-width: 800px; */
+}
+
+/* Video section */
+.approach-video-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Individual video card */
+.approach-video-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    /* padding: 15px; */
+    width: 48%; /* Two videos side by side */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .approach-video-container {
+        display: block;
+    }
+
+    .approach-video-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
