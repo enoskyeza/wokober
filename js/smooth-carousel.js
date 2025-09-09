@@ -21,8 +21,8 @@ class SmoothCarousel {
     init() {
       if (!this.container) return;
 
-      // collect real slides once
-      this.realSlides = Array.from(this.container.querySelectorAll('.custom_project_details_right'));
+      // collect real slides once - support both project and testimonial slides
+      this.realSlides = Array.from(this.container.querySelectorAll('.custom_project_details_right, .custom_testimonial_item'));
       if (this.realSlides.length === 0) return;
 
       this.totalReal = this.realSlides.length;
@@ -236,6 +236,7 @@ class SmoothCarousel {
   // init
   document.addEventListener('DOMContentLoaded', function() {
     setTimeout(() => {
+      // Initialize project carousel
       const projectCarousel = new SmoothCarousel('.project-slider', {
         autoplay: true,
         autoplayDelay: 8000,
@@ -243,5 +244,14 @@ class SmoothCarousel {
         easing: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)'
       });
       window.projectCarousel = projectCarousel;
+
+      // Initialize testimonial carousel
+      const testimonialCarousel = new SmoothCarousel('.testimonial-slider', {
+        autoplay: true,
+        autoplayDelay: 6000,
+        transitionDuration: 800,
+        easing: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)'
+      });
+      window.testimonialCarousel = testimonialCarousel;
     }, 100);
   });
