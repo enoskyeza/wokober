@@ -33,21 +33,8 @@
         }
     });
 
-    // Slider 2
-    var projectSlider = tns({
-        container: '.project-slider',
-        items: 1,
-        slideBy: 'page',
-        speed: 500,
-        autoplayTimeout: 8000,
-        autoplay: true,
-        nav: false,
-        navPosition: 'bottom',
-        autoplayButtonOutput: false,
-        controlsContainer: '.project-slider-dots',
-        prevButton: '.previous',
-        nextButton: '.next',
-    });
+    // Project slider is now handled by smooth-carousel.js
+    // Removed Tiny Slider implementation for better performance
 
     // logo Slider
     var logoSlider = tns({
@@ -77,31 +64,8 @@
         }
     });
 
-    // Slider for testimonials
-    var testimonialSlider = tns({
-        container: '.testimonial-slider',
-        items: 1,
-        slideBy: 'page',
-        speed: 2365,
-        autoplay: true,
-        nav: false,
-        navPosition: 'bottom',
-        autoplayButtonOutput: false,
-        controlsContainer: '.project-slider-dots',
-        prevButton: '.previous',
-        nextButton: '.next',
-        responsive: {
-            640: {
-                items: 1
-            },
-            700: {
-                gutter: 0
-            },
-            900: {
-                items: 1
-            }
-        }
-    });
+    // Testimonial slider is now handled by smooth-carousel.js
+    // Removed Tiny Slider implementation for better performance
 
     //Submenu Dropdown Toggle
 	if ($('.navigation li.dropdown ul').length) {
