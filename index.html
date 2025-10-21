@@ -15,18 +15,19 @@
 
 
     <link rel='stylesheet' id='animate-css' href='./css/oxpins-addon-assets-vendors-animate-animate.min.css'
-          media='all'/>
+          media='print' onload="this.media='all'"/>
     <link rel='stylesheet' id='jarallax-css' href='./css/oxpins-addon-assets-vendors-jarallax-jarallax.css'
-          media='all'/>
-    <link rel='stylesheet' id='swiper-css' href='./css/oxpins-addon-assets-vendors-swiper-swiper.min.css' media='all'/>
+          media='print' onload="this.media='all'"/>
+    <link rel='stylesheet' id='swiper-css' href='./css/oxpins-addon-assets-vendors-swiper-swiper.min.css'
+          media='print' onload="this.media='all'"/>
     <link rel='stylesheet' id='oxpins-addon-style-css' href='./css/oxpins-addon-assets-css-oxpins-addon.css'
-          media='all'/>
+          media='print' onload="this.media='all'"/>
     <link rel='stylesheet' id='oxpins-icons-css' href='./css/oxpins-assets-vendors-oxpins-icons-style.css'
-          media='all'/>
+          media='print' onload="this.media='all'"/>
     <link rel='stylesheet' id='bootstrap-css' href='./css/oxpins-assets-vendors-bootstrap-css-bootstrap.min.css'
           media='all'/>
     <link rel='stylesheet' id='fontawesome-css' href='./css/oxpins-assets-vendors-fontawesome-css-all.min.css'
-          media='all'/>
+          media='print' onload="this.media='all'"/>
     <link rel='stylesheet' id='oxpins-style-css' href='./css/oxpins-style.css' media='all'/>
 
     <!-- My fonts -->
@@ -34,13 +35,8 @@
 
 
     <link rel='stylesheet' id='recent-posts-widget-with-thumbnails-public-style-css'
-          href='./css/recent-posts-widget-with-thumbnails-public.css' media='all'/>
+          href='./css/recent-posts-widget-with-thumbnails-public.css' media='print' onload="this.media='all'"/>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin/>
-    <script src='./js/jquery-jquery.min.js' id='jquery-core-js'></script>
-    <script src='./js/dist-vendor-regenerator-runtime.min.js' id='regenerator-runtime-js'></script>
-    <script src='./js/dist-vendor-wp-polyfill.min.js' id='wp-polyfill-js'></script>
-    <script src='./js/dist-hooks.min.js' id='wp-hooks-js'></script>
-    <script src='./js/dist-i18n.min.js' id='wp-i18n-js'></script>
 
     <!-- Icons -->
     <link rel="icon" href="./images/logo_icon/favicon-w-32x32.png" sizes="32x32"/>
@@ -48,7 +44,11 @@
     <link rel="apple-touch-icon" href="./images/logo_icon/apple-touch-icon.png"/>
 
     <!-- Tiny slider cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"/>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" as="style"
+          onload="this.onload=null;this.rel='stylesheet'"/>
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"/>
+    </noscript>
     <!--[if (lt IE 9)]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script>
     <![endif]-->
@@ -82,14 +82,14 @@
 
     <!-- Stylesheets -->
 <!--<link href="assets/css/bootstrap.css" rel="stylesheet">-->
-<link href="./assets/css/jquery-ui.css" rel="stylesheet">
-<link href="./assets/css/swiper.min.css" rel="stylesheet">
-<link href="./assets/css/flaticon.css" rel="stylesheet">
-<link href="./assets/css/font-awesome.css" rel="stylesheet">
-<link href="./assets/css/animate.css" rel="stylesheet">
-<link href="./assets/css/custom-animate.css" rel="stylesheet">
-<link href="./assets/css/jquery.fancybox.min.css" rel="stylesheet">
-<link href="./assets/css/owl.css" rel="stylesheet">
+<link href="./assets/css/jquery-ui.css" rel="stylesheet" media="print" onload="this.media='all'">
+<link href="./assets/css/swiper.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+<link href="./assets/css/flaticon.css" rel="stylesheet" media="print" onload="this.media='all'">
+<link href="./assets/css/font-awesome.css" rel="stylesheet" media="print" onload="this.media='all'">
+<link href="./assets/css/animate.css" rel="stylesheet" media="print" onload="this.media='all'">
+<link href="./assets/css/custom-animate.css" rel="stylesheet" media="print" onload="this.media='all'">
+<link href="./assets/css/jquery.fancybox.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+<link href="./assets/css/owl.css" rel="stylesheet" media="print" onload="this.media='all'">
 <link href="./assets/css/style.css" rel="stylesheet">
 <link href="./assets/css/responsive.css" rel="stylesheet">
 
@@ -113,6 +113,7 @@
                             <div class="logo">
                                 <a href="/" class="hero_logo">
                                     <img id="LogoId" class="logo_img" decoding="async" width="200" height="auto"
+                                         loading="eager" data-critical="true"
                                          src="./images/img/Logo-01.png"
                                          alt="Wokober Logo">
                                 </a>
@@ -215,8 +216,9 @@
                 <div class="col logo">
                     <a href="/" class="hero_logo">
                         <img id="LogoId" class="logo_img" decoding="async" width="150" height="50"
-                         src="./images/img/Logo-01.png"
-                         alt="Wokober Logo">
+                             loading="eager" data-critical="true"
+                             src="./images/img/Logo-01.png"
+                             alt="Wokober Logo">
                     </a>
                 </div>
 
@@ -290,8 +292,9 @@
     <section>
         <div class="hero_vid">
             <div class="vid-container">
-                <video autoplay muted loop id="myVideo" poster="videos/preview2.webp">
-                    <source src="videos/final_vid.mp4" type="video/mp4">
+                <video id="myVideo" class="hero-video" muted playsinline loop preload="none"
+                       poster="videos/preview2.webp">
+                    <source data-src="videos/final_vid.mp4" type="video/mp4">
                     Your browser does not support HTML5 video.
                 </video>
             </div>
@@ -1153,39 +1156,63 @@
 </div>
 <!-- #page -->
 
-<script src='./js/oxpins-assets-vendors-bootstrap-js-bootstrap.min.js' id='bootstrap-js'></script>
-<script src='./js/beaver-builder-lite-version-js-jquery.easing.min.js' id='jquery-easing-js'></script>
-<script src='./js/beaver-builder-lite-version-js-jquery.fitvids.min.js' id='jquery-fitvids-js'></script>
-<script src='./js/beaver-builder-lite-version-js-jquery.bxslider.min.js' id='jquery-bxslider-js'></script>
-<script src='./js/oxpins-addon-assets-vendors-countdown-countdown.min.js' id='countdown-js'></script>
-<script src='./js/oxpins-addon-assets-vendors-isotope-isotope.js' id='isotope-js'></script>
-<script src='./js/oxpins-addon-assets-vendors-jarallax-jarallax.min.js' id='jarallax-js'></script>
-<script src='./js/oxpins-addon-assets-vendors-jquery-ajaxchimp-jquery.ajaxchimp.min.js'
-        id='jquery-ajaxchimp-js'></script>
-<script src='./js/oxpins-addon-assets-vendors-jquery-appear-jquery.appear.min.js' id='jquery-appear-js'></script>
-<script src='./js/oxpins-addon-assets-vendors-jquery-magnific-popup-jquery.magnific-popup.min.js'
-        id='jquery-magnific-popup-js'></script>
-<script src='./js/oxpins-addon-assets-vendors-jquery-circle-progress-jquery.circle-progress.min.js'
-        id='jquery-circle-progress-js'></script>
-<script src='./js/oxpins-addon-assets-vendors-odometer-odometer.min.js' id='odometer-js'></script>
-<script src='./js/oxpins-addon-assets-vendors-owl-carousel-owl.carousel.min.js' id='owl-carousel-js'></script>
-<script src='./js/oxpins-addon-assets-vendors-swiper-swiper.min.js' id='swiper-js'></script>
-<script src='./js/oxpins-addon-assets-vendors-wow-wow.js' id='wow-js'></script>
-<script src='./js/oxpins-addon-assets-vendors-jquery-tilt-tilt.jquery.min.js' id='jquery-tilt-js'></script>
-<script src='./js/oxpins-addon-assets-vendors-sharer-sharer.min.js' id='sharer-js'></script>
-<script src='./js/oxpins-addon-assets-vendors-circleType-jquery.circleType.js' id='circleType-js'></script>
-<script src='./js/oxpins-addon-assets-vendors-circleType-jquery.lettering.min.js' id='lettering-js'></script>
-<script src='./js/oxpins-addon-assets-js-oxpins-addon.js' id='oxpins-addon-script-js'></script>
-<script src='./js/jquery-ui-core.min.js' id='jquery-ui-core-js'></script>
-<script id='wp-util-js-extra'>
-    var _wpUtilSettings = {"ajax": {"url": "\/wordpress\/wp-admin\/admin-ajax.php"}};
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const heroVideo = document.getElementById('myVideo');
+        if (heroVideo) {
+            const source = heroVideo.querySelector('source[data-src]');
+            const loadVideo = function () {
+                if (source && source.dataset.src && !source.dataset.loaded) {
+                    source.src = source.dataset.src;
+                    source.dataset.loaded = 'true';
+                    heroVideo.load();
+                    heroVideo.play().catch(function () {
+                        /* autoplay might be blocked; ignore */
+                    });
+                }
+            };
+
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            loadVideo();
+                            observer.disconnect();
+                        }
+                    });
+                }, {rootMargin: '200px'});
+                observer.observe(heroVideo);
+            } else {
+                loadVideo();
+            }
+        }
+
+        document.querySelectorAll('img:not([loading]):not([data-critical])').forEach(function (img) {
+            img.setAttribute('loading', 'lazy');
+            img.setAttribute('decoding', 'async');
+        });
+    });
 </script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-<script src="./js/script.js"></script>
-<script src="./components.js"></script>
-<script src="./js/video-modal.js"></script>
-<script src="./js/smooth-carousel.js"></script>
+<script src="./assets/js/jquery.js" defer></script>
+<script src="./assets/js/popper.min.js" defer></script>
+<script src="./assets/js/bootstrap.min.js" defer></script>
+<script src="./assets/js/TweenMax.min.js" defer></script>
+<script src="./js/oxpins-addon-assets-vendors-jarallax-jarallax.min.js" defer></script>
+<script src="./assets/js/wow.js" defer></script>
+<script src="./assets/js/owl.js" defer></script>
+<script src="./assets/js/appear.js" defer></script>
+<script src="./assets/js/jquery.countdown.min.js" defer></script>
+<script src="./assets/js/swiper.min.js" defer></script>
+<script src="./assets/js/jquery.fancybox.js" defer></script>
+<script src="./assets/js/menu-nav-btn.js" defer></script>
+<script src="./assets/js/jquery-ui.js" defer></script>
+<script src="./assets/js/script.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js" defer></script>
+<script src="./js/script.js" defer></script>
+<script src="./components.js" defer></script>
+<script src="./js/video-modal.js" defer></script>
+<script src="./js/smooth-carousel.js" defer></script>
 
 <!--    NAV STYLES  -->
 <script>
@@ -1231,24 +1258,18 @@
 
 
 <!-- JS -->
-<script src="./assets/js/jquery.js"></script>
-<script src="./assets/js/popper.min.js"></script>
-<script src="./assets/js/bootstrap.min.js"></script>
-<script src="./assets/js/TweenMax.min.js"></script>
-<script src="./assets/js/wow.js"></script>
-<script src="./assets/js/owl.js"></script>
-<script src="./assets/js/appear.js"></script>
-<script src="./assets/js/swiper.min.js"></script>
-<script src="./assets/js/jquery.fancybox.js"></script>
-<script src="./assets/js/menu-nav-btn.js"></script>
-<script src="./assets/js/jquery-ui.js"></script>
-<!-- Custom JS -->
-<script src="./js/script.js"></script>
-
 <script>
-        $("#nav-toggle").click(function () {
-        $(this).toggleClass("toggler-active");
-        $("#menu").slideToggle();
+    document.addEventListener('DOMContentLoaded', function () {
+        const navToggle = document.getElementById('nav-toggle');
+        const navCollapse = document.getElementById('navbarSupportedContent');
+        if (navToggle && navCollapse) {
+            navToggle.addEventListener('click', function () {
+                navToggle.classList.toggle('toggler-active');
+                const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+                navToggle.setAttribute('aria-expanded', (!expanded).toString());
+                navCollapse.classList.toggle('show');
+            });
+        }
     });
 </script>
 </body>
