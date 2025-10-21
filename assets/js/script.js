@@ -902,9 +902,11 @@
 		});
 	}
 
-	$(function() {
-		$('[data-toggle="tooltip"]').tooltip();
-	});
+		$(function() {
+			if (typeof $.fn.tooltip === 'function') {
+				$('[data-toggle="tooltip"]').tooltip();
+			}
+		});
 
 	// Language Selector
 	$(".languages").on('click', function() {
@@ -988,7 +990,7 @@
 	}
 
 	// Elements Animation
-	if ($('.wow').length) {
+		if ($('.wow').length && typeof WOW !== 'undefined') {
 		var wow = new WOW({
 			boxClass: 'wow', // animated element css class (default is wow)
 			animateClass: 'animated', // animation css class (default is animated)
